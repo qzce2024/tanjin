@@ -1,6 +1,8 @@
 ---
-import { siteConfig } from '../config.ts';
+import { siteConfig as defaultConfig } from '../config.ts';
 import { Icon } from 'astro-icon/components';
+
+const { config = defaultConfig } = Astro.props;
 ---
 
 <nav
@@ -9,25 +11,33 @@ import { Icon } from 'astro-icon/components';
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="flex h-16 items-center justify-between">
       <div class="flex items-center">
-        <a href="/" class="text-mono-black text-xl font-bold"
-          >{siteConfig.site.name}</a
+        <a href="/" class="text-mono-heading text-xl font-bold"
+          >{config.site.name}</a
         >
       </div>
 
       <div class="hidden items-center space-x-8 md:flex">
         {
-          siteConfig.navigation.links.map((link) => (
+          config.navigation.links.map((link) => (
             <a href={link.href} class="text-mono-dark">
               {link.name}
             </a>
           ))
         }
-        <a
-          href={siteConfig.navigation.cta.href}
-          class="bg-mono-black rounded-lg px-6 py-2 text-white"
-        >
-          {siteConfig.navigation.cta.text}
-        </a>
+        {config.navigation.cta.href === '#inquiry' ? (
+          <button
+            class="inquiry-trigger bg-mono-black rounded-lg px-6 py-2 text-white"
+          >
+            {config.navigation.cta.text}
+          </button>
+        ) : (
+          <a
+            href={config.navigation.cta.href}
+            class="bg-mono-black rounded-lg px-6 py-2 text-white"
+          >
+            {config.navigation.cta.text}
+          </a>
+        )}
       </div>
 
       <button
@@ -37,25 +47,33 @@ import { Icon } from 'astro-icon/components';
         aria-expanded="false"
         aria-label="Toggle navigation menu"
       >
-        <Icon name="heroicons:bars-3" class="text-mono-black h-6 w-6" />
+        <Icon name="heroicons:bars-3" class="text-mono-heading h-6 w-6" />
       </button>
     </div>
 
     <div id="mobileMenu" class="hidden pb-4 md:hidden" aria-hidden="true">
       <div class="flex flex-col space-y-3">
         {
-          siteConfig.navigation.links.map((link) => (
+          config.navigation.links.map((link) => (
             <a href={link.href} class="text-mono-dark py-2">
               {link.name}
             </a>
           ))
         }
-        <a
-          href={siteConfig.navigation.cta.href}
-          class="bg-mono-black rounded-lg px-6 py-3 text-center text-white"
-        >
-          {siteConfig.navigation.cta.text}
-        </a>
+        {config.navigation.cta.href === '#inquiry' ? (
+          <button
+            class="inquiry-trigger bg-mono-black rounded-lg px-6 py-3 text-center text-white w-full"
+          >
+            {config.navigation.cta.text}
+          </button>
+        ) : (
+          <a
+            href={config.navigation.cta.href}
+            class="bg-mono-black rounded-lg px-6 py-3 text-center text-white"
+          >
+            {config.navigation.cta.text}
+          </a>
+        )}
       </div>
     </div>
   </div>

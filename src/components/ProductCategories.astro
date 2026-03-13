@@ -1,0 +1,136 @@
+---
+import { Icon } from 'astro-icon/components';
+
+interface ProductCategory {
+  title: string;
+  image: string;
+  description: string;
+  forms: string[];
+  highlights: string[];
+  applications: string[];
+}
+
+interface Props {
+  title?: string;
+  subtitle?: string;
+  products: ProductCategory[];
+}
+
+const {
+  title = 'Our Products',
+  subtitle = 'Comprehensive range of activated carbon for diverse industrial needs',
+  products = [],
+} = Astro.props;
+---
+
+<section id="features" class="relative bg-white px-4 py-20 sm:px-6 lg:px-8">
+  <div
+    class="border-mono-lighter absolute top-8 left-8 h-16 w-16 border-t-2 border-l-2"
+  >
+  </div>
+  <div
+    class="border-mono-lighter absolute top-8 right-8 h-16 w-16 border-t-2 border-r-2"
+  >
+  </div>
+
+  <div class="mx-auto max-w-7xl">
+    <div class="scroll-fade-up mx-auto mb-16 max-w-3xl text-center">
+      <h2
+        class="text-mono-heading mb-4 text-2xl font-bold sm:text-3xl lg:text-4xl"
+      >
+        {title}
+      </h2>
+      <p class="text-mono-dark text-base sm:text-lg">
+        {subtitle}
+      </p>
+    </div>
+
+    <div class="space-y-12">
+      {
+        products.map((product, index) => (
+          <div
+            class={`scroll-fade-up border-mono-lighter overflow-hidden rounded-xl border stagger-${(index % 9) + 1}`}
+          >
+            <div
+              class={`grid grid-cols-1 lg:grid-cols-2 ${index % 2 === 1 ? 'lg:direction-rtl' : ''}`}
+            >
+              {/* 图片 */}
+              <div class={`bg-mono-lighter ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
+                <img
+                  src={product.image}
+                  alt={product.title}
+                  class="h-full w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+
+              {/* 内容 */}
+              <div class={`p-6 sm:p-8 lg:p-10 ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
+                <h3 class="text-mono-heading mb-3 text-xl font-bold sm:text-2xl">
+                  {product.title}
+                </h3>
+                <p class="text-mono-dark mb-6 text-sm leading-relaxed sm:text-base">
+                  {product.description}
+                </p>
+
+                {/* 可选形态 */}
+                <div class="mb-5">
+                  <p class="text-mono-heading mb-2 text-xs font-semibold tracking-wide uppercase">
+                    Available Forms
+                  </p>
+                  <div class="flex flex-wrap gap-2">
+                    {product.forms.map((form) => (
+                      <span class="bg-mono-lighter text-mono-heading rounded-full px-3 py-1 text-xs font-medium">
+                        {form}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* 关键参数 */}
+                <div class="mb-5">
+                  <p class="text-mono-heading mb-2 text-xs font-semibold tracking-wide uppercase">
+                    Key Specs
+                  </p>
+                  <ul class="space-y-1.5">
+                    {product.highlights.map((item) => (
+                      <li class="flex items-start text-sm">
+                        <Icon
+                          name="heroicons:check"
+                          class="text-mono-black mr-2 mt-0.5 h-4 w-4 flex-shrink-0"
+                        />
+                        <span class="text-mono-dark">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* 典型应用 */}
+                <div class="mb-6">
+                  <p class="text-mono-heading mb-2 text-xs font-semibold tracking-wide uppercase">
+                    Typical Applications
+                  </p>
+                  <div class="flex flex-wrap gap-2">
+                    {product.applications.map((app) => (
+                      <span class="border-mono-lighter text-mono-dark rounded-full border px-3 py-1 text-xs">
+                        {app}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* 询价按钮 */}
+                <button
+                  class="inquiry-trigger bg-mono-black rounded-lg px-6 py-2.5 text-sm font-semibold text-white shadow-sm"
+                  data-product={`Inquiry about: ${product.title}`}
+                >
+                  Request Quote
+                </button>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

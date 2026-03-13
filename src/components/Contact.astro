@@ -1,22 +1,24 @@
 ---
-import { siteConfig } from '../config.ts';
+import { siteConfig as defaultConfig } from '../config.ts';
 import { Icon } from 'astro-icon/components';
+
+const { config = defaultConfig } = Astro.props;
 ---
 
 <section id="contact" class="bg-mono-lighter px-4 py-20 sm:px-6 lg:px-8">
   <div class="mx-auto max-w-7xl">
     <div class="grid grid-cols-1 items-start gap-12 lg:grid-cols-2">
       <div class="scroll-fade-left">
-        <h2 class="text-mono-black mb-6 text-4xl font-bold sm:text-5xl">
-          {siteConfig.contact.title}
+        <h2 class="text-mono-heading mb-6 text-2xl font-bold sm:text-3xl lg:text-4xl">
+          {config.contact.title}
         </h2>
-        <p class="text-mono-dark mb-8 text-xl leading-relaxed">
-          {siteConfig.contact.subtitle}
+        <p class="text-mono-dark mb-8 text-base leading-relaxed sm:text-lg">
+          {config.contact.subtitle}
         </p>
 
         <ul class="mb-8 space-y-4">
           {
-            siteConfig.contact.benefits.map((benefit) => (
+            config.contact.benefits.map((benefit) => (
               <li class="flex items-center">
                 <Icon
                   name="heroicons:check"
@@ -33,9 +35,17 @@ import { Icon } from 'astro-icon/components';
             Questions? Reach out to our team:
           </p>
           <a
-            href={`mailto:${siteConfig.contact.email}`}
-            class="text-mono-black font-semibold">{siteConfig.contact.email}</a
+            href={`mailto:${config.contact.email}`}
+            class="text-mono-black font-semibold hover:underline">{config.contact.email}</a
           >
+          {config.contact.phone && (
+            <div class="mt-3">
+              <a
+                href={`tel:${config.contact.phone}`}
+                class="text-mono-black font-semibold hover:underline">{config.contact.phone}</a
+              >
+            </div>
+          )}
         </div>
       </div>
 
@@ -46,62 +56,62 @@ import { Icon } from 'astro-icon/components';
           <div>
             <label
               for="name"
-              class="text-mono-black mb-2 block text-sm font-semibold"
-              >{siteConfig.contact.form.fields.name.label}</label
+              class="text-mono-heading mb-2 block text-sm font-semibold"
+              >{config.contact.form.fields.name.label}</label
             >
             <input
               type="text"
               id="name"
               name="name"
-              required={siteConfig.contact.form.fields.name.required}
+              required={config.contact.form.fields.name.required}
               class="border-mono-lighter w-full rounded-lg border px-4 py-3"
-              placeholder={siteConfig.contact.form.fields.name.placeholder}
+              placeholder={config.contact.form.fields.name.placeholder}
             />
           </div>
 
           <div>
             <label
               for="email"
-              class="text-mono-black mb-2 block text-sm font-semibold"
-              >{siteConfig.contact.form.fields.email.label}</label
+              class="text-mono-heading mb-2 block text-sm font-semibold"
+              >{config.contact.form.fields.email.label}</label
             >
             <input
               type="email"
               id="email"
               name="email"
-              required={siteConfig.contact.form.fields.email.required}
+              required={config.contact.form.fields.email.required}
               class="border-mono-lighter w-full rounded-lg border px-4 py-3"
-              placeholder={siteConfig.contact.form.fields.email.placeholder}
+              placeholder={config.contact.form.fields.email.placeholder}
             />
           </div>
 
           <div>
             <label
               for="company"
-              class="text-mono-black mb-2 block text-sm font-semibold"
-              >{siteConfig.contact.form.fields.company.label}</label
+              class="text-mono-heading mb-2 block text-sm font-semibold"
+              >{config.contact.form.fields.company.label}</label
             >
             <input
               type="text"
               id="company"
               name="company"
               class="border-mono-lighter w-full rounded-lg border px-4 py-3"
-              placeholder={siteConfig.contact.form.fields.company.placeholder}
+              placeholder={config.contact.form.fields.company.placeholder}
             />
           </div>
 
           <div>
             <label
               for="message"
-              class="text-mono-black mb-2 block text-sm font-semibold"
-              >{siteConfig.contact.form.fields.message.label}</label
+              class="text-mono-heading mb-2 block text-sm font-semibold"
+              >{config.contact.form.fields.message.label}</label
             >
             <textarea
               id="message"
               name="message"
               rows="4"
               class="form-input border-mono-lighter w-full resize-none rounded-lg border px-4 py-3"
-              placeholder={siteConfig.contact.form.fields.message.placeholder}
+              placeholder={config.contact.form.fields.message.placeholder}
             ></textarea>
           </div>
 
@@ -109,7 +119,7 @@ import { Icon } from 'astro-icon/components';
             type="submit"
             class="bg-mono-black w-full rounded-lg px-6 py-4 font-semibold text-white shadow-lg"
           >
-            {siteConfig.contact.form.cta}
+            {config.contact.form.cta}
           </button>
 
           <p class="text-mono-gray text-center text-xs leading-relaxed">

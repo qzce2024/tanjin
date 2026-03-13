@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git config:*)",
+      "Bash(ls:*)",
+      "Bash(npx astro:*)",
+      "WebFetch(domain:dreve51.oss-cn-beijing.aliyuncs.com)",
+      "Bash(curl:*)",
+      "Bash(powershell:*)"
+    ]
+  }
+}

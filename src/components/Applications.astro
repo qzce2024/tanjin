@@ -1,0 +1,91 @@
+---
+import { Icon } from 'astro-icon/components';
+
+interface ApplicationItem {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+interface Props {
+  title?: string;
+  subtitle?: string;
+  items?: ApplicationItem[];
+}
+
+const {
+  title = 'Applications',
+  subtitle = 'Serving diverse industries worldwide',
+  items = [],
+} = Astro.props;
+---
+
+<section
+  id="applications"
+  class="bg-mono-lighter relative px-4 py-20 sm:px-6 lg:px-8"
+>
+  <div class="mx-auto max-w-7xl">
+    <div class="scroll-fade-up mx-auto mb-12 max-w-3xl text-center">
+      <h2 class="text-mono-heading mb-4 text-2xl font-bold sm:text-3xl lg:text-4xl">
+        {title}
+      </h2>
+      <p class="text-mono-dark text-base sm:text-lg">
+        {subtitle}
+      </p>
+    </div>
+
+    <div class="scroll-fade-up overflow-hidden rounded-xl border border-white/80 bg-white shadow-sm">
+      {
+        items.map((item, index) => (
+          <div
+            class={`${index > 0 ? 'border-mono-lighter border-t' : ''}`}
+          >
+            {/* 桌面端 */}
+            <div class="hidden sm:grid sm:grid-cols-[56px_1fr_120px] sm:items-center sm:gap-6 sm:px-6 sm:py-5">
+              <div class="flex h-11 w-11 flex-shrink-0 items-center justify-center">
+                <Icon name={item.icon} class="text-mono-heading h-8 w-8" />
+              </div>
+              <div>
+                <h3 class="text-mono-heading text-base font-semibold">
+                  {item.title}
+                </h3>
+                <p class="text-mono-dark mt-0.5 text-sm leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
+              <div class="text-right">
+                <button
+                  class="inquiry-trigger bg-mono-black rounded-lg px-4 py-2 text-xs font-semibold text-white"
+                  data-product={`Inquiry about: ${item.title} application`}
+                >
+                  Get Quote
+                </button>
+              </div>
+            </div>
+
+            {/* 移动端 */}
+            <div class="px-5 py-5 sm:hidden">
+              <div class="mb-2 flex items-center gap-3">
+                <div class="flex h-9 w-9 flex-shrink-0 items-center justify-center">
+                  <Icon name={item.icon} class="text-mono-heading h-7 w-7" />
+                </div>
+                <h3 class="text-mono-heading text-sm font-semibold">
+                  {item.title}
+                </h3>
+              </div>
+              <p class="text-mono-dark mb-3 text-sm leading-relaxed">
+                {item.description}
+              </p>
+              <button
+                class="inquiry-trigger bg-mono-black rounded-lg px-5 py-2 text-xs font-semibold text-white"
+                data-product={`Inquiry about: ${item.title} application`}
+              >
+                Get Quote
+              </button>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
