@@ -30,15 +30,8 @@ const { config = defaultConfig, testimonials = defaultTestimonials } = Astro.pro
             </div>
             <p class="text-mono-dark mb-4 text-sm leading-relaxed">"{t.quote}"</p>
             <div class="flex items-center gap-3">
-              <img
-                src={t.avatar}
-                alt={t.author}
-                class="h-10 w-10 rounded-full object-cover"
-                loading="lazy"
-                onerror={`this.style.display='none';this.nextElementSibling.style.display='flex'`}
-              />
               <div
-                class="bg-mono-black hidden h-10 w-10 items-center justify-center rounded-full text-xs font-semibold text-white"
+                class="bg-mono-black flex h-10 w-10 items-center justify-center rounded-full text-xs font-semibold text-white"
               >
                 {t.initials}
               </div>

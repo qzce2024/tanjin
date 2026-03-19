@@ -125,7 +125,7 @@
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', async () => {
+  document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('inquiryModal');
     const backdrop = document.getElementById('inquiryBackdrop');
     const closeBtn = document.getElementById('inquiryClose');
@@ -147,12 +147,22 @@
     setVal('inq-hiddenScreen', `${screen.width}x${screen.height}`);
     setVal('inq-hiddenTimezone', Intl.DateTimeFormat().resolvedOptions().timeZone);
 
-    try {
-      const ipRes = await fetch('https://ipapi.co/json/');
-      const ipData = await ipRes.json();
+    // Lazy fetch IP info — shared via window, non-blocking
+    if (!(window as any).__ipDataPromise) {
+      (window as any).__ipDataPromise = fetch('https://ipapi.co/json/')
+        .then(r => r.json())
+        .catch(() => null);
+    }
+    (window as any).__ipDataPromise.then((ipData: any) => {
+      if (!ipData) return;
       setVal('inq-hiddenIp', ipData.ip || '');
       setVal('inq-hiddenCountry', `${ipData.country_name || ''} (${ipData.city || ''})`);
-    } catch {}
+      // Also fill contact form fields if they exist
+      const contactIp = document.getElementById('hiddenIp') as HTMLInputElement;
+      const contactCountry = document.getElementById('hiddenCountry') as HTMLInputElement;
+      if (contactIp) contactIp.value = ipData.ip || '';
+      if (contactCountry) contactCountry.value = `${ipData.country_name || ''} (${ipData.city || ''})`;
+    });
 
     function openModal(product?: string) {
       if (!modal) return;

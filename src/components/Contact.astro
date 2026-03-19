@@ -142,7 +142,7 @@ const { config = defaultConfig } = Astro.props;
 </section>
 
 <script>
-  document.addEventListener('DOMContentLoaded', async () => {
+  document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('contactForm') as HTMLFormElement;
     const submitBtn = document.getElementById('submitBtn') as HTMLButtonElement;
     const successMsg = document.getElementById('formSuccess')!;
@@ -156,13 +156,17 @@ const { config = defaultConfig } = Astro.props;
     (document.getElementById('hiddenScreen') as HTMLInputElement).value = `${screen.width}x${screen.height}`;
     (document.getElementById('hiddenTimezone') as HTMLInputElement).value = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
-    // Get IP + country via free API
-    try {
-      const ipRes = await fetch('https://ipapi.co/json/');
-      const ipData = await ipRes.json();
+    // Reuse shared IP data from InquiryModal, or fetch if not available
+    if (!(window as any).__ipDataPromise) {
+      (window as any).__ipDataPromise = fetch('https://ipapi.co/json/')
+        .then(r => r.json())
+        .catch(() => null);
+    }
+    (window as any).__ipDataPromise.then((ipData: any) => {
+      if (!ipData) return;
       (document.getElementById('hiddenIp') as HTMLInputElement).value = ipData.ip || '';
       (document.getElementById('hiddenCountry') as HTMLInputElement).value = `${ipData.country_name || ''} (${ipData.city || ''})`;
-    } catch {}
+    });
 
     if (form) {
       form.addEventListener('submit', async (e) => {
