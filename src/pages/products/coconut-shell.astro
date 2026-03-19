@@ -24,7 +24,7 @@ const d = coconutShellData;
       <div class="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
         <!-- Left: Content -->
         <div>
-          <h1 class="scroll-fade-up mb-5 text-3xl font-extrabold text-mono-heading sm:text-4xl lg:text-5xl lg:leading-tight">
+          <h1 class="scroll-fade-up mb-5 text-3xl font-bold text-mono-heading sm:text-4xl lg:text-5xl lg:leading-tight">
             {d.hero.title}
           </h1>
           <p class="scroll-fade-up mb-6 text-base leading-relaxed text-mono-dark/70 sm:text-lg">
@@ -54,7 +54,7 @@ const d = coconutShellData;
       <div class="mt-14 grid grid-cols-2 gap-4 pb-14 sm:grid-cols-4 sm:pb-20">
         {d.hero.stats.map((stat) => (
           <div class="scroll-fade-up rounded-xl bg-white px-4 py-6 text-center shadow-sm transition-all duration-200 hover:shadow-md hover:-translate-y-1">
-            <p class="text-2xl font-extrabold text-mono-heading sm:text-3xl">{stat.value}</p>
+            <p class="text-2xl font-bold text-mono-heading sm:text-3xl">{stat.value}</p>
             <p class="mt-1 text-xs font-medium text-mono-gray sm:text-sm">{stat.label}</p>
           </div>
         ))}
