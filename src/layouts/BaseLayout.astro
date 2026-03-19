@@ -64,21 +64,32 @@ const {
 
     <script>
       document.addEventListener('DOMContentLoaded', () => {
-        const observerOptions = {
-          threshold: 0.1,
-          rootMargin: '0px 0px -100px 0px',
-        };
-        const observer = new IntersectionObserver((entries) => {
+        // Scroll-fade: one-shot observer, unobserve after visible
+        const fadeObserver = new IntersectionObserver((entries, obs) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
               entry.target.classList.add('visible');
+              obs.unobserve(entry.target);
             }
           });
-        }, observerOptions);
-        const scrollFadeElements = document.querySelectorAll(
+        }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+
+        document.querySelectorAll(
           '.scroll-fade, .scroll-fade-up, .scroll-fade-down, .scroll-fade-left, .scroll-fade-right',
-        );
-        scrollFadeElements.forEach((el) => observer.observe(el));
+        ).forEach((el) => fadeObserver.observe(el));
+
+        // Infinite animations: pause when off-screen, resume when visible
+        const animObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+            } else {
+              entry.target.classList.remove('visible');
+            }
+          });
+        }, { threshold: 0 });
+
+        document.querySelectorAll('.float, .pulse-slow').forEach((el) => animObserver.observe(el));
       });
     </script>
   </body>

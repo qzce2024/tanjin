@@ -1,5 +1,6 @@
 ---
 import { siteConfig as defaultConfig } from '../config.ts';
+import { Image } from 'astro:assets';
 
 const { config = defaultConfig, heroImage } = Astro.props;
 const hasImage = !!heroImage;
@@ -17,18 +18,24 @@ const hasImage = !!heroImage;
       <div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
         <div>
           <h1
-            class="text-mono-heading scroll-fade-up mb-6 text-3xl leading-tight font-extrabold sm:text-4xl lg:text-5xl"
+            class="text-mono-heading fade-up mb-6 text-3xl leading-tight font-extrabold sm:text-4xl lg:text-5xl"
           >
-            {config.hero.headline}<br />
-            <span class="text-mono-black">{config.hero.subheadline}</span>
+            {config.hero.headline} <span class="text-mono-black">{config.hero.subheadline}</span>
           </h1>
           <p
-            class="text-mono-dark scroll-fade-up mb-10 text-base leading-relaxed sm:text-lg lg:text-xl"
+            class="text-mono-dark fade-up mb-6 text-base leading-relaxed sm:text-lg lg:text-xl"
+            style="animation-delay: 100ms"
           >
             {config.hero.description}
           </p>
+          {config.hero.trustLine && (
+            <p class="text-mono-gray fade-up mb-10 text-sm italic" style="animation-delay: 150ms">
+              {config.hero.trustLine}
+            </p>
+          )}
           <div
-            class="scroll-fade-up mb-12 flex flex-col gap-4 sm:flex-row"
+            class="fade-up mb-12 flex flex-col gap-4 sm:flex-row"
+            style="animation-delay: 200ms"
           >
             {config.hero.cta.primary.href === '#inquiry' ? (
               <button
@@ -44,19 +51,13 @@ const hasImage = !!heroImage;
                 {config.hero.cta.primary.text}
               </a>
             )}
-            <a
-              href={config.hero.cta.secondary.href}
-              class="border-mono-black text-mono-black rounded-lg border-2 bg-white px-8 py-4 text-center font-semibold"
-            >
-              {config.hero.cta.secondary.text}
-            </a>
           </div>
 
           <div
             class="border-mono-lighter grid grid-cols-3 gap-8 border-t pt-8"
           >
             {config.hero.stats.map((stat, index) => (
-              <div class={`float scroll-fade-up stagger-${index + 1}`}>
+              <div class={`float fade-up`} style={`animation-delay: ${250 + index * 80}ms`}>
                 <div class="text-mono-black mb-2 text-2xl font-bold sm:text-3xl">
                   {stat.value}
                 </div>
@@ -68,10 +69,12 @@ const hasImage = !!heroImage;
           </div>
         </div>
 
-        <div class="scroll-fade-right flex items-center justify-center">
-          <img
+        <div class="fade-left" style="animation-delay: 150ms">
+          <Image
             src={heroImage}
             alt={config.hero.headline}
+            widths={[400, 600, 800]}
+            sizes="(max-width: 1024px) 100vw, 50vw"
             class="w-full max-w-lg rounded-2xl shadow-2xl"
           />
         </div>
@@ -80,18 +83,24 @@ const hasImage = !!heroImage;
       <!-- 居中布局（默认） -->
       <div class="mx-auto max-w-4xl text-center">
         <h1
-          class="text-mono-heading scroll-fade-up mb-6 text-5xl leading-tight font-extrabold sm:text-6xl lg:text-7xl"
+          class="text-mono-heading fade-up mb-6 text-5xl leading-tight font-extrabold sm:text-6xl lg:text-7xl"
         >
-          {config.hero.headline}<br />
-          <span class="text-mono-black">{config.hero.subheadline}</span>
+          {config.hero.headline} <span class="text-mono-black">{config.hero.subheadline}</span>
         </h1>
         <p
-          class="text-mono-dark scroll-fade-up mb-10 text-xl leading-relaxed sm:text-2xl"
+          class="text-mono-dark fade-up mb-6 text-xl leading-relaxed sm:text-2xl"
+          style="animation-delay: 100ms"
         >
           {config.hero.description}
         </p>
+        {config.hero.trustLine && (
+          <p class="text-mono-gray fade-up mb-10 text-sm italic" style="animation-delay: 150ms">
+            {config.hero.trustLine}
+          </p>
+        )}
         <div
-          class="scroll-fade-up mb-16 flex flex-col justify-center gap-4 sm:flex-row"
+          class="fade-up mb-16 flex flex-col justify-center gap-4 sm:flex-row"
+          style="animation-delay: 200ms"
         >
           {config.hero.cta.primary.href === '#inquiry' ? (
             <button
@@ -107,19 +116,13 @@ const hasImage = !!heroImage;
               {config.hero.cta.primary.text}
             </a>
           )}
-          <a
-            href={config.hero.cta.secondary.href}
-            class="border-mono-black text-mono-black rounded-lg border-2 bg-white px-8 py-4 font-semibold"
-          >
-            {config.hero.cta.secondary.text}
-          </a>
         </div>
 
         <div
           class="border-mono-lighter mx-auto grid max-w-3xl grid-cols-3 gap-8 border-t pt-20"
         >
           {config.hero.stats.map((stat, index) => (
-            <div class={`float scroll-fade-up stagger-${index + 1}`}>
+            <div class={`float fade-up`} style={`animation-delay: ${250 + index * 80}ms`}>
               <div class="text-mono-black mb-2 text-4xl font-bold">
                 {stat.value}
               </div>

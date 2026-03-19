@@ -12,11 +12,11 @@
 
   --font-sans: Geist, system-ui, -apple-system, sans-serif;
 
-  --animate-fade-in: fade-in 1200ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  --animate-fade-up: fade-up 1400ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  --animate-fade-down: fade-down 1400ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  --animate-fade-left: fade-left 1400ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  --animate-fade-right: fade-right 1400ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-fade-in: fade-in 500ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-fade-up: fade-up 600ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-fade-down: fade-down 600ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-fade-left: fade-left 600ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-fade-right: fade-right 600ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
   --animate-pulse-slow: pulse-slow 3500ms cubic-bezier(0.4, 0, 0.6, 1) infinite;
   --animate-float: float 4500ms cubic-bezier(0.45, 0, 0.55, 1) infinite;
 }
@@ -33,7 +33,7 @@
 @keyframes fade-up {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(16px);
   }
   to {
     opacity: 1;
@@ -44,7 +44,7 @@
 @keyframes fade-down {
   from {
     opacity: 0;
-    transform: translateY(-30px);
+    transform: translateY(-16px);
   }
   to {
     opacity: 1;
@@ -55,7 +55,7 @@
 @keyframes fade-left {
   from {
     opacity: 0;
-    transform: translateX(30px);
+    transform: translateX(16px);
   }
   to {
     opacity: 1;
@@ -66,7 +66,7 @@
 @keyframes fade-right {
   from {
     opacity: 0;
-    transform: translateX(-30px);
+    transform: translateX(-16px);
   }
   to {
     opacity: 1;
@@ -80,7 +80,7 @@
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-12px);
+    transform: translateY(-8px);
   }
 }
 
@@ -109,6 +109,15 @@
 
 .transition-smooth {
   transition: all 350ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* All buttons and clickable elements use pointer cursor */
+button,
+a[class*="bg-mono-black"],
+a[class*="border-mono-black"],
+[type="submit"],
+.inquiry-trigger {
+  cursor: pointer;
 }
 
 /* Button hover effects */
@@ -178,18 +187,28 @@ button[class*="border-mono-black"][class*="bg-white"]:hover {
 
 .float {
   animation: var(--animate-float);
+  animation-play-state: paused;
+}
+
+.float.visible {
+  animation-play-state: running;
 }
 
 .pulse-slow {
   animation: var(--animate-pulse-slow);
+  animation-play-state: paused;
+}
+
+.pulse-slow.visible {
+  animation-play-state: running;
 }
 
 .scroll-fade-up {
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(16px);
   transition:
-    opacity 1200ms cubic-bezier(0.16, 1, 0.3, 1),
-    transform 1200ms cubic-bezier(0.16, 1, 0.3, 1);
+    opacity 700ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 700ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .scroll-fade-up.visible {
@@ -199,10 +218,10 @@ button[class*="border-mono-black"][class*="bg-white"]:hover {
 
 .scroll-fade-down {
   opacity: 0;
-  transform: translateY(-30px);
+  transform: translateY(-16px);
   transition:
-    opacity 1200ms cubic-bezier(0.16, 1, 0.3, 1),
-    transform 1200ms cubic-bezier(0.16, 1, 0.3, 1);
+    opacity 700ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 700ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .scroll-fade-down.visible {
@@ -212,10 +231,10 @@ button[class*="border-mono-black"][class*="bg-white"]:hover {
 
 .scroll-fade-left {
   opacity: 0;
-  transform: translateX(30px);
+  transform: translateX(16px);
   transition:
-    opacity 1200ms cubic-bezier(0.16, 1, 0.3, 1),
-    transform 1200ms cubic-bezier(0.16, 1, 0.3, 1);
+    opacity 700ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 700ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .scroll-fade-left.visible {
@@ -225,10 +244,10 @@ button[class*="border-mono-black"][class*="bg-white"]:hover {
 
 .scroll-fade-right {
   opacity: 0;
-  transform: translateX(-30px);
+  transform: translateX(-16px);
   transition:
-    opacity 1200ms cubic-bezier(0.16, 1, 0.3, 1),
-    transform 1200ms cubic-bezier(0.16, 1, 0.3, 1);
+    opacity 700ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 700ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .scroll-fade-right.visible {
@@ -241,7 +260,7 @@ button[class*="border-mono-black"][class*="bg-white"]:hover {
 }
 
 .faq-icon {
-  transition: transform 400ms cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 250ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .faq-button[aria-expanded='true'] .faq-icon {
@@ -252,53 +271,144 @@ button[class*="border-mono-black"][class*="bg-white"]:hover {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  transform: translateY(-10px);
+  transform: translateY(-8px);
   transition:
-    max-height 500ms cubic-bezier(0.16, 1, 0.3, 1),
-    opacity 400ms ease,
-    transform 400ms cubic-bezier(0.16, 1, 0.3, 1),
-    padding 400ms ease;
+    max-height 350ms cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 250ms ease,
+    transform 250ms cubic-bezier(0.16, 1, 0.3, 1),
+    padding 250ms ease;
 }
 
 .faq-content.active {
   max-height: 500px;
   opacity: 1;
   transform: translateY(0);
+  padding-top: 0.75rem;
   padding-bottom: 1.25rem;
 }
 
 .stagger-1 {
-  transition-delay: 100ms;
+  transition-delay: 80ms;
 }
 
 .stagger-2 {
-  transition-delay: 200ms;
+  transition-delay: 160ms;
 }
 
 .stagger-3 {
-  transition-delay: 300ms;
+  transition-delay: 240ms;
 }
 
 .stagger-4 {
-  transition-delay: 400ms;
+  transition-delay: 320ms;
 }
 
 .stagger-5 {
-  transition-delay: 500ms;
+  transition-delay: 400ms;
 }
 
 .stagger-6 {
-  transition-delay: 600ms;
+  transition-delay: 400ms;
 }
 
 .stagger-7 {
-  transition-delay: 700ms;
+  transition-delay: 400ms;
 }
 
 .stagger-8 {
-  transition-delay: 800ms;
+  transition-delay: 400ms;
 }
 
 .stagger-9 {
-  transition-delay: 900ms;
+  transition-delay: 400ms;
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-fade-up,
+  .scroll-fade-down,
+  .scroll-fade-left,
+  .scroll-fade-right {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .float,
+  .pulse-slow {
+    animation: none;
+  }
+  .fade-in,
+  .fade-up,
+  .fade-down,
+  .fade-left,
+  .fade-right {
+    animation: none;
+    opacity: 1;
+  }
+  .stagger-1, .stagger-2, .stagger-3,
+  .stagger-4, .stagger-5, .stagger-6,
+  .stagger-7, .stagger-8, .stagger-9 {
+    transition-delay: 0ms;
+  }
+}
+
+/* Form focus states */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--color-mono-black);
+  box-shadow: 0 0 0 3px rgba(0, 114, 238, 0.15);
+  transition: border-color 200ms ease, box-shadow 200ms ease;
+}
+
+/* Focus-visible for keyboard navigation */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-mono-black);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Section spacing standards */
+.section-lg {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.section-md {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+.section-sm {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+/* Tab panel transitions */
+.tab-panel {
+  opacity: 0;
+  transform: translateY(8px);
+  max-height: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transition:
+    opacity 250ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 250ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tab-panel-active {
+  opacity: 1;
+  transform: translateY(0);
+  max-height: none;
+  overflow: visible;
+  pointer-events: auto;
+}
+
+/* Interactive card base */
+.card-hover {
+  transition: transform 200ms cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 200ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
 }
