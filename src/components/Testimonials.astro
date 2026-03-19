@@ -3,24 +3,12 @@ import { siteConfig as defaultConfig } from '../config.ts';
 import { Icon } from 'astro-icon/components';
 import { testimonialsData as defaultTestimonials } from '../content/testimonials';
 
-const defaultCompanyIconMap = {
-  Stripe: 'simple-icons:stripe',
-  Shopify: 'simple-icons:shopify',
-  Notion: 'simple-icons:notion',
-  HubSpot: 'simple-icons:hubspot',
-  Intercom: 'simple-icons:intercom',
-  Linear: 'simple-icons:linear',
-};
-
-const { config = defaultConfig, testimonials = defaultTestimonials, logos } = Astro.props;
-const companyIconMap = defaultCompanyIconMap;
-const hasLogos = logos && logos.length > 0;
-const hasCompanyIcons = !hasLogos;
+const { config = defaultConfig, testimonials = defaultTestimonials } = Astro.props;
 ---
 
-<section class="relative bg-white px-4 py-20 sm:px-6 lg:px-8">
+<section class="relative bg-mono-lighter section-lg px-4 sm:px-6 lg:px-8">
   <div class="mx-auto max-w-7xl">
-    <div class="scroll-fade-up mx-auto mb-16 max-w-3xl text-center">
+    <div class="scroll-fade-up mx-auto mb-12 max-w-3xl text-center">
       <h2 class="text-mono-heading mb-4 text-2xl font-bold sm:text-3xl lg:text-4xl">
         {config.testimonials.title}
       </h2>
@@ -29,165 +17,39 @@ const hasCompanyIcons = !hasLogos;
       </p>
     </div>
 
-    <div class="mb-20 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
       {
-        testimonials.map((testimonial, index) => (
+        testimonials.map((t, index) => (
           <div
-            class={`scroll-fade-up border-mono-black bg-mono-lighter rounded-xl border-l-4 p-8 shadow-lg stagger-${(index % 9) + 1}`}
+            class={`scroll-fade-up card-hover border-mono-black rounded-xl border-l-4 bg-white p-6 stagger-${(index % 9) + 1}`}
           >
-            <div class="mb-4 flex">
-              {Array.from({ length: testimonial.rating }).map(() => (
-                <Icon
-                  name="heroicons:star-solid"
-                  class="text-mono-black h-5 w-5"
-                />
+            <div class="mb-3 flex">
+              {Array.from({ length: t.rating }).map(() => (
+                <Icon name="heroicons:star-solid" class="text-mono-black h-4 w-4" />
               ))}
             </div>
-            <p class="text-mono-dark mb-6 leading-relaxed">
-              "{testimonial.quote}"
-            </p>
-            <div class="flex items-center justify-between">
-              <div class="flex items-center">
-                <div class="bg-mono-black mr-4 flex h-12 w-12 items-center justify-center rounded-full font-semibold text-white">
-                  {testimonial.initials}
-                </div>
-                <div>
-                  <div class="text-mono-heading font-semibold">
-                    {testimonial.author}
-                  </div>
-                  <div class="text-mono-gray text-sm">{testimonial.role}</div>
-                </div>
+            <p class="text-mono-dark mb-4 text-sm leading-relaxed">"{t.quote}"</p>
+            <div class="flex items-center gap-3">
+              <img
+                src={t.avatar}
+                alt={t.author}
+                class="h-10 w-10 rounded-full object-cover"
+                loading="lazy"
+                onerror={`this.style.display='none';this.nextElementSibling.style.display='flex'`}
+              />
+              <div
+                class="bg-mono-black hidden h-10 w-10 items-center justify-center rounded-full text-xs font-semibold text-white"
+              >
+                {t.initials}
               </div>
-              {hasCompanyIcons && companyIconMap[testimonial.company] ? (
-                <Icon
-                  name={companyIconMap[testimonial.company]}
-                  class="text-mono-heading h-6 w-6 opacity-60"
-                />
-              ) : (
-                <span class="text-mono-gray text-xs font-medium uppercase tracking-wide">
-                  {testimonial.company}
-                </span>
-              )}
+              <div>
+                <div class="text-mono-heading text-sm font-semibold">{t.author}</div>
+                <div class="text-mono-gray text-xs">{t.role}, {t.company}</div>
+              </div>
             </div>
           </div>
         ))
       }
-    </div>
-
-    <div class="scroll-fade-up">
-      <div class="bg-mono-lighter rounded-2xl p-12">
-        <p
-          class="text-mono-gray mb-10 text-center text-sm tracking-wide uppercase"
-        >
-          {hasLogos ? 'Certifications & Trust' : 'Trusted by Leading Companies'}
-        </p>
-        {
-          hasLogos ? (
-            <div class="mx-auto grid max-w-4xl grid-cols-3 items-center gap-12 sm:grid-cols-3 md:grid-cols-6">
-              {logos.map((logo) => (
-                <div class="flex flex-col items-center justify-center gap-3">
-                  <Icon
-                    name={logo.icon}
-                    class="text-mono-heading h-12 w-12"
-                  />
-                  <span class="text-mono-gray text-xs font-medium">
-                    {logo.label}
-                  </span>
-                </div>
-              ))}
-            </div>
-          ) : (
-            <div class="mx-auto grid max-w-6xl grid-cols-3 items-center gap-12 sm:grid-cols-4 md:grid-cols-6">
-              <div class="flex flex-col items-center justify-center gap-3">
-                <Icon
-                  name="simple-icons:slack"
-                  class="text-mono-heading h-12 w-12"
-                />
-                <span class="text-mono-gray text-xs font-medium">Slack</span>
-              </div>
-              <div class="flex flex-col items-center justify-center gap-3">
-                <Icon
-                  name="simple-icons:notion"
-                  class="text-mono-heading h-12 w-12"
-                />
-                <span class="text-mono-gray text-xs font-medium">Notion</span>
-              </div>
-              <div class="flex flex-col items-center justify-center gap-3">
-                <Icon
-                  name="simple-icons:asana"
-                  class="text-mono-heading h-12 w-12"
-                />
-                <span class="text-mono-gray text-xs font-medium">Asana</span>
-              </div>
-              <div class="flex flex-col items-center justify-center gap-3">
-                <Icon
-                  name="simple-icons:stripe"
-                  class="text-mono-heading h-12 w-12"
-                />
-                <span class="text-mono-gray text-xs font-medium">Stripe</span>
-              </div>
-              <div class="flex flex-col items-center justify-center gap-3">
-                <Icon
-                  name="simple-icons:shopify"
-                  class="text-mono-heading h-12 w-12"
-                />
-                <span class="text-mono-gray text-xs font-medium">Shopify</span>
-              </div>
-              <div class="flex flex-col items-center justify-center gap-3">
-                <Icon
-                  name="simple-icons:hubspot"
-                  class="text-mono-heading h-12 w-12"
-                />
-                <span class="text-mono-gray text-xs font-medium">HubSpot</span>
-              </div>
-              <div class="flex flex-col items-center justify-center gap-3">
-                <Icon
-                  name="simple-icons:linear"
-                  class="text-mono-heading h-12 w-12"
-                />
-                <span class="text-mono-gray text-xs font-medium">Linear</span>
-              </div>
-              <div class="flex flex-col items-center justify-center gap-3">
-                <Icon
-                  name="simple-icons:intercom"
-                  class="text-mono-heading h-12 w-12"
-                />
-                <span class="text-mono-gray text-xs font-medium">
-                  Intercom
-                </span>
-              </div>
-              <div class="flex flex-col items-center justify-center gap-3">
-                <Icon
-                  name="simple-icons:figma"
-                  class="text-mono-heading h-12 w-12"
-                />
-                <span class="text-mono-gray text-xs font-medium">Figma</span>
-              </div>
-              <div class="flex flex-col items-center justify-center gap-3">
-                <Icon
-                  name="simple-icons:vercel"
-                  class="text-mono-heading h-12 w-12"
-                />
-                <span class="text-mono-gray text-xs font-medium">Vercel</span>
-              </div>
-              <div class="flex flex-col items-center justify-center gap-3">
-                <Icon
-                  name="simple-icons:github"
-                  class="text-mono-heading h-12 w-12"
-                />
-                <span class="text-mono-gray text-xs font-medium">GitHub</span>
-              </div>
-              <div class="flex flex-col items-center justify-center gap-3">
-                <Icon
-                  name="simple-icons:dropbox"
-                  class="text-mono-heading h-12 w-12"
-                />
-                <span class="text-mono-gray text-xs font-medium">Dropbox</span>
-              </div>
-            </div>
-          )
-        }
-      </div>
     </div>
   </div>
 </section>

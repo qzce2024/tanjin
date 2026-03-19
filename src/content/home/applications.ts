@@ -3,36 +3,48 @@ export const applicationsData = [
     icon: 'heroicons:beaker',
     title: 'Water Treatment',
     description:
-      'Iodine value 800–1200 mg/g. Coconut shell & coal-based GAC/PAC. Removes COD, chlorine, organic compounds. NSF/ANSI 61 certified for drinking water.',
+      'NSF/ANSI 61 certified GAC & PAC. Removes COD, chlorine, and organics to meet WHO & EPA drinking water standards.',
   },
   {
     icon: 'heroicons:cloud',
     title: 'Air Purification',
     description:
-      'CTC 50–80%. Columnar & impregnated carbon. VOC removal, H₂S treatment, odor control. Suitable for industrial exhaust and indoor air systems.',
+      'Columnar & impregnated carbon for VOC, H₂S, and odor removal. Clients report 90%+ removal efficiency in exhaust systems.',
   },
   {
     icon: 'heroicons:cube',
     title: 'Gold Recovery',
     description:
-      'Hardness > 95%, iodine 1050+ mg/g. Coconut shell CIL/CIP grade. High gold loading capacity, low abrasion loss, 6×12 / 8×16 mesh available.',
+      'CIL/CIP grade coconut shell carbon, 6×12 & 8×16 mesh. High gold loading with low abrasion — proven to boost yield by 10–15%.',
   },
   {
     icon: 'heroicons:cake',
     title: 'Food & Beverage',
     description:
-      'Methylene blue 180–220 mg/g. Wood-based PAC, food-grade certified. Sugar decolorization, MSG purification, edible oil refining, beverage processing.',
+      'Food-grade wood-based PAC for sugar decolorization, MSG purification & oil refining. HALAL & KOSHER certified.',
   },
   {
     icon: 'heroicons:heart',
     title: 'Pharmaceutical',
     description:
-      'Ash < 3%, heavy metals < 10 ppm. Acid-washed GAC/PAC. USP/EP compliant. API purification, injection water treatment, medical-grade filtration.',
+      'USP/EP compliant acid-washed carbon for API purification and injection water. Ultra-low ash and heavy metals.',
   },
   {
     icon: 'heroicons:fire',
     title: 'Chemical & Industrial',
     description:
-      'Custom specs available. Coal & coconut-based. Solvent recovery, catalyst carrier, chemical decolorization, petrochemical processing, gas masks.',
+      'Solvent recovery, catalyst support & chemical decolorization. Custom specs for petrochemical and refinery processes.',
+  },
+  {
+    icon: 'heroicons:shield-check',
+    title: 'Environmental',
+    description:
+      'Soil remediation, groundwater cleanup & landfill gas treatment. Compliant with EPA, EU, and local environmental standards.',
+  },
+  {
+    icon: 'heroicons:bolt',
+    title: 'Energy & Gas',
+    description:
+      'Biogas purification, natural gas desulfurization & flue gas mercury removal. Proven in power plants and gas processing facilities.',
   },
 ];

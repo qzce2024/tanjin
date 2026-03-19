@@ -11,21 +11,23 @@ interface Props {
   title?: string;
   subtitle?: string;
   items?: ApplicationItem[];
+  ctaText?: string;
 }
 
 const {
   title = 'Applications',
   subtitle = 'Serving diverse industries worldwide',
   items = [],
+  ctaText = 'Not sure which grade fits your application?',
 } = Astro.props;
 ---
 
 <section
   id="applications"
-  class="bg-mono-lighter relative px-4 py-20 sm:px-6 lg:px-8"
+  class="bg-mono-lighter relative section-lg px-4 sm:px-6 lg:px-8"
 >
   <div class="mx-auto max-w-7xl">
-    <div class="scroll-fade-up mx-auto mb-12 max-w-3xl text-center">
+    <div class="scroll-fade-up mx-auto mb-16 max-w-3xl text-center">
       <h2 class="text-mono-heading mb-4 text-2xl font-bold sm:text-3xl lg:text-4xl">
         {title}
       </h2>
@@ -34,58 +36,31 @@ const {
       </p>
     </div>
 
-    <div class="scroll-fade-up overflow-hidden rounded-xl border border-white/80 bg-white shadow-sm">
+    <div class="grid grid-cols-2 gap-x-8 gap-y-10 sm:gap-x-12 sm:gap-y-12 lg:grid-cols-4">
       {
         items.map((item, index) => (
-          <div
-            class={`${index > 0 ? 'border-mono-lighter border-t' : ''}`}
-          >
-            {/* 桌面端 */}
-            <div class="hidden sm:grid sm:grid-cols-[56px_1fr_120px] sm:items-center sm:gap-6 sm:px-6 sm:py-5">
-              <div class="flex h-11 w-11 flex-shrink-0 items-center justify-center">
-                <Icon name={item.icon} class="text-mono-heading h-8 w-8" />
-              </div>
-              <div>
-                <h3 class="text-mono-heading text-base font-semibold">
-                  {item.title}
-                </h3>
-                <p class="text-mono-dark mt-0.5 text-sm leading-relaxed">
-                  {item.description}
-                </p>
-              </div>
-              <div class="text-right">
-                <button
-                  class="inquiry-trigger bg-mono-black rounded-lg px-4 py-2 text-xs font-semibold text-white"
-                  data-product={`Inquiry about: ${item.title} application`}
-                >
-                  Get Quote
-                </button>
-              </div>
+          <div class={`scroll-fade-up group cursor-default stagger-${(index % 9) + 1}`}>
+            <div class="bg-mono-black/5 mb-3 inline-flex rounded-lg p-2.5 transition-colors duration-200 group-hover:bg-mono-black/10">
+              <Icon name={item.icon} class="text-mono-heading h-7 w-7 sm:h-8 sm:w-8" />
             </div>
-
-            {/* 移动端 */}
-            <div class="px-5 py-5 sm:hidden">
-              <div class="mb-2 flex items-center gap-3">
-                <div class="flex h-9 w-9 flex-shrink-0 items-center justify-center">
-                  <Icon name={item.icon} class="text-mono-heading h-7 w-7" />
-                </div>
-                <h3 class="text-mono-heading text-sm font-semibold">
-                  {item.title}
-                </h3>
-              </div>
-              <p class="text-mono-dark mb-3 text-sm leading-relaxed">
-                {item.description}
-              </p>
-              <button
-                class="inquiry-trigger bg-mono-black rounded-lg px-5 py-2 text-xs font-semibold text-white"
-                data-product={`Inquiry about: ${item.title} application`}
-              >
-                Get Quote
-              </button>
-            </div>
+            <h3 class="text-mono-heading mb-1.5 text-sm font-semibold sm:text-base">
+              {item.title}
+            </h3>
+            <p class="text-mono-dark text-xs leading-relaxed sm:text-sm">
+              {item.description}
+            </p>
           </div>
         ))
       }
+    </div>
+
+    <div class="scroll-fade-up mt-14 text-center">
+      <p class="text-mono-dark mb-4 text-sm sm:text-base">{ctaText}</p>
+      <button
+        class="inquiry-trigger bg-mono-black rounded-lg px-6 py-3 text-sm font-semibold text-white"
+      >
+        Talk to an Engineer
+      </button>
     </div>
   </div>
 </section>

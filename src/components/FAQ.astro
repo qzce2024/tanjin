@@ -6,9 +6,9 @@ import { faqItems as defaultFaqItems } from '../content/faq';
 const { config = defaultConfig, items = defaultFaqItems } = Astro.props;
 ---
 
-<section id="faq" class="relative bg-white px-4 py-20 sm:px-6 lg:px-8">
+<section id="faq" class="relative bg-white section-lg px-4 sm:px-6 lg:px-8">
   <div class="mx-auto max-w-4xl">
-    <div class="scroll-fade-up mb-16 text-center">
+    <div class="scroll-fade-up mb-12 text-center">
       <h2 class="text-mono-heading mb-4 text-2xl font-bold sm:text-3xl lg:text-4xl">
         {config.faq.title}
       </h2>
@@ -21,10 +21,10 @@ const { config = defaultConfig, items = defaultFaqItems } = Astro.props;
       {
         items.map((item, index) => (
           <div
-            class={`scroll-fade-up border-mono-lighter rounded-lg border stagger-${(index % 9) + 1}`}
+            class={`scroll-fade-up border-mono-lighter rounded-lg border transition-shadow duration-200 hover:shadow-md stagger-${(index % 9) + 1}`}
           >
             <button
-              class="faq-button flex w-full items-center justify-between px-6 py-5 text-left"
+              class="faq-button flex w-full cursor-pointer items-center justify-between px-6 py-5 text-left transition-colors duration-200 hover:bg-mono-lighter/50"
               aria-expanded="false"
             >
               <span class="text-mono-heading pr-8 font-semibold">

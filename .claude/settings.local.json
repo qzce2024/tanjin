@@ -6,7 +6,21 @@
       "Bash(npx astro:*)",
       "WebFetch(domain:dreve51.oss-cn-beijing.aliyuncs.com)",
       "Bash(curl:*)",
-      "Bash(powershell:*)"
+      "Bash(powershell:*)",
+      "Bash(sed:*)",
+      "WebFetch(domain:metachem-eg.com)",
+      "WebSearch",
+      "Bash(mkdir:*)",
+      "Bash(mv:*)",
+      "Bash(cp:*)",
+      "WebFetch(domain:cgcarbon.com)",
+      "Bash(tr {:*)",
+      "Bash(npm install:*)",
+      "WebFetch(domain:astro-temple.pages.dev)",
+      "Bash(npm run:*)",
+      "Bash(gh repo:*)",
+      "Bash(winget install:*)",
+      "Bash(export:*)"
     ]
   }
 }

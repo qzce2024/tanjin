@@ -1,0 +1,49 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+  title: string;
+  description?: string;
+  buttonText: string;
+  buttonHref: string;
+  bgImage?: ImageMetadata;
+}
+
+const { title, description, buttonText, buttonHref, bgImage } = Astro.props;
+---
+
+<section class="relative overflow-hidden section-lg px-4 sm:px-6 lg:px-8">
+  {bgImage ? (
+    <>
+      <Image
+        src={bgImage}
+        alt=""
+        widths={[800, 1200, 1920]}
+        sizes="100vw"
+        class="absolute inset-0 h-full w-full object-cover"
+      />
+      <div class="absolute inset-0 bg-mono-heading/75"></div>
+    </>
+  ) : (
+    <div class="absolute inset-0 bg-mono-black"></div>
+  )}
+  <div class="relative mx-auto max-w-3xl text-center">
+    <h2 class="scroll-fade-up mb-4 text-2xl font-bold text-white sm:text-3xl">
+      {title}
+    </h2>
+    {description && (
+      <p class="scroll-fade-up mb-8 text-base leading-relaxed text-white/80 sm:text-lg">
+        {description}
+      </p>
+    )}
+    {buttonHref === '#inquiry' ? (
+      <button class="inquiry-trigger scroll-fade-up inline-block rounded-lg bg-white px-8 py-4 font-semibold text-mono-black shadow-lg transition-all duration-200 hover:bg-mono-lighter">
+        {buttonText}
+      </button>
+    ) : (
+      <a href={buttonHref} class="scroll-fade-up inline-block rounded-lg bg-white px-8 py-4 font-semibold text-mono-black shadow-lg transition-all duration-200 hover:bg-mono-lighter">
+        {buttonText}
+      </a>
+    )}
+  </div>
+</section>

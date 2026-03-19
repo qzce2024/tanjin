@@ -1,32 +1,26 @@
 export const homeHowItWorksSteps = [
   {
     number: 1,
-    title: 'Send Inquiry',
+    title: 'Send Your Requirements',
     description:
-      'Tell us your requirements: product type, specifications, quantity, and application. We respond within 24 hours.',
+      'Tell us your application, specs, and quantity. Engineer response within 24 hours.',
   },
   {
     number: 2,
-    title: 'Technical Consultation',
+    title: 'Get Expert Recommendations',
     description:
-      'Our engineers recommend the optimal product based on your specific application and performance requirements.',
+      'We match the right carbon grade to your process with a detailed quote.',
   },
   {
     number: 3,
-    title: 'Sample Testing',
+    title: 'Confirm & Produce',
     description:
-      'Receive free samples for lab testing and evaluation. We provide full technical data sheets and COA reports.',
+      'Flexible payment terms. Every batch passes 3-stage quality control.',
   },
   {
     number: 4,
-    title: 'Order & Production',
+    title: 'Receive Worldwide',
     description:
-      'Confirm your order with flexible payment terms. Production with strict quality control at every stage.',
-  },
-  {
-    number: 5,
-    title: 'Global Shipping',
-    description:
-      'Professional export packaging and documentation. Reliable shipping to your port or door worldwide.',
+      'Professional export packaging. FOB or CIF shipping available.',
   },
 ];

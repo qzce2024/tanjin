@@ -1,9 +1,10 @@
 ---
 import { Icon } from 'astro-icon/components';
+import { Image } from 'astro:assets';
 
 interface ProductCategory {
   title: string;
-  image: string;
+  image: ImageMetadata;
   description: string;
   forms: string[];
   highlights: string[];
@@ -23,7 +24,7 @@ const {
 } = Astro.props;
 ---
 
-<section id="features" class="relative bg-white px-4 py-20 sm:px-6 lg:px-8">
+<section id="features" class="relative bg-white section-lg px-4 sm:px-6 lg:px-8">
   <div
     class="border-mono-lighter absolute top-8 left-8 h-16 w-16 border-t-2 border-l-2"
   >
@@ -45,88 +46,86 @@ const {
       </p>
     </div>
 
-    <div class="space-y-12">
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
       {
         products.map((product, index) => (
           <div
-            class={`scroll-fade-up border-mono-lighter overflow-hidden rounded-xl border stagger-${(index % 9) + 1}`}
+            class={`scroll-fade-up border-mono-lighter group overflow-hidden rounded-xl border transition-all duration-300 hover:shadow-xl hover:-translate-y-1 stagger-${(index % 9) + 1}`}
           >
-            <div
-              class={`grid grid-cols-1 lg:grid-cols-2 ${index % 2 === 1 ? 'lg:direction-rtl' : ''}`}
-            >
-              {/* 图片 */}
-              <div class={`bg-mono-lighter ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
-                <img
-                  src={product.image}
-                  alt={product.title}
-                  class="h-full w-full object-cover"
-                  loading="lazy"
-                />
-              </div>
+            {/* 图片 */}
+            <div class="bg-mono-lighter aspect-[16/9] overflow-hidden">
+              <Image
+                src={product.image}
+                alt={product.title}
+                widths={[400, 600, 800]}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                class="h-full w-full object-cover"
+                loading="lazy"
+              />
+            </div>
 
-              {/* 内容 */}
-              <div class={`p-6 sm:p-8 lg:p-10 ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                <h3 class="text-mono-heading mb-3 text-xl font-bold sm:text-2xl">
-                  {product.title}
-                </h3>
-                <p class="text-mono-dark mb-6 text-sm leading-relaxed sm:text-base">
-                  {product.description}
+            {/* 内容 */}
+            <div class="p-6 sm:p-8">
+              <h3 class="text-mono-heading mb-3 text-xl font-bold">
+                {product.title}
+              </h3>
+              <p class="text-mono-dark mb-5 text-sm leading-relaxed">
+                {product.description}
+              </p>
+
+              {/* 可选形态 */}
+              <div class="mb-4">
+                <p class="text-mono-heading mb-2 text-xs font-semibold tracking-wide uppercase">
+                  Available Forms
                 </p>
-
-                {/* 可选形态 */}
-                <div class="mb-5">
-                  <p class="text-mono-heading mb-2 text-xs font-semibold tracking-wide uppercase">
-                    Available Forms
-                  </p>
-                  <div class="flex flex-wrap gap-2">
-                    {product.forms.map((form) => (
-                      <span class="bg-mono-lighter text-mono-heading rounded-full px-3 py-1 text-xs font-medium">
-                        {form}
-                      </span>
-                    ))}
-                  </div>
+                <div class="flex flex-wrap gap-2">
+                  {product.forms.map((form) => (
+                    <span class="bg-mono-lighter text-mono-heading rounded-full px-3 py-1 text-xs font-medium">
+                      {form}
+                    </span>
+                  ))}
                 </div>
-
-                {/* 关键参数 */}
-                <div class="mb-5">
-                  <p class="text-mono-heading mb-2 text-xs font-semibold tracking-wide uppercase">
-                    Key Specs
-                  </p>
-                  <ul class="space-y-1.5">
-                    {product.highlights.map((item) => (
-                      <li class="flex items-start text-sm">
-                        <Icon
-                          name="heroicons:check"
-                          class="text-mono-black mr-2 mt-0.5 h-4 w-4 flex-shrink-0"
-                        />
-                        <span class="text-mono-dark">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* 典型应用 */}
-                <div class="mb-6">
-                  <p class="text-mono-heading mb-2 text-xs font-semibold tracking-wide uppercase">
-                    Typical Applications
-                  </p>
-                  <div class="flex flex-wrap gap-2">
-                    {product.applications.map((app) => (
-                      <span class="border-mono-lighter text-mono-dark rounded-full border px-3 py-1 text-xs">
-                        {app}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                {/* 询价按钮 */}
-                <button
-                  class="inquiry-trigger bg-mono-black rounded-lg px-6 py-2.5 text-sm font-semibold text-white shadow-sm"
-                  data-product={`Inquiry about: ${product.title}`}
-                >
-                  Request Quote
-                </button>
               </div>
+
+              {/* 关键参数 */}
+              <div class="mb-4">
+                <p class="text-mono-heading mb-2 text-xs font-semibold tracking-wide uppercase">
+                  Key Specs
+                </p>
+                <ul class="space-y-1.5">
+                  {product.highlights.map((item) => (
+                    <li class="flex items-start text-sm">
+                      <Icon
+                        name="heroicons:check"
+                        class="text-mono-black mr-2 mt-0.5 h-4 w-4 flex-shrink-0"
+                      />
+                      <span class="text-mono-dark">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* 典型应用 */}
+              <div class="mb-6">
+                <p class="text-mono-heading mb-2 text-xs font-semibold tracking-wide uppercase">
+                  Typical Applications
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  {product.applications.map((app) => (
+                    <span class="border-mono-lighter text-mono-dark rounded-full border px-3 py-1 text-xs">
+                      {app}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* 询价按钮 */}
+              <button
+                class="inquiry-trigger bg-mono-black rounded-lg px-6 py-2.5 text-sm font-semibold text-white shadow-sm"
+                data-product={`Inquiry about: ${product.title}`}
+              >
+                Get Samples & Pricing
+              </button>
             </div>
           </div>
         ))

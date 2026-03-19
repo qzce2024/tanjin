@@ -1,0 +1,68 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { homeConfig } from '../content/home/config';
+import { applicationsPageData } from '../content/applications';
+import Navigation from '../components/Navigation.astro';
+import PageCTA from '../components/PageCTA.astro';
+import Footer from '../components/Footer.astro';
+import { Image } from 'astro:assets';
+import heroBg from '../assets/images/applications/activated-carbon-applications.png';
+import ctaBg from '../assets/images/applications/activated-carbon-inquiry.png';
+---
+
+<BaseLayout
+  title="Applications - Tanjin Carbon"
+  description="Explore activated carbon applications across water treatment, air purification, gold recovery, food, pharmaceutical, chemical, environmental, and energy industries."
+>
+  <Navigation config={homeConfig} />
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden px-4 pt-32 pb-20 sm:px-6 lg:px-8">
+    <Image src={heroBg} alt="" widths={[800, 1200, 1920]} sizes="100vw" class="absolute inset-0 h-full w-full object-cover" loading="eager" />
+    <div class="absolute inset-0 bg-mono-heading/75"></div>
+    <div class="relative mx-auto max-w-4xl text-center">
+      <h1 class="scroll-fade-up mb-4 text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">
+        Applications
+      </h1>
+      <p class="scroll-fade-up mx-auto max-w-2xl text-base leading-relaxed text-white/85 sm:text-lg lg:text-xl">
+        From drinking water to gold mines — our activated carbon serves diverse industries across 50+ countries
+      </p>
+    </div>
+  </section>
+
+  <!-- Application List -->
+  <section class="section-lg px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl">
+      {applicationsPageData.map((app, index) => (
+        <div class={`scroll-fade-up grid grid-cols-1 items-center gap-6 py-6 lg:grid-cols-[1fr_2fr] stagger-${(index % 4) + 1}`}>
+          <div class="overflow-hidden rounded-xl">
+            <Image src={app.image} alt={app.title} widths={[400, 600]} sizes="(max-width: 1024px) 100vw, 33vw" class="aspect-4/3 w-full object-cover" />
+          </div>
+          <div>
+            <h2 class="text-mono-heading mb-3 text-xl font-bold sm:text-2xl">{app.title}</h2>
+            <p class="text-mono-dark mb-6 text-sm leading-relaxed sm:text-base">{app.description}</p>
+            <div class="flex flex-wrap items-center gap-4">
+              <button class="inquiry-trigger inline-flex items-center gap-2 rounded-lg bg-mono-black px-6 py-3 text-sm font-semibold text-white">
+                Get a Quote
+              </button>
+              {app.slug && (
+                <a href={`/applications/${app.slug}`} class="inline-flex items-center gap-1 text-sm font-semibold text-mono-heading transition-colors hover:text-mono-black">
+                  Learn More &rarr;
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <PageCTA
+    title="Not Sure Which Carbon Fits Your Application?"
+    description="Tell us your requirements — our engineers will recommend the right grade for your process."
+    buttonText="Talk to an Engineer"
+    buttonHref="#inquiry"
+    bgImage={ctaBg}
+  />
+  <Footer config={homeConfig} />
+</BaseLayout>

@@ -35,7 +35,19 @@
     <p id="inquiryProduct" class="text-mono-gray mb-6 text-sm"></p>
 
     <!-- Form -->
-    <form id="inquiryForm" class="space-y-4">
+    <form id="inquiryForm" action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+      <input type="hidden" name="access_key" value="fa886cef-962b-44d9-a0c6-f86678b0c2cc" />
+      <input type="hidden" name="subject" value="New Inquiry from Tanjin Carbon Website" />
+      <input type="hidden" name="from_name" value="Tanjin Carbon Website" />
+      <input type="checkbox" name="botcheck" class="hidden" style="display:none" />
+      <input type="hidden" name="IP Address" id="inq-hiddenIp" value="" />
+      <input type="hidden" name="Country" id="inq-hiddenCountry" value="" />
+      <input type="hidden" name="Browser" id="inq-hiddenBrowser" value="" />
+      <input type="hidden" name="Language" id="inq-hiddenLang" value="" />
+      <input type="hidden" name="Page URL" id="inq-hiddenPage" value="" />
+      <input type="hidden" name="Screen Size" id="inq-hiddenScreen" value="" />
+      <input type="hidden" name="Timezone" id="inq-hiddenTimezone" value="" />
+      <input type="hidden" name="Product Interest" id="inq-hiddenProduct" value="" />
       <div>
         <label for="inq-name" class="text-mono-heading mb-1 block text-sm font-semibold">
           Contact Name <span class="text-red-500">*</span>
@@ -66,14 +78,14 @@
 
       <div>
         <label for="inq-company" class="text-mono-heading mb-1 block text-sm font-semibold">
-          Company
+          Phone / WhatsApp
         </label>
         <input
           type="text"
           id="inq-company"
-          name="company"
+          name="phone"
           class="border-mono-lighter w-full rounded-lg border px-4 py-2.5 text-sm"
-          placeholder="Your Company Ltd."
+          placeholder="+1 234 567 8900"
         />
       </div>
 
@@ -92,10 +104,18 @@
 
       <button
         type="submit"
+        id="inqSubmitBtn"
         class="bg-mono-black w-full rounded-lg px-6 py-3 text-sm font-semibold text-white shadow-lg"
       >
         Send Inquiry
       </button>
+
+      <div id="inqSuccess" class="hidden rounded-lg bg-green-50 p-3 text-center text-sm font-medium text-green-700">
+        Thank you! We'll get back to you within 24 hours.
+      </div>
+      <div id="inqError" class="hidden rounded-lg bg-red-50 p-3 text-center text-sm font-medium text-red-700">
+        Something went wrong. Please try again or email us directly.
+      </div>
 
       <p class="text-mono-gray text-center text-xs">
         We typically respond within 24 hours.
@@ -105,22 +125,47 @@
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('DOMContentLoaded', async () => {
     const modal = document.getElementById('inquiryModal');
     const backdrop = document.getElementById('inquiryBackdrop');
     const closeBtn = document.getElementById('inquiryClose');
     const form = document.getElementById('inquiryForm') as HTMLFormElement;
     const productLabel = document.getElementById('inquiryProduct');
+    const submitBtn = document.getElementById('inqSubmitBtn') as HTMLButtonElement;
+    const successMsg = document.getElementById('inqSuccess')!;
+    const errorMsg = document.getElementById('inqError')!;
+    const btnText = submitBtn?.textContent || '';
+
+    // Collect visitor info
+    const setVal = (id: string, val: string) => {
+      const el = document.getElementById(id) as HTMLInputElement;
+      if (el) el.value = val;
+    };
+    setVal('inq-hiddenBrowser', navigator.userAgent);
+    setVal('inq-hiddenLang', navigator.language);
+    setVal('inq-hiddenPage', window.location.href);
+    setVal('inq-hiddenScreen', `${screen.width}x${screen.height}`);
+    setVal('inq-hiddenTimezone', Intl.DateTimeFormat().resolvedOptions().timeZone);
+
+    try {
+      const ipRes = await fetch('https://ipapi.co/json/');
+      const ipData = await ipRes.json();
+      setVal('inq-hiddenIp', ipData.ip || '');
+      setVal('inq-hiddenCountry', `${ipData.country_name || ''} (${ipData.city || ''})`);
+    } catch {}
 
     function openModal(product?: string) {
       if (!modal) return;
       if (productLabel) {
         productLabel.textContent = product || 'Tell us about your activated carbon needs.';
       }
+      setVal('inq-hiddenProduct', product || '');
       modal.classList.remove('hidden');
       modal.classList.add('flex');
       modal.setAttribute('aria-hidden', 'false');
       document.body.style.overflow = 'hidden';
+      successMsg.classList.add('hidden');
+      errorMsg.classList.add('hidden');
     }
 
     function closeModal() {
@@ -148,11 +193,32 @@
     });
 
     // Form submit
-    form?.addEventListener('submit', (e) => {
+    form?.addEventListener('submit', async (e) => {
       e.preventDefault();
-      alert('Thank you for your inquiry! We will get back to you within 24 hours.');
-      form.reset();
-      closeModal();
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+      successMsg.classList.add('hidden');
+      errorMsg.classList.add('hidden');
+
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+        });
+        const data = await res.json();
+
+        if (data.success) {
+          successMsg.classList.remove('hidden');
+          form.reset();
+        } else {
+          errorMsg.classList.remove('hidden');
+        }
+      } catch {
+        errorMsg.classList.remove('hidden');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = btnText;
+      }
     });
   });
 </script>

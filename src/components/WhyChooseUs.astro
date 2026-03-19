@@ -1,10 +1,17 @@
 ---
 import { Icon } from 'astro-icon/components';
+import { Image } from 'astro:assets';
+import shipment1 from '../assets/images/about/shipment-1.png';
+import shipment2 from '../assets/images/about/shipment-2.png';
+import shipment3 from '../assets/images/about/shipment-3.png';
+import shipment4 from '../assets/images/about/shipment-4.png';
 
 interface WhyChooseUsItem {
   icon: string;
   title: string;
   description: string;
+  image: ImageMetadata;
+  highlights: string[];
 }
 
 interface Props {
@@ -20,7 +27,7 @@ const {
 } = Astro.props;
 ---
 
-<section id="why-us" class="relative bg-white px-4 py-20 sm:px-6 lg:px-8">
+<section id="why-us" class="relative bg-white section-lg px-4 sm:px-6 lg:px-8">
   <div
     class="border-mono-lighter absolute top-8 left-8 h-16 w-16 border-t-2 border-l-2"
   >
@@ -40,22 +47,118 @@ const {
       </p>
     </div>
 
-    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <div class="space-y-12">
       {
         items.map((item, index) => (
           <div
-            class={`group ${index % 2 === 0 ? 'scroll-fade-left' : 'scroll-fade-right'} border-mono-lighter rounded-xl border p-8 stagger-${(index % 9) + 1}`}
+            class={`scroll-fade-${index % 2 === 0 ? 'left' : 'right'} grid grid-cols-1 items-center gap-8 lg:grid-cols-2 stagger-${(index % 9) + 1}`}
           >
-            <div class="bg-mono-black mb-6 flex h-14 w-14 items-center justify-center rounded-lg text-white">
-              <Icon name={item.icon} class="h-7 w-7" />
+            <div class={index % 2 === 1 ? 'lg:order-2' : ''}>
+              <Image
+                src={item.image}
+                alt={item.title}
+                widths={[400, 600, 800]}
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                class="border-mono-lighter w-full rounded-xl border object-cover"
+                loading="lazy"
+              />
             </div>
-            <h3 class="text-mono-heading mb-3 text-xl font-semibold">
-              {item.title}
-            </h3>
-            <p class="text-mono-dark leading-relaxed">{item.description}</p>
+            <div class={index % 2 === 1 ? 'lg:order-1' : ''}>
+              <div class="bg-mono-black mb-4 flex h-12 w-12 items-center justify-center rounded-lg text-white">
+                <Icon name={item.icon} class="h-6 w-6" />
+              </div>
+              <h3 class="text-mono-heading mb-3 text-xl font-semibold">
+                {item.title}
+              </h3>
+              <p class="text-mono-dark mb-4 leading-relaxed">{item.description}</p>
+              <ul class="space-y-2">
+                {item.highlights.map((h) => (
+                  <li class="flex items-start gap-2">
+                    <Icon
+                      name="heroicons:check"
+                      class="text-mono-black mt-0.5 h-5 w-5 flex-shrink-0"
+                    />
+                    <span class="text-mono-dark text-sm">{h}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         ))
       }
     </div>
   </div>
 </section>
+
+<section class="bg-mono-black section-lg px-4 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-7xl">
+    <div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+      {/* 左侧文案 */}
+      <div>
+        <h3 class="mb-3 text-2xl font-bold text-white sm:text-3xl">
+          See the difference factory-direct makes
+        </h3>
+        <p class="mb-8 leading-relaxed text-white/70">
+          See why manufacturers, water plants, and mining operations choose to work with us directly.
+        </p>
+        <a
+          href="#contact"
+          class="inline-block rounded-lg bg-white px-8 py-4 font-semibold text-mono-black shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5"
+        >
+          Get Free Samples & Pricing
+        </a>
+      </div>
+
+      {/* 右侧发货图轮播 */}
+      <div class="relative aspect-[16/9] overflow-hidden rounded-xl">
+        <div class="why-cta-slider flex h-full transition-transform duration-500 ease-in-out">
+          <Image src={shipment1} alt="Shipment photo 1" class="h-full w-full flex-shrink-0 object-cover" widths={[400, 600, 800]} sizes="(max-width: 1024px) 100vw, 50vw" loading="lazy" />
+          <Image src={shipment2} alt="Shipment photo 2" class="h-full w-full flex-shrink-0 object-cover" widths={[400, 600, 800]} sizes="(max-width: 1024px) 100vw, 50vw" loading="lazy" />
+          <Image src={shipment3} alt="Shipment photo 3" class="h-full w-full flex-shrink-0 object-cover" widths={[400, 600, 800]} sizes="(max-width: 1024px) 100vw, 50vw" loading="lazy" />
+          <Image src={shipment4} alt="Shipment photo 4" class="h-full w-full flex-shrink-0 object-cover" widths={[400, 600, 800]} sizes="(max-width: 1024px) 100vw, 50vw" loading="lazy" />
+        </div>
+        {/* 指示器 */}
+        <div class="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
+          <button class="why-cta-dot h-2.5 w-2.5 cursor-pointer rounded-full bg-white/80 transition-opacity duration-200" data-index="0" aria-label="Slide 1"></button>
+          <button class="why-cta-dot h-2.5 w-2.5 cursor-pointer rounded-full bg-white/40 transition-opacity duration-200" data-index="1" aria-label="Slide 2"></button>
+          <button class="why-cta-dot h-2.5 w-2.5 cursor-pointer rounded-full bg-white/40 transition-opacity duration-200" data-index="2" aria-label="Slide 3"></button>
+          <button class="why-cta-dot h-2.5 w-2.5 cursor-pointer rounded-full bg-white/40 transition-opacity duration-200" data-index="3" aria-label="Slide 4"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const slider = document.querySelector('.why-cta-slider') as HTMLElement;
+    const dots = document.querySelectorAll('.why-cta-dot');
+    const container = slider?.parentElement;
+    if (!slider || dots.length === 0 || !container) return;
+
+    let current = 0;
+    let paused = false;
+    const total = dots.length;
+
+    function goTo(index: number) {
+      current = index;
+      slider.style.transform = `translateX(-${current * 100}%)`;
+      dots.forEach((d, i) => {
+        (d as HTMLElement).style.opacity = i === current ? '1' : '0.4';
+      });
+    }
+
+    dots.forEach((dot) => {
+      dot.addEventListener('click', () => {
+        goTo(Number((dot as HTMLElement).dataset.index));
+      });
+    });
+
+    container.addEventListener('mouseenter', () => { paused = true; });
+    container.addEventListener('mouseleave', () => { paused = false; });
+
+    setInterval(() => {
+      if (!paused) goTo((current + 1) % total);
+    }, 4000);
+  });
+</script>

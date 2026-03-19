@@ -1,7 +1,12 @@
+import coconutShellCarbon from '../../assets/images/home/coconut-shell-carbon.png';
+import coalBasedCarbon from '../../assets/images/home/coal-based-carbon.png';
+import woodBasedCarbon from '../../assets/images/home/wood-based-carbon.png';
+import specialtyCarbon from '../../assets/images/home/specialty-carbon.png';
+
 export const productCategories = [
   {
     title: 'Coconut Shell Activated Carbon',
-    image: '/images/home/coconut-shell-carbon.png',
+    image: coconutShellCarbon,
     description:
       'Premium coconut shell-based carbon with high hardness, excellent micropore structure, and superior adsorption capacity. Our best-selling product line.',
     forms: ['Granular', 'Columnar', 'Powdered'],
@@ -14,7 +19,7 @@ export const productCategories = [
   },
   {
     title: 'Coal-Based Activated Carbon',
-    image: '/images/home/coal-based-carbon.png',
+    image: coalBasedCarbon,
     description:
       'Cost-effective coal-based carbon with balanced pore distribution. Versatile solution for large-scale water treatment and industrial applications.',
     forms: ['Granular', 'Columnar', 'Powdered'],
@@ -27,7 +32,7 @@ export const productCategories = [
   },
   {
     title: 'Wood-Based Activated Carbon',
-    image: '/images/home/wood-based-carbon.png',
+    image: woodBasedCarbon,
     description:
       'Wood-based carbon with well-developed mesopore structure, primarily available in powdered form. Ideal for decolorization and food-grade purification.',
     forms: ['Powdered (primary)', 'Granular'],
@@ -40,7 +45,7 @@ export const productCategories = [
   },
   {
     title: 'Impregnated Activated Carbon',
-    image: '/images/home/specialty-carbon.png',
+    image: specialtyCarbon,
     description:
       'Chemically impregnated carbons for targeted removal of specific contaminants. Various impregnation agents available for specialized gas treatment and purification applications.',
     forms: ['KI', 'KOH', 'NaOH', 'CuO', 'Silver', 'Sulfur-loaded'],

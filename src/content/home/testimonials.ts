@@ -1,29 +1,32 @@
 export const homeTestimonialsData = [
   {
     quote:
-      'We have been sourcing activated carbon from Tanjin Carbon for over 3 years. Their coconut shell carbon consistently meets our strict quality standards for drinking water treatment. Reliable partner.',
+      'Switched from a local trading company to Tanjin Carbon 3 years ago. Same coconut shell GAC quality, 22% lower cost. Their COA reports match our lab results every time — that kind of consistency is rare.',
     author: 'Robert van der Berg',
     role: 'Procurement Manager',
     company: 'AquaPure Solutions',
     initials: 'RB',
+    avatar: 'https://placehold.co/96x96/E8F0FE/0072EE?text=RB',
     rating: 5,
   },
   {
     quote:
-      'The technical support from Tanjin Carbon helped us select the right carbon grade for our gold recovery process. Production yield improved by 12% after switching to their CIL-grade carbon.',
+      'Their engineer recommended switching from 6×12 to 8×16 mesh for our CIL circuit. Gold recovery yield went up 12% in the first quarter. The free consultation alone was worth the call.',
     author: 'James Okonkwo',
     role: 'Operations Director',
     company: 'West African Mining Corp',
     initials: 'JO',
+    avatar: 'https://placehold.co/96x96/E8F0FE/0072EE?text=JO',
     rating: 5,
   },
   {
     quote:
-      'Fast delivery, competitive pricing, and consistent quality. Tanjin Carbon is our go-to supplier for powdered activated carbon used in our food processing plants across Southeast Asia.',
+      'We needed food-grade PAC delivered to 3 plants across Southeast Asia on a tight schedule. Tanjin hit every delivery window and the price per ton was 18% below our previous supplier.',
     author: 'Tanaka Hiroshi',
     role: 'Supply Chain Director',
     company: 'Pacific Food Industries',
     initials: 'TH',
+    avatar: 'https://placehold.co/96x96/E8F0FE/0072EE?text=TH',
     rating: 5,
   },
 ];

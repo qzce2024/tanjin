@@ -7,9 +7,11 @@ import { whyChooseUsData } from '../content/home/why-choose-us';
 import { homeHowItWorksSteps } from '../content/home/how-it-works';
 import { homeTestimonialsData, homeTrustLogos } from '../content/home/testimonials';
 import { homeFaqItems } from '../content/home/faq';
+import heroProductImage from '../assets/images/home/hero-product.png';
 
 import Navigation from '../components/Navigation.astro';
 import Hero from '../components/Hero.astro';
+import TrustBar from '../components/TrustBar.astro';
 import ProductCategories from '../components/ProductCategories.astro';
 import Applications from '../components/Applications.astro';
 import WhyChooseUs from '../components/WhyChooseUs.astro';
@@ -31,24 +33,25 @@ import Footer from '../components/Footer.astro';
   twitterDescription={homeConfig.site.twitterDescription}
 >
   <Navigation config={homeConfig} />
-  <Hero config={homeConfig} heroImage="/images/home/hero-product.png" />
+  <Hero config={homeConfig} heroImage={heroProductImage} />
+  <TrustBar logos={homeTrustLogos} />
   <ProductCategories
-    title="Our Products"
-    subtitle="Comprehensive range of activated carbon for diverse industrial needs"
+    title="Activated Carbon Products"
+    subtitle="4 product lines covering 90% of industrial carbon applications — each backed by COA and free samples"
     products={productCategories}
   />
   <Applications
     title="Industry Applications"
-    subtitle="Our activated carbon products serve diverse industries across the globe"
+    subtitle="Proven performance across 8 core industries, backed by lab data and client results"
     items={applicationsData}
   />
   <WhyChooseUs
-    title="Why Choose Tanjin Carbon"
-    subtitle="Your trusted partner for premium activated carbon solutions"
+    title="Why 500+ Companies Choose Tanjin Carbon"
+    subtitle="We're not a trading company — we're the factory"
     items={whyChooseUsData}
   />
   <HowItWorks config={homeConfig} steps={homeHowItWorksSteps} />
-  <Testimonials config={homeConfig} testimonials={homeTestimonialsData} logos={homeTrustLogos} />
+  <Testimonials config={homeConfig} testimonials={homeTestimonialsData} />
   <FAQ config={homeConfig} items={homeFaqItems} />
   <Contact config={homeConfig} />
   <Footer config={homeConfig} />

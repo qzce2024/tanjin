@@ -18,26 +18,40 @@ export const homeConfig = {
 
   navigation: {
     links: [
-      { name: 'Products', href: '#features' },
-      { name: 'Applications', href: '#applications' },
-      { name: 'Why Us', href: '#why-us' },
-      { name: 'Process', href: '#how-it-works' },
-      { name: 'FAQ', href: '#faq' },
+      { name: 'Products', href: '/products' },
+      {
+        name: 'Applications',
+        href: '/applications',
+        children: [
+          { name: 'Water Treatment', href: '/applications/water-treatment' },
+          { name: 'Air Purification', href: '/applications/air-purification' },
+          { name: 'Gold Recovery', href: '/applications/gold-recovery' },
+          { name: 'Food & Beverage', href: '/applications/food-beverage' },
+          { name: 'Pharmaceutical', href: '/applications/pharmaceutical' },
+          { name: 'Chemical & Industrial', href: '/applications/chemical-industrial' },
+          { name: 'Environmental', href: '/applications/environmental' },
+          { name: 'Energy & Gas', href: '/applications/energy-gas' },
+        ],
+      },
+      { name: 'About', href: '/about' },
+      { name: 'Certifications', href: '/certifications' },
+      { name: 'FAQ', href: '/faq' },
     ],
     cta: {
-      text: 'Request Quote',
+      text: 'Get Free Samples',
       href: '#inquiry',
     },
   },
 
   hero: {
-    headline: 'Premium Activated Carbon',
-    subheadline: 'For Global Industries',
+    headline: 'Factory-Direct Activated Carbon',
+    subheadline: 'Save 5–10% Without the Middleman',
     description:
-      'Factory-direct activated carbon solutions for water treatment, air purification, gold recovery, and industrial applications. Trusted by clients in 50+ countries.',
+      'ISO 9001 certified manufacturer shipping to 50+ countries. From coconut shell GAC to custom-spec impregnated carbon — get the exact grade you need with free samples and full COA reports.',
+    trustLine: 'Trusted by 500+ companies across water treatment, mining, food processing & more',
     cta: {
       primary: {
-        text: 'Request a Quote',
+        text: 'Get Free Samples & Pricing',
         href: '#inquiry',
       },
       secondary: {
@@ -70,38 +84,38 @@ export const homeConfig = {
   },
 
   howItWorks: {
-    title: 'How to Order',
+    title: 'From Inquiry to Delivery in 4 Steps',
     subtitle:
-      'Simple 5-step procurement process from inquiry to global delivery',
+      'A straightforward process from first contact to global delivery',
   },
 
   testimonials: {
-    title: 'Trusted by Global Clients',
+    title: 'Real Results from Real Partners',
     subtitle:
-      'Hear from our partners across water treatment, mining, and industrial sectors',
+      'See how manufacturers, water plants, and mining operations improved performance with our carbon',
     companyLogos: [],
   },
 
   faq: {
-    title: 'Frequently Asked Questions',
+    title: 'Common Questions Before You Order',
     subtitle:
-      'Common questions about our activated carbon products and procurement process',
+      'Quick answers to help you move forward with confidence',
   },
 
   contact: {
-    title: 'Request a Quote',
+    title: 'Get Your Custom Quote in 24 Hours',
     subtitle:
-      'Tell us about your activated carbon requirements. Our technical team will respond within 24 hours with product recommendations and pricing.',
+      'Tell us what you need — application, specs, quantity. We\'ll get back to you within 24 hours.',
     benefits: [
-      'Free samples available',
-      'Technical consultation included',
-      'Flexible payment terms',
-      'Global shipping to 50+ countries',
+      'Free samples (up to 500g) shipped in 3 days',
+      'Engineer-led product consultation included',
+      'Flexible payment: T/T, L/C, Trade Assurance',
+      'FOB / CIF shipping worldwide',
     ],
     email: 'info@goldcarbon.net',
     phone: '+86 177 1980 1166',
     form: {
-      cta: 'Send Inquiry',
+      cta: 'Get My Custom Quote',
       fields: {
         name: {
           label: 'Contact Name',
@@ -114,8 +128,8 @@ export const homeConfig = {
           required: true,
         },
         company: {
-          label: 'Company Name',
-          placeholder: 'Your Company Ltd.',
+          label: 'Phone / WhatsApp',
+          placeholder: '+1 234 567 8900',
           required: false,
         },
         message: {
@@ -145,21 +159,24 @@ export const homeConfig = {
       {
         title: 'Applications',
         links: [
-          { name: 'Water Treatment', href: '#applications' },
-          { name: 'Air Purification', href: '#applications' },
-          { name: 'Gold Recovery', href: '#applications' },
-          { name: 'Food & Beverage', href: '#applications' },
-          { name: 'Pharmaceutical', href: '#applications' },
+          { name: 'Water Treatment', href: '/applications/water-treatment' },
+          { name: 'Air Purification', href: '/applications/air-purification' },
+          { name: 'Gold Recovery', href: '/applications/gold-recovery' },
+          { name: 'Food & Beverage', href: '/applications/food-beverage' },
+          { name: 'Pharmaceutical', href: '/applications/pharmaceutical' },
+          { name: 'Chemical & Industrial', href: '/applications/chemical-industrial' },
+          { name: 'Environmental', href: '/applications/environmental' },
+          { name: 'Energy & Gas', href: '/applications/energy-gas' },
         ],
       },
       {
         title: 'Company',
         links: [
-          { name: 'About Us', href: '#' },
+          { name: 'About Us', href: '/about' },
           { name: 'Why Choose Us', href: '#why-us' },
-          { name: 'Certifications', href: '#' },
-          { name: 'Contact', href: '#contact' },
-          { name: 'Request Quote', href: '#contact' },
+          { name: 'Certifications', href: '/certifications' },
+          { name: 'Contact', href: '/contact' },
+          { name: 'FAQ', href: '/faq' },
         ],
       },
     ],
