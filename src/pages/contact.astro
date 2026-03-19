@@ -37,7 +37,7 @@ import contactHeroBg from '../assets/images/contact/contact-hero.png';
   </section>
 
   <!-- Contact: Info Left + Form Right -->
-  <section class="bg-mono-lighter section-lg px-4 sm:px-6 lg:px-8">
+  <section class="bg-mono-lighter/40 section-lg px-4 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-7xl">
       <div class="grid grid-cols-1 items-start gap-12 lg:grid-cols-2">
         <!-- Left: Info -->
@@ -124,7 +124,7 @@ import contactHeroBg from '../assets/images/contact/contact-hero.png';
 </BaseLayout>
 
 <script>
-  document.addEventListener('DOMContentLoaded', async () => {
+  document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('contactForm') as HTMLFormElement;
     const submitBtn = document.getElementById('submitBtn') as HTMLButtonElement;
     const successMsg = document.getElementById('formSuccess')!;
@@ -137,12 +137,16 @@ import contactHeroBg from '../assets/images/contact/contact-hero.png';
     (document.getElementById('hiddenScreen') as HTMLInputElement).value = `${screen.width}x${screen.height}`;
     (document.getElementById('hiddenTimezone') as HTMLInputElement).value = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
-    try {
-      const ipRes = await fetch('https://ipapi.co/json/');
-      const ipData = await ipRes.json();
+    if (!(window as any).__ipDataPromise) {
+      (window as any).__ipDataPromise = fetch('https://ipapi.co/json/')
+        .then(r => r.json())
+        .catch(() => null);
+    }
+    (window as any).__ipDataPromise.then((ipData: any) => {
+      if (!ipData) return;
       (document.getElementById('hiddenIp') as HTMLInputElement).value = ipData.ip || '';
       (document.getElementById('hiddenCountry') as HTMLInputElement).value = `${ipData.country_name || ''} (${ipData.city || ''})`;
-    } catch {}
+    });
 
     if (form) {
       form.addEventListener('submit', async (e) => {

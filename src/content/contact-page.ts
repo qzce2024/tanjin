@@ -3,7 +3,7 @@ export const contactPageData = {
     {
       icon: 'heroicons:map-pin',
       title: 'Office Address',
-      lines: ['Yinchuan, Ningxia, China'],
+      lines: ['No. 52, Yanling West Road', 'Yanshi Town, Xinluo District', 'Longyan City, Fujian Province, China'],
     },
     {
       icon: 'heroicons:envelope',

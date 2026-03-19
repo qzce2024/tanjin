@@ -7,7 +7,7 @@ export const aboutData = {
   intro: {
     title: 'Who We Are',
     description:
-      'Tanjin Carbon is a factory-direct activated carbon manufacturer based in Ningxia, China. Since 2009, we\'ve supplied premium activated carbon to 500+ clients in 50+ countries.',
+      'Tanjin Carbon is a factory-direct activated carbon manufacturer based in Longyan, Fujian, China. Since 2009, we\'ve supplied premium activated carbon to 500+ clients in 50+ countries.',
     detail:
       'We own and operate our own production lines — no middlemen. You get consistent quality, transparent pricing, and direct communication with the people who make your product.',
     image: aboutFactory,
