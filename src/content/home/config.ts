@@ -36,6 +36,7 @@ export const homeConfig = {
       { name: 'About', href: '/about' },
       { name: 'Certifications', href: '/certifications' },
       { name: 'FAQ', href: '/faq' },
+      { name: 'Contact', href: '/contact' },
     ],
     cta: {
       text: 'Get Free Samples',
@@ -149,11 +150,11 @@ export const homeConfig = {
       {
         title: 'Products',
         links: [
-          { name: 'Granular Activated Carbon', href: '#features' },
-          { name: 'Powdered Activated Carbon', href: '#features' },
-          { name: 'Coconut Shell Carbon', href: '#features' },
-          { name: 'Coal-Based Carbon', href: '#features' },
-          { name: 'Custom Specifications', href: '#features' },
+          { name: 'Granular Activated Carbon', href: '/products' },
+          { name: 'Powdered Activated Carbon', href: '/products' },
+          { name: 'Coconut Shell Carbon', href: '/products' },
+          { name: 'Coal-Based Carbon', href: '/products' },
+          { name: 'Custom Specifications', href: '/products' },
         ],
       },
       {
@@ -173,7 +174,6 @@ export const homeConfig = {
         title: 'Company',
         links: [
           { name: 'About Us', href: '/about' },
-          { name: 'Why Choose Us', href: '#why-us' },
           { name: 'Certifications', href: '/certifications' },
           { name: 'Contact', href: '/contact' },
           { name: 'FAQ', href: '/faq' },
