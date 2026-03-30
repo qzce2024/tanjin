@@ -16,7 +16,7 @@ import contactHeroBg from '../assets/images/contact/contact-hero.png';
   <Navigation config={homeConfig} />
 
   <!-- Hero with background image -->
-  <section class="relative overflow-hidden px-4 pt-32 pb-20 sm:px-6 lg:px-8">
+  <section class="relative overflow-hidden px-4 pt-20 pb-20 sm:px-6 lg:px-8">
     <Image
       src={contactHeroBg}
       alt=""
@@ -37,7 +37,7 @@ import contactHeroBg from '../assets/images/contact/contact-hero.png';
   </section>
 
   <!-- Contact: Info Left + Form Right -->
-  <section class="bg-mono-lighter/40 section-lg px-4 sm:px-6 lg:px-8">
+  <section class="section-lg px-4 sm:px-6 lg:px-8" style="background-color: #F5F5F5;">
     <div class="mx-auto max-w-7xl">
       <div class="grid grid-cols-1 items-start gap-12 lg:grid-cols-2">
         <!-- Left: Info -->
@@ -71,7 +71,7 @@ import contactHeroBg from '../assets/images/contact/contact-hero.png';
         </div>
 
         <!-- Right: Form -->
-        <div class="scroll-fade-up stagger-2 rounded-2xl bg-white p-6 shadow-lg sm:p-8">
+        <div class="scroll-fade-up stagger-2 rounded-2xl p-6 shadow-xl sm:p-8" style="background-color: #FAFAFA;">
           <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="space-y-5">
             <input type="hidden" name="access_key" value="fa886cef-962b-44d9-a0c6-f86678b0c2cc" />
             <input type="hidden" name="subject" value="New Inquiry from Tanjin Carbon Website" />
@@ -86,19 +86,19 @@ import contactHeroBg from '../assets/images/contact/contact-hero.png';
             <input type="hidden" name="Timezone" id="hiddenTimezone" value="" />
             <div>
               <label for="name" class="text-mono-heading mb-2 block text-sm font-semibold">{homeConfig.contact.form.fields.name.label}</label>
-              <input type="text" id="name" name="name" required class="border-mono-lighter w-full rounded-lg border px-4 py-3 transition-all duration-200" placeholder={homeConfig.contact.form.fields.name.placeholder} />
+              <input type="text" id="name" name="name" required class="w-full rounded-lg border-2 border-gray-300 px-4 py-3 transition-all duration-200 focus:border-mono-black" placeholder={homeConfig.contact.form.fields.name.placeholder} />
             </div>
             <div>
               <label for="email" class="text-mono-heading mb-2 block text-sm font-semibold">{homeConfig.contact.form.fields.email.label}</label>
-              <input type="email" id="email" name="email" required class="border-mono-lighter w-full rounded-lg border px-4 py-3 transition-all duration-200" placeholder={homeConfig.contact.form.fields.email.placeholder} />
+              <input type="email" id="email" name="email" required class="w-full rounded-lg border-2 border-gray-300 px-4 py-3 transition-all duration-200 focus:border-mono-black" placeholder={homeConfig.contact.form.fields.email.placeholder} />
             </div>
             <div>
               <label for="company" class="text-mono-heading mb-2 block text-sm font-semibold">{homeConfig.contact.form.fields.company.label}</label>
-              <input type="text" id="company" name="company" class="border-mono-lighter w-full rounded-lg border px-4 py-3 transition-all duration-200" placeholder={homeConfig.contact.form.fields.company.placeholder} />
+              <input type="text" id="company" name="company" class="w-full rounded-lg border-2 border-gray-300 px-4 py-3 transition-all duration-200 focus:border-mono-black" placeholder={homeConfig.contact.form.fields.company.placeholder} />
             </div>
             <div>
               <label for="message" class="text-mono-heading mb-2 block text-sm font-semibold">{homeConfig.contact.form.fields.message.label}</label>
-              <textarea id="message" name="message" rows="4" class="border-mono-lighter w-full resize-none rounded-lg border px-4 py-3 transition-all duration-200" placeholder={homeConfig.contact.form.fields.message.placeholder}></textarea>
+              <textarea id="message" name="message" rows="4" class="w-full resize-none rounded-lg border-2 border-gray-300 px-4 py-3 transition-all duration-200 focus:border-mono-black" placeholder={homeConfig.contact.form.fields.message.placeholder}></textarea>
             </div>
             <div id="formSuccess" class="hidden rounded-lg bg-green-50 p-4 text-center text-sm font-medium text-green-700">
               Thank you! We'll get back to you within 24 hours.
