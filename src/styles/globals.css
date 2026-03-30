@@ -20,11 +20,31 @@
 
   --font-sans: Geist, system-ui, -apple-system, sans-serif;
 
-  --spacing-4: clamp(0.75rem, 1vw, 1rem);
-  --spacing-6: clamp(1rem, 1.5vw, 1.5rem);
-  --spacing-8: clamp(1.25rem, 2vw, 2rem);
-  --spacing-10: clamp(1.5rem, 2.5vw, 2.5rem);
-  --spacing-12: clamp(1.75rem, 3vw, 3rem);
+  /* 流体字体大小 - 移动端到桌面端平滑缩放 */
+  --font-size-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --font-size-sm: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
+  --font-size-base: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+  --font-size-lg: clamp(1.125rem, 1rem + 0.625vw, 1.25rem);
+  --font-size-xl: clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem);
+  --font-size-2xl: clamp(1.5rem, 1.3rem + 1vw, 1.875rem);
+  --font-size-3xl: clamp(1.875rem, 1.6rem + 1.375vw, 2.25rem);
+  --font-size-4xl: clamp(2.25rem, 1.9rem + 1.75vw, 3rem);
+  --font-size-5xl: clamp(3rem, 2.5rem + 2.5vw, 4rem);
+
+  /* 流体间距 - 完整的 spacing scale */
+  --spacing-1: clamp(0.25rem, 0.2rem + 0.125vw, 0.25rem);
+  --spacing-2: clamp(0.5rem, 0.45rem + 0.25vw, 0.5rem);
+  --spacing-3: clamp(0.625rem, 0.55rem + 0.375vw, 0.75rem);
+  --spacing-4: clamp(0.75rem, 0.65rem + 0.5vw, 1rem);
+  --spacing-5: clamp(0.875rem, 0.75rem + 0.625vw, 1.25rem);
+  --spacing-6: clamp(1rem, 0.85rem + 0.75vw, 1.5rem);
+  --spacing-8: clamp(1.25rem, 1rem + 1.25vw, 2rem);
+  --spacing-10: clamp(1.5rem, 1.2rem + 1.5vw, 2.5rem);
+  --spacing-12: clamp(1.75rem, 1.4rem + 1.75vw, 3rem);
+  --spacing-16: clamp(2.5rem, 2rem + 2.5vw, 4rem);
+  --spacing-20: clamp(3rem, 2.5rem + 2.5vw, 5rem);
+  --spacing-24: clamp(3.5rem, 3rem + 2.5vw, 6rem);
+  --spacing-32: clamp(4.5rem, 3.5rem + 5vw, 8rem);
 }
 
 
