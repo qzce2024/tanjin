@@ -21,15 +21,15 @@
   --font-sans: Geist, system-ui, -apple-system, sans-serif;
 
   /* 流体字体大小 - 移动端到桌面端平滑缩放 */
-  --font-size-xs: clamp(0.8125rem, 0.75rem + 0.3125vw, 0.875rem);
-  --font-size-sm: clamp(0.9375rem, 0.875rem + 0.3125vw, 1rem);
-  --font-size-base: clamp(1.0625rem, 1rem + 0.3125vw, 1.125rem);
-  --font-size-lg: clamp(1.1875rem, 1.125rem + 0.3125vw, 1.25rem);
-  --font-size-xl: clamp(1.375rem, 1.25rem + 0.625vw, 1.5rem);
-  --font-size-2xl: clamp(1.625rem, 1.5rem + 0.625vw, 1.875rem);
-  --font-size-3xl: clamp(2rem, 1.75rem + 1.25vw, 2.25rem);
-  --font-size-4xl: clamp(2.5rem, 2.125rem + 1.875vw, 3rem);
-  --font-size-5xl: clamp(3.25rem, 2.75rem + 2.5vw, 4rem);
+  --font-size-xs: clamp(0.875rem, 0.8125rem + 0.3125vw, 0.875rem);
+  --font-size-sm: clamp(1rem, 0.9375rem + 0.3125vw, 1rem);
+  --font-size-base: clamp(1.125rem, 1.0625rem + 0.3125vw, 1.125rem);
+  --font-size-lg: clamp(1.25rem, 1.1875rem + 0.3125vw, 1.25rem);
+  --font-size-xl: clamp(1.5rem, 1.375rem + 0.625vw, 1.5rem);
+  --font-size-2xl: clamp(1.75rem, 1.625rem + 0.625vw, 1.875rem);
+  --font-size-3xl: clamp(2.125rem, 2rem + 0.625vw, 2.25rem);
+  --font-size-4xl: clamp(2.75rem, 2.5rem + 1.25vw, 3rem);
+  --font-size-5xl: clamp(3.5rem, 3.25rem + 1.25vw, 4rem);
 
   /* 流体间距 - 完整的 spacing scale */
   --spacing-1: clamp(0.25rem, 0.2rem + 0.125vw, 0.25rem);
