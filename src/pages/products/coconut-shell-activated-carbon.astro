@@ -13,7 +13,7 @@ const d = coconutShellData;
 <BaseLayout title={d.meta.title} description={d.meta.description}>
   <Navigation config={homeConfig} />
 
-  <section class="relative overflow-hidden bg-[linear-gradient(135deg,#020202_0%,#0a0f14_34%,#111822_68%,#050607_100%)] px-4 sm:px-6 lg:px-8" style="padding-top: calc(5rem + 4rem); padding-bottom: 0;">
+  <section class="relative overflow-hidden bg-[linear-gradient(135deg,#020202_0%,#0a0f14_34%,#111822_68%,#050607_100%)] px-4 pt-20 sm:px-6 lg:px-8" style="padding-bottom: 0;">
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.10),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(71,85,105,0.24),transparent_34%),linear-gradient(180deg,rgba(148,163,184,0.05),transparent_24%)]"></div>
     <div class="absolute inset-0 opacity-[0.08]" style="background-image: repeating-linear-gradient(135deg, rgba(226,232,240,0.22) 0, rgba(226,232,240,0.22) 1px, transparent 1px, transparent 14px);"></div>
     <div class="absolute inset-x-0 top-0 h-px bg-white/10"></div>
@@ -25,7 +25,7 @@ const d = coconutShellData;
               {d.hero.tag}
             </p>
           )}
-          <h1 class="scroll-fade-up mb-5 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
+          <h1 class="scroll-fade-up mb-5 text-3xl font-medium text-white sm:text-4xl lg:text-5xl">
             Coconut Shell Activated Carbon Supplier & Manufacturer
           </h1>
           <p class="scroll-fade-up mb-7 text-[15px] leading-7 text-white/78 sm:text-base">
@@ -60,7 +60,7 @@ const d = coconutShellData;
       <div class="space-y-8 lg:space-y-10">
         <div class="grid gap-5 pb-7 lg:grid-cols-[1.25fr_0.75fr] lg:gap-7 lg:pb-8">
           <div>
-            <h2 class="mb-5 text-2xl font-bold text-mono-heading sm:text-3xl">Coconut shell activated carbon supplier overview</h2>
+            <h2 class="mb-5 text-2xl font-medium text-mono-heading sm:text-3xl">Coconut shell activated carbon supplier overview</h2>
             <div class="space-y-5 text-[15px] leading-8 text-mono-dark sm:text-base">
               <p>
                 Coconut shell activated carbon is a premium-grade adsorption material produced from selected coconut shell raw material. Its microporous structure, high hardness, and low ash content make it suitable for demanding purification systems where stable performance and longer service life are required.
@@ -125,7 +125,7 @@ const d = coconutShellData;
 
         <div id="product-forms" class="pb-7 lg:pb-8">
           <div class="mb-8 max-w-3xl">
-            <h2 class="mb-4 text-2xl font-bold text-mono-heading sm:text-3xl">Coconut Shell Activated Carbon Product Forms</h2>
+            <h2 class="mb-4 text-2xl font-medium text-mono-heading sm:text-3xl">Coconut Shell Activated Carbon Product Forms</h2>
             <p class="text-[15px] leading-8 text-mono-dark sm:text-base">
               Coconut shell activated carbon is available in several physical forms depending on operating conditions, contact time, pressure drop, and required adsorption performance.
             </p>
@@ -147,7 +147,7 @@ const d = coconutShellData;
 
         <div id="applications" class="pb-7 lg:pb-8">
           <div class="mb-8 max-w-4xl">
-            <h2 class="mb-4 text-2xl font-bold text-mono-heading sm:text-3xl">Typical Applications</h2>
+            <h2 class="mb-4 text-2xl font-medium text-mono-heading sm:text-3xl">Typical Applications</h2>
             <p class="text-[15px] leading-8 text-mono-dark sm:text-base">
               Typical applications include water treatment, gold recovery, air purification, food-grade processing, and other liquid-phase or gas-phase adsorption systems.
             </p>
@@ -176,7 +176,7 @@ const d = coconutShellData;
 
         <div id="technical-parameters" class="pb-7 lg:pb-8">
           <div class="mb-8 max-w-4xl">
-            <h2 class="mb-4 text-2xl font-bold text-mono-heading sm:text-3xl">Technical Parameters</h2>
+            <h2 class="mb-4 text-2xl font-medium text-mono-heading sm:text-3xl">Technical Parameters</h2>
             <p class="text-[15px] leading-8 text-mono-dark sm:text-base">
               The table below shows common particle sizes and key technical parameters for coconut activated carbon supply, including mesh range, iodine value, hardness, and core product characteristics.
             </p>
@@ -246,7 +246,7 @@ const d = coconutShellData;
 
         <div id="packaging-supply" class="grid gap-7 pb-7 lg:grid-cols-[6fr_5fr] lg:items-start lg:pb-8">
           <div>
-            <h2 class="mb-5 text-2xl font-bold text-mono-heading sm:text-3xl">Packaging and shipping</h2>
+            <h2 class="mb-5 text-2xl font-medium text-mono-heading sm:text-3xl">Packaging and shipping</h2>
             <div class="space-y-4 text-[15px] leading-8 text-mono-dark sm:text-base">
               <p>
                 Export packing is arranged to suit order size, destination, and handling requirements.
@@ -278,7 +278,7 @@ const d = coconutShellData;
             <div class="mb-3 inline-flex items-center gap-2 rounded-full bg-mono-black px-3 py-1 text-[11px] font-semibold tracking-[0.18em] text-white uppercase">
               Key reasons
             </div>
-            <h2 class="mb-4 text-2xl font-bold text-mono-heading sm:text-3xl">Product advantages</h2>
+            <h2 class="mb-4 text-2xl font-medium text-mono-heading sm:text-3xl">Product advantages</h2>
             <p class="text-[15px] leading-8 text-mono-dark sm:text-base">
               Key performance points buyers usually compare before placing an order.
             </p>
@@ -289,7 +289,7 @@ const d = coconutShellData;
               <div class={`flex items-start gap-4 rounded-xl border border-mono-lighter p-5 stagger-${(index % 4) + 1}`}>
                 <Icon name={item.icon} class="mt-0.5 h-6 w-6 flex-shrink-0 text-mono-black" />
                 <div>
-                  <h3 class="mb-1 text-sm font-bold text-mono-heading">{item.title}</h3>
+                  <h3 class="mb-1 text-sm font-medium text-mono-heading">{item.title}</h3>
                   <p class="text-sm leading-relaxed text-mono-gray">{item.description}</p>
                 </div>
               </div>
@@ -300,7 +300,7 @@ const d = coconutShellData;
 
 
         <div id="faq">
-          <h2 class="mb-5 text-2xl font-bold text-mono-heading sm:text-3xl">Frequently asked questions</h2>
+          <h2 class="mb-5 text-2xl font-medium text-mono-heading sm:text-3xl">Frequently asked questions</h2>
           <div class="divide-y divide-mono-lighter border-y border-mono-lighter">
             {d.faq.map((item) => (
               <div>

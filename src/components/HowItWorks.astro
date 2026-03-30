@@ -11,7 +11,7 @@ const { config = defaultConfig, steps = defaultSteps } = Astro.props;
 >
   <div class="mx-auto max-w-7xl">
     <div class="scroll-fade-down mx-auto mb-12 max-w-3xl text-center">
-      <h2 class="text-mono-heading mb-4 text-2xl font-bold sm:text-3xl lg:text-4xl">
+      <h2 class="text-mono-heading mb-4 text-2xl font-medium sm:text-3xl lg:text-4xl">
         {config.howItWorks.title}
       </h2>
       <p class="text-mono-dark text-base sm:text-lg">
@@ -28,7 +28,7 @@ const { config = defaultConfig, steps = defaultSteps } = Astro.props;
           {
             steps.map((step) => (
               <div class="scroll-fade-up group relative cursor-default text-center">
-                <div class="bg-mono-black mx-auto mb-4 flex h-11 w-11 items-center justify-center rounded-full text-base font-bold text-white transition-transform duration-200 group-hover:scale-110">
+                <div class="bg-mono-black mx-auto mb-4 flex h-11 w-11 items-center justify-center rounded-full text-base font-medium text-white transition-transform duration-200 group-hover:scale-110">
                   {step.number}
                 </div>
                 <h3 class="text-mono-heading mb-1.5 text-base font-semibold">
@@ -51,7 +51,7 @@ const { config = defaultConfig, steps = defaultSteps } = Astro.props;
           {
             steps.map((step) => (
               <div class="relative pl-8">
-                <div class="bg-mono-black absolute -left-3.5 top-0 flex h-7 w-7 items-center justify-center rounded-full text-xs font-bold text-white">
+                <div class="bg-mono-black absolute -left-3.5 top-0 flex h-7 w-7 items-center justify-center rounded-full text-xs font-medium text-white">
                   {step.number}
                 </div>
                 <h3 class="text-mono-heading text-base font-semibold">{step.title}</h3>

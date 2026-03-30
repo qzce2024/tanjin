@@ -20,10 +20,6 @@
 
   --font-sans: Geist, system-ui, -apple-system, sans-serif;
 
-  --spacing-16: clamp(3rem, 4vw, 4rem);
-  --spacing-20: clamp(3.5rem, 5vw, 5rem);
-  --spacing-24: clamp(4rem, 6vw, 6rem);
-  --spacing-32: clamp(5rem, 8vw, 8rem);
 }
 
 
@@ -152,16 +148,16 @@ button:focus-visible {
 
 /* Section spacing standards - responsive scaling */
 .section-lg {
-  padding-top: clamp(2rem, 5vw, 5rem);
-  padding-bottom: clamp(2rem, 5vw, 5rem);
+  padding-top: clamp(3rem, 5vw, 5rem);
+  padding-bottom: clamp(3rem, 5vw, 5rem);
 }
 .section-md {
-  padding-top: clamp(1.5rem, 3.5vw, 3.5rem);
-  padding-bottom: clamp(1.5rem, 3.5vw, 3.5rem);
+  padding-top: clamp(2rem, 3.5vw, 3.5rem);
+  padding-bottom: clamp(2rem, 3.5vw, 3.5rem);
 }
 .section-sm {
-  padding-top: clamp(1rem, 2.5vw, 2.5rem);
-  padding-bottom: clamp(1rem, 2.5vw, 2.5rem);
+  padding-top: clamp(1.5rem, 2.5vw, 2.5rem);
+  padding-bottom: clamp(1.5rem, 2.5vw, 2.5rem);
 }
 
 /* Tab panel transitions */

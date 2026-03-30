@@ -7,7 +7,7 @@ const hasImage = !!heroImage;
 ---
 
 <section
-  class="mono-mesh to-mono-lighter relative bg-gradient-to-b from-white px-4 pt-32 pb-20 sm:px-6 lg:px-8"
+  class="mono-mesh to-mono-lighter relative bg-gradient-to-b from-white px-4 pt-20 pb-12 sm:pt-24 sm:pb-16 lg:pt-32 lg:pb-20 sm:px-6 lg:px-8"
 >
   <div class="bg-mono-black absolute top-32 left-0 h-32 w-1"></div>
   <div class="bg-mono-black absolute top-32 right-0 h-32 w-1"></div>
@@ -18,7 +18,7 @@ const hasImage = !!heroImage;
       <div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
         <div>
           <h1
-            class="text-mono-heading fade-up mb-6 text-3xl leading-tight font-bold sm:text-4xl lg:text-5xl"
+            class="text-mono-heading fade-up mb-6 text-3xl leading-tight font-medium sm:text-4xl lg:text-5xl"
           >
             {config.hero.headline} <span class="text-mono-black">{config.hero.subheadline}</span>
           </h1>
@@ -58,7 +58,7 @@ const hasImage = !!heroImage;
           >
             {config.hero.stats.map((stat, index) => (
               <div class={`float fade-up`} style={`animation-delay: ${250 + index * 80}ms`}>
-                <div class="text-mono-black mb-2 text-2xl font-bold sm:text-3xl">
+                <div class="text-mono-black mb-2 text-2xl font-medium sm:text-3xl">
                   {stat.value}
                 </div>
                 <div class="text-mono-gray text-sm tracking-wide uppercase">
@@ -83,7 +83,7 @@ const hasImage = !!heroImage;
       <!-- 居中布局（默认） -->
       <div class="mx-auto max-w-4xl text-center">
         <h1
-          class="text-mono-heading fade-up mb-6 text-5xl leading-tight font-bold sm:text-6xl lg:text-7xl"
+          class="text-mono-heading fade-up mb-6 text-5xl leading-tight font-medium sm:text-6xl lg:text-7xl"
         >
           {config.hero.headline} <span class="text-mono-black">{config.hero.subheadline}</span>
         </h1>
@@ -123,7 +123,7 @@ const hasImage = !!heroImage;
         >
           {config.hero.stats.map((stat, index) => (
             <div class={`float fade-up`} style={`animation-delay: ${250 + index * 80}ms`}>
-              <div class="text-mono-black mb-2 text-4xl font-bold">
+              <div class="text-mono-black mb-2 text-4xl font-medium">
                 {stat.value}
               </div>
               <div class="text-mono-gray text-sm tracking-wide uppercase">

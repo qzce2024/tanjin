@@ -24,7 +24,7 @@ const d = certificationsData;
     <Image src={certHeroBg} alt="" widths={[800, 1200, 1920]} sizes="100vw" class="absolute inset-0 h-full w-full object-cover" loading="eager" />
     <div class="absolute inset-0 bg-mono-heading/75"></div>
     <div class="relative mx-auto max-w-4xl text-center">
-      <h1 class="scroll-fade-up mb-4 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">Certifications & Quality</h1>
+      <h1 class="scroll-fade-up mb-4 text-3xl font-medium text-white sm:text-4xl lg:text-5xl">Certifications & Quality</h1>
       <p class="scroll-fade-up mx-auto max-w-2xl text-base leading-relaxed text-white/85 sm:text-lg lg:text-xl">
         Internationally certified products backed by rigorous testing — every batch verified before shipment
       </p>
@@ -34,7 +34,7 @@ const d = certificationsData;
   <!-- Quality Intro -->
   <section class="bg-white pt-20 px-4 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-7xl text-center">
-      <h2 class="text-mono-heading mb-4 text-2xl font-bold sm:text-3xl lg:text-4xl">{d.qualityStory.title}</h2>
+      <h2 class="text-mono-heading mb-4 text-2xl font-medium sm:text-3xl lg:text-4xl">{d.qualityStory.title}</h2>
       <p class="text-mono-dark mx-auto max-w-3xl text-base sm:text-lg">{d.qualityStory.subtitle}</p>
     </div>
   </section>
@@ -49,7 +49,7 @@ const d = certificationsData;
           </div>
           <div class={i % 2 === 1 ? 'lg:order-1' : ''}>
             <span class="text-mono-black mb-3 inline-block text-sm font-semibold uppercase tracking-wide">Step {item.step}</span>
-            <h3 class="text-mono-heading mb-4 text-2xl font-bold">{item.title}</h3>
+            <h3 class="text-mono-heading mb-4 text-2xl font-medium">{item.title}</h3>
             <p class="text-mono-dark mb-6 text-base leading-relaxed">{item.description}</p>
             <ul class="space-y-3">
               {item.points.map((p) => (
@@ -69,7 +69,7 @@ const d = certificationsData;
   <section class="bg-white section-lg px-4 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-7xl">
       <div class="mb-10 text-center">
-        <h2 class="text-mono-heading mb-4 text-2xl font-bold sm:text-3xl">Our Factory & Equipment</h2>
+        <h2 class="text-mono-heading mb-4 text-2xl font-medium sm:text-3xl">Our Factory & Equipment</h2>
         <p class="text-mono-dark text-base sm:text-lg">A look inside our production facility in Longyan, Fujian, China</p>
       </div>
       <div class="grid grid-cols-2 gap-4 lg:grid-cols-4">
@@ -86,13 +86,13 @@ const d = certificationsData;
   <section class="bg-mono-lighter section-lg px-4 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-7xl">
       <div class="mb-10 text-center">
-        <h2 class="text-mono-heading mb-4 text-2xl font-bold sm:text-3xl">Our Certifications</h2>
+        <h2 class="text-mono-heading mb-4 text-2xl font-medium sm:text-3xl">Our Certifications</h2>
         <p class="text-mono-dark text-base sm:text-lg">Recognized by international standards organizations</p>
       </div>
       <div class="grid grid-cols-2 gap-6 sm:grid-cols-4">
         {d.certificates.map((cert) => (
           <div class="rounded-xl bg-white px-6 py-8 text-center shadow-sm">
-            <div class="text-mono-heading text-xl font-bold">{cert.name}</div>
+            <div class="text-mono-heading text-xl font-medium">{cert.name}</div>
             <div class="text-mono-gray mt-1 text-sm">{cert.scope}</div>
           </div>
         ))}

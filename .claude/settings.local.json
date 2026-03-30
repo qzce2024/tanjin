@@ -20,7 +20,13 @@
       "Bash(npm run:*)",
       "Bash(gh repo:*)",
       "Bash(winget install:*)",
-      "Bash(export:*)"
+      "Bash(export:*)",
+      "Bash(npm ls:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(find src:*)",
+      "Bash(grep:*)"
     ]
   }
 }
