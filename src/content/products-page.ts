@@ -1,25 +1,152 @@
-import coconutShellCarbon from '../assets/images/home/coconut-shell-carbon.png';
-import coalBasedCarbon from '../assets/images/home/coal-based-carbon.png';
-import woodBasedCarbon from '../assets/images/home/wood-based-carbon.png';
+import coconutShellCarbon from '../assets/images/products/coconut-shell-activated-carbon-supplier-manufacturer.png';
+import coalBasedCarbon from '../assets/images/products/coal-based-activated-carbon-supplier-manufacturer.png';
+import woodBasedCarbon from '../assets/images/products/wood-based-activated-carbon-supplier-manufacturer.png';
+import coconutBanner from '../assets/images/products/coconut-shell-granular-activated-carbon-supplier.png';
+import woodBanner from '../assets/images/products/wood-powdered-activated-carbon-supplier.png';
+import coalBanner from '../assets/images/products/coal-granular-activated-carbon-supplier.png';
+import coconutGranular from '../assets/images/products/coconut-shell-granular-activated-carbon-supplier.png';
+import coconutPowder from '../assets/images/products/coconut-shell-powdered-activated-carbon-supplier.png';
+import coconutPellet from '../assets/images/products/coconut-shell-pellet-activated-carbon-supplier.png';
+import coconutGold from '../assets/images/products/coconut-shell-gold-recovery-activated-carbon-supplier.png';
+import coconutSilver from '../assets/images/products/silver-impregnated-activated-carbon-supplier.png';
+import woodPowder from '../assets/images/products/wood-powdered-activated-carbon-supplier.png';
+import woodPharma from '../assets/images/products/pharmaceutical-activated-carbon-supplier.png';
+import woodFood from '../assets/images/products/food-grade-activated-carbon-supplier.png';
+import woodFine from '../assets/images/products/fine-powder-activated-carbon-supplier.png';
+import woodDecolor from '../assets/images/products/decolorization-activated-carbon-supplier.png';
+import coalGranular from '../assets/images/products/coal-granular-activated-carbon-supplier.png';
+import coalPellet from '../assets/images/products/coal-pellet-activated-carbon-supplier.png';
+import coalPowder from '../assets/images/products/coal-powdered-activated-carbon-supplier.png';
+import coalImpregnated from '../assets/images/products/impregnated-activated-carbon-supplier.png';
+import coalIndustrial from '../assets/images/products/industrial-activated-carbon-supplier.png';
 
 export const productsHero = {
   title: 'Activated Carbon Products',
-  subtitle: 'From raw material to finished product, every grade is manufactured in our own facility — quality controlled, competitively priced, and ready to ship worldwide.',
+  subtitle: 'Explore our activated carbon portfolio by raw material, with application guidance and export-ready grades for water, air, food, mining, and industrial purification.',
   highlights: [
-    '20,000+ tons annual production',
-    'Factory-direct competitive pricing',
-    'ISO 9001 & NSF 61 certified',
-    'Custom specifications available',
+    'Coconut shell, wood, and coal product families',
+    'Export-ready grades for liquid and gas phase use',
+    'Factory-direct supply with custom specifications',
+    'Application guidance from sampling to shipment',
   ],
 };
 
-export const productsTrustItems = [
-  { icon: 'heroicons:cube-transparent', label: 'Coconut · Wood · Coal' },
-  { icon: 'heroicons:squares-2x2', label: 'Granular · Powder · Pellet' },
-  { icon: 'heroicons:shield-check', label: 'ISO 9001 · NSF 61' },
-  { icon: 'heroicons:globe-alt', label: '50+ Countries' },
-  { icon: 'heroicons:building-office-2', label: '20,000+ Tons/Year' },
-];
+export const productMaterials = [
+  {
+    id: 'coconut-shell',
+    title: 'Coconut Shell Activated Carbon',
+    image: coconutShellCarbon,
+    description:
+      'Microporous coconut shell carbon delivers high hardness, low ash, and excellent adsorption performance for premium liquid and gas phase purification.',
+    applications: ['Drinking water treatment', 'Gold recovery', 'Air purification', 'Food and beverage purification'],
+    ctaText: 'Request Quote',
+    ctaProduct: 'Inquiry about: Coconut Shell Activated Carbon',
+    detailHref: '/products/coconut-shell-activated-carbon',
+    subdivisions: [
+      {
+        title: 'Coconut Shell Granular Activated Carbon',
+        description: 'High-hardness granular grades for water treatment and purification columns.',
+        image: coconutGranular,
+      },
+      {
+        title: 'Coconut Shell Powdered Activated Carbon',
+        description: 'Fast-acting powdered carbon for polishing, purification, and decolorization.',
+        image: coconutPowder,
+      },
+      {
+        title: 'Coconut Shell Pellet Activated Carbon',
+        description: 'Low-dust pellet carbon for gas adsorption and odor control systems.',
+        image: coconutPellet,
+      },
+      {
+        title: 'Gold Recovery Activated Carbon',
+        description: 'Specialized coconut shell carbon for CIP, CIL, and gold adsorption processes.',
+        image: coconutGold,
+      },
+      {
+        title: 'Silver Impregnated Activated Carbon',
+        description: 'Impregnated coconut shell media for enhanced antibacterial water applications.',
+        image: coconutSilver,
+      },
+    ],
+  },
+  {
+    id: 'wood',
+    title: 'Wood-Based Activated Carbon',
+    image: woodBasedCarbon,
+    description:
+      'Wood-based carbon offers a developed mesoporous structure and strong decolorization ability for liquid-phase purification in food, pharma, and specialty chemical processing.',
+    applications: ['Sugar decolorization', 'Pharmaceutical purification', 'Food processing', 'Fine chemical treatment'],
+    ctaText: 'Request Quote',
+    ctaProduct: 'Inquiry about: Wood-Based Activated Carbon',
+    detailHref: '/products/wood-based-activated-carbon',
+    subdivisions: [
+      {
+        title: 'Wood Powdered Activated Carbon',
+        description: 'Fine wood powder grades for rapid adsorption in liquid purification systems.',
+        image: woodPowder,
+      },
+      {
+        title: 'Pharmaceutical Activated Carbon',
+        description: 'Purified low-impurity grades for API, intermediate, and pharma applications.',
+        image: woodPharma,
+      },
+      {
+        title: 'Food Grade Activated Carbon',
+        description: 'Food-contact carbon for color, odor, and taste improvement in processing.',
+        image: woodFood,
+      },
+      {
+        title: 'Fine Powder Activated Carbon',
+        description: 'Custom fine particle products for specialty chemical and lab-scale use.',
+        image: woodFine,
+      },
+      {
+        title: 'Decolorization Activated Carbon',
+        description: 'High-efficiency wood carbon for syrup, additive, and solution decolorization.',
+        image: woodDecolor,
+      },
+    ],
+  },
+  {
+    id: 'coal',
+    title: 'Coal-Based Activated Carbon',
+    image: coalBasedCarbon,
+    description:
+      'Coal-based carbon balances adsorption efficiency, durability, and cost, making it a practical option for large-scale industrial water and air treatment.',
+    applications: ['Industrial wastewater', 'Air purification', 'Solvent recovery', 'Chemical process purification'],
+    ctaText: 'Request Quote',
+    ctaProduct: 'Inquiry about: Coal-Based Activated Carbon',
+    detailHref: '/contact',
+    subdivisions: [
+      {
+        title: 'Coal Granular Activated Carbon',
+        description: 'Versatile granular grades for industrial water and wastewater adsorption.',
+        image: coalGranular,
+      },
+      {
+        title: 'Coal Pellet Activated Carbon',
+        description: 'Extruded pellet carbon for VOC treatment and gas phase purification.',
+        image: coalPellet,
+      },
+      {
+        title: 'Coal Powdered Activated Carbon',
+        description: 'Powdered products for batch dosing, polishing, and process treatment.',
+        image: coalPowder,
+      },
+      {
+        title: 'Impregnated Activated Carbon',
+        description: 'Modified coal-based media for targeted contaminant and gas removal.',
+        image: coalImpregnated,
+      },
+      {
+        title: 'Industrial Activated Carbon',
+        description: 'Heavy-duty grades for continuous operation in chemical and energy plants.',
+        image: coalIndustrial,
+      },
+    ],
+  },
+] as const;
 
 export const materialCards = [
   {
@@ -27,117 +154,20 @@ export const materialCards = [
     title: 'Coconut Shell Activated Carbon',
     image: coconutShellCarbon,
     description: 'Premium microporous carbon with the highest hardness. Ideal for drinking water, gold recovery, and high-purity applications.',
-    specs: [
-      'Iodine: 800–1200+ mg/g',
-      'Hardness: > 95%',
-      'Ash: < 5%',
-    ],
+    specs: ['Iodine: 800–1200+ mg/g', 'Hardness: > 95%', 'Ash: < 5%'],
   },
   {
     id: 'wood-based',
     title: 'Wood-Based Activated Carbon',
     image: woodBasedCarbon,
     description: 'Mesoporous carbon with outstanding decolorization. The top choice for food-grade, pharmaceutical, and chemical purification.',
-    specs: [
-      'MB value: 150–220 mg/g',
-      'Ash: < 5%',
-      'Heavy metals: < 10 ppm',
-    ],
+    specs: ['MB value: 150–220 mg/g', 'Ash: < 5%', 'Heavy metals: < 10 ppm'],
   },
   {
     id: 'coal-based',
     title: 'Coal-Based Activated Carbon',
     image: coalBasedCarbon,
     description: 'Cost-effective carbon with balanced pore structure. Best price-to-performance ratio for large-scale industrial use.',
-    specs: [
-      'Iodine: 600–1100 mg/g',
-      'CTC: 50–80%',
-      'Hardness: > 90%',
-    ],
-  },
-];
-
-export const formItems = [
-  { title: 'Granular (GAC)', icon: 'heroicons:cube', description: '0.5–4 mm for fixed-bed adsorption columns' },
-  { title: 'Powdered (PAC)', icon: 'heroicons:sparkles', description: '< 0.15 mm for batch dosing & decolorization' },
-  { title: 'Extruded Pellet', icon: 'heroicons:bars-3', description: '1.5–8 mm cylinders for gas-phase treatment' },
-{ title: 'Acid / Water Washed', icon: 'heroicons:funnel', description: 'Low ash & pH for food-grade and pharma use' },
-  { title: 'Impregnated', icon: 'heroicons:beaker', description: 'KI, KOH, silver, sulfur for targeted removal' },
-];
-
-import goldRecoveryImg from '../assets/images/applications/gold-recovery/gold-recovery-activated-carbon.png';
-import waterTreatmentImg from '../assets/images/applications/water-treatment/water-treatment-activated-carbon.png';
-import airPurificationImg from '../assets/images/applications/air-purification/air-purification-activated-carbon.png';
-import foodBeverageImg from '../assets/images/applications/food-beverage/food-beverage-activated-carbon.png';
-import pharmaceuticalImg from '../assets/images/applications/pharmaceutical/pharmaceutical-activated-carbon.png';
-import chemicalIndustrialImg from '../assets/images/applications/chemical-industrial/chemical-industrial-activated-carbon.png';
-
-export const featuredProducts = [
-  {
-    model: 'TJCG-612',
-    name: 'Gold Recovery Carbon',
-    image: goldRecoveryImg,
-    description: 'Coconut shell 6×12 mesh granular carbon with high hardness (>97%) for CIP/CIL gold extraction',
-  },
-  {
-    model: 'TJCG-830',
-    name: 'Water Treatment Carbon',
-    image: waterTreatmentImg,
-    description: 'Coconut shell 8×30 mesh granular carbon for drinking water and municipal water purification',
-  },
-  {
-    model: 'TJCE-40',
-    name: 'Air Purification Carbon',
-    image: airPurificationImg,
-    description: 'Coal-based 4mm extruded pellet carbon for VOC adsorption and solvent recovery',
-  },
-  {
-    model: 'TJWP-200',
-    name: 'Food & Beverage Carbon',
-    image: foodBeverageImg,
-    description: 'Wood-based 200 mesh powdered carbon for sugar decolorization and beverage purification',
-  },
-  {
-    model: 'TJWP-325',
-    name: 'Pharmaceutical Carbon',
-    image: pharmaceuticalImg,
-    description: 'Wood-based 325 mesh acid-washed powdered carbon for pharmaceutical and API purification',
-  },
-  {
-    model: 'TJLG-830',
-    name: 'Chemical & Industrial Carbon',
-    image: chemicalIndustrialImg,
-    description: 'Coal-based 8×30 mesh granular carbon for chemical process purification and catalyst support',
-  },
-];
-
-export const orderSteps = [
-  { step: '01', title: 'Inquiry', description: 'Tell us your application, specs, and quantity' },
-  { step: '02', title: 'Recommendation', description: 'Our engineers match the right grade for you' },
-  { step: '03', title: 'Quotation', description: 'Receive pricing with detailed product specs' },
-  { step: '04', title: 'Production', description: 'Manufacturing with in-process quality checks' },
-  { step: '05', title: 'Delivery', description: 'Inspection, packing, and global shipping' },
-];
-
-export const productFaq = [
-  {
-    question: 'What is the minimum order quantity (MOQ)?',
-    answer: 'Our standard MOQ is 1 ton (1,000 kg) for most products. For sample orders, we can provide 1–5 kg for testing purposes at no charge.',
-  },
-  {
-    question: 'Can you customize specifications?',
-    answer: 'Yes. We offer custom particle sizes, iodine values, impregnation types, and packaging. Share your requirements and our engineers will develop a tailored solution.',
-  },
-  {
-    question: 'What certifications do your products carry?',
-    answer: 'Our products are ISO 9001:2015 certified, NSF/ANSI 61 approved for drinking water, and available with Halal and Kosher certification upon request.',
-  },
-  {
-    question: 'What are the typical lead times?',
-    answer: 'Standard products ship within 7–15 business days. Custom specifications may require 15–25 business days depending on complexity.',
-  },
-  {
-    question: 'Do you provide COA (Certificate of Analysis)?',
-    answer: 'Yes. Every shipment includes a detailed COA with test results for iodine value, moisture, ash content, particle size distribution, and other relevant parameters.',
+    specs: ['Iodine: 600–1100 mg/g', 'CTC: 50–80%', 'Hardness: > 90%'],
   },
 ];

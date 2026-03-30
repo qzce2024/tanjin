@@ -1,46 +1,45 @@
-import heroBg from '../../assets/images/home/coconut-shell-carbon.png';
-import shipment1 from '../../assets/images/about/shipment-1.png';
-import aboutProduction from '../../assets/images/about/about-production.png';
-import qaLab from '../../assets/images/about/qa-lab.png';
-import qaWarehouse from '../../assets/images/about/qa-warehouse.png';
+import heroBg from '../../assets/images/products/coconut-shell/coconut-shell-hero.png';
+import shipment1 from '../../assets/images/products/coconut-shell/coconut-shell-loading.png';
+import aboutProduction from '../../assets/images/products/coconut-shell/coconut-shell-production.png';
+import qaLab from '../../assets/images/products/coconut-shell/coconut-shell-lab.png';
+import qaWarehouse from '../../assets/images/products/coconut-shell/coconut-shell-warehouse.png';
 import aboutTeam from '../../assets/images/about/about-team.png';
-import ctaBg from '../../assets/images/applications/activated-carbon-inquiry.png';
+import ctaBg from '../../assets/images/products/coconut-shell/coconut-shell-cta.png';
 
 export const coconutShellData = {
   meta: {
-    title: 'Coconut Shell Activated Carbon - Tanjin Carbon',
+    title: 'Coconut Shell Activated Carbon Supplier & Manufacturer | Tanjin Carbon',
     description:
-      'Premium coconut shell activated carbon with high hardness, microporous structure, and superior adsorption. Ideal for water treatment, gold recovery, air purification, and food-grade applications.',
+      'Coconut shell activated carbon supplier and manufacturer for water treatment, gold recovery, air purification, food-grade, and pharmaceutical applications. High hardness, low ash, and custom specifications available.',
   },
 
   hero: {
-    title: 'Coconut Shell Activated Carbon Supplier',
+    title: 'Coconut Shell Activated Carbon Supplier & Manufacturer',
     description:
-      'Factory-direct coconut shell activated carbon from one of China\'s leading manufacturers — reliable supply, certified quality, and competitive pricing for global buyers.',
-    buttonText: 'Get a Quote',
+      'Factory-direct coconut shell activated carbon supplier and manufacturer for water treatment, gold recovery, air purification, food-grade purification, and pharmaceutical applications.',
+    buttonText: 'Request a Quote',
+    secondaryButtonText: 'View Specifications',
+    secondaryButtonHref: '#specifications',
     bgImage: heroBg,
-    tag: 'Trusted Manufacturer & Exporter',
+    tag: '',
     highlights: [
-      'Own production base with 10,000+ MT annual capacity',
-      'NSF 61, ISO 9001, HALAL, KOSHER certified',
-      'Exported to 50+ countries across 6 continents',
-      'Competitive factory-direct pricing with flexible MOQ',
-    ],
-    stats: [
-      { value: '15+', label: 'Years in Business' },
-      { value: '10,000+', label: 'MT Annual Capacity' },
-      { value: '50+', label: 'Countries Served' },
-      { value: '500+', label: 'Global Clients' },
+      'Factory-direct coconut shell supply',
+      'High hardness and low ash',
+      'Custom specifications available',
     ],
   },
 
-  trustLogos: [
-    { icon: 'heroicons:shield-check', label: 'NSF/ANSI 61' },
-    { icon: 'heroicons:document-check', label: 'ISO 9001' },
-    { icon: 'heroicons:check-badge', label: 'HALAL' },
-    { icon: 'heroicons:check-badge', label: 'KOSHER' },
-    { icon: 'heroicons:beaker', label: 'SGS Tested' },
-  ],
+  overview: {
+    title: 'A complete coconut shell carbon product line for liquid and gas-phase purification',
+    description:
+      'This page is designed as a continuous product detail hub for buyers comparing grades, applications, technical specifications, production capability, and ordering requirements. Instead of splitting information into isolated sections, the content flows as one industrial product dossier focused on fast B2B evaluation.',
+    points: [
+      'Available in granular, powdered, pelletized, and acid-washed forms',
+      'Suitable for water treatment, gold recovery, air purification, food, and pharmaceutical use',
+      'Custom mesh size, iodine value, ash, and packaging options available',
+      'Factory-direct supply with documentation, sample support, and export experience',
+    ],
+  },
 
   productTypes: {
     title: 'Product Forms Available',
@@ -49,9 +48,9 @@ export const coconutShellData = {
       {
         icon: 'heroicons:cube',
         tab: 'Granular',
-        title: 'Coconut Shell Granular Activated Carbon',
+        title: 'Coconut Granular Activated Carbon',
         description: 'The most widely used form of coconut shell carbon. Its high hardness and microporous structure make it ideal for fixed-bed adsorbers across water, air, and mining industries.',
-        image: heroBg,
+    image: heroBg,
         applications: [
           'Drinking water purification',
           'Gold recovery (CIP/CIL)',
@@ -65,9 +64,9 @@ export const coconutShellData = {
       {
         icon: 'heroicons:sparkles',
         tab: 'Powdered',
-        title: 'Coconut Shell Powdered Activated Carbon',
+        title: 'Coconut Powdered Activated Carbon',
         description: 'Ultra-fine powder for rapid adsorption in batch dosing and single-pass applications. Delivers fast contact time and high removal efficiency.',
-        image: heroBg,
+    image: heroBg,
         applications: [
           'Municipal wastewater dosing',
           'Sugar decolorization',
@@ -79,9 +78,9 @@ export const coconutShellData = {
       {
         icon: 'heroicons:bars-3',
         tab: 'Pelletized',
-        title: 'Coconut Shell Pelletized Activated Carbon',
+        title: 'Coconut Pelletized Activated Carbon',
         description: 'Extruded cylindrical pellets with low pressure drop and excellent mechanical strength. Optimized for gas-phase adsorption and continuous flow systems.',
-        image: heroBg,
+    image: heroBg,
         applications: [
           'VOC emission control',
           'H₂S removal',
@@ -92,9 +91,9 @@ export const coconutShellData = {
       {
         icon: 'heroicons:beaker',
         tab: 'Acid-Washed',
-        title: 'Coconut Shell Acid-Washed Activated Carbon',
+        title: 'Coconut Acid-Washed Activated Carbon',
         description: 'HCl-washed to minimize ash, soluble metals, and pH — meeting the strictest purity standards for food, pharmaceutical, and high-purity water applications.',
-        image: heroBg,
+    image: heroBg,
         applications: [
           'Food-grade decolorization',
           'Pharmaceutical (USP/EP)',
@@ -102,6 +101,30 @@ export const coconutShellData = {
           'Fine chemical purification',
           'Bottled water treatment',
           'Cosmetic processing',
+        ],
+      },
+      {
+        icon: 'heroicons:circle-stack',
+        tab: 'Gold Recovery',
+        title: 'Gold Recovery Activated Carbon',
+        description: 'High-hardness carbon developed for CIP, CIL, and related precious metal recovery systems.',
+    image: heroBg,
+        applications: [
+          'CIP adsorption systems',
+          'CIL process circuits',
+          'Precious metal recovery',
+        ],
+      },
+      {
+        icon: 'heroicons:shield-check',
+        tab: 'Silver Impregnated',
+        title: 'Silver Impregnated Activated Carbon',
+        description: 'Specialty activated carbon designed for antibacterial and higher-purity treatment requirements.',
+    image: heroBg,
+        applications: [
+          'Potable water treatment',
+          'Antibacterial filtration systems',
+          'Specialty purification use',
         ],
       },
     ],
@@ -238,31 +261,31 @@ export const coconutShellData = {
 
   faq: [
     {
-      question: 'What is the difference between coconut shell and coal-based activated carbon?',
-      answer: 'Coconut shell carbon has a predominantly microporous structure, higher hardness (≥95%), and lower ash content (<5%), making it ideal for applications requiring fine molecule adsorption like drinking water, gold recovery, and pharmaceutical processing. Coal-based carbon has more mesopores and macropores, better suited for decolorization and large molecule removal.',
+      question: 'What is coconut shell activated carbon used for?',
+      answer: 'Coconut shell activated carbon is used for water treatment, gold recovery, air purification, food-grade purification, and pharmaceutical purification. It is preferred where high hardness, low ash, and strong microporous adsorption are required.',
     },
     {
-      question: 'What is the minimum order quantity (MOQ)?',
+      question: 'What is the minimum order quantity (MOQ) for coconut shell activated carbon?',
       answer: 'Our standard MOQ is 1 metric ton, but we are flexible for trial orders or new customers. Contact us to discuss your specific needs.',
     },
     {
-      question: 'Can you customize the iodine value, mesh size, or other specifications?',
+      question: 'Can you customize coconut shell activated carbon specifications?',
       answer: 'Yes. We manufacture in-house and can adjust iodine value, mesh size, ash content, pH, and other parameters to match your process requirements. Custom impregnation is also available.',
     },
     {
-      question: 'How long is the lead time?',
+      question: 'How long is the lead time for coconut shell activated carbon?',
       answer: 'Standard products are typically ready within 7–15 days after deposit confirmation. Custom orders may take 15–25 days depending on specifications and quantity.',
     },
     {
-      question: 'Do you provide free samples?',
+      question: 'Do you provide free samples of coconut shell activated carbon?',
       answer: 'Yes, we offer free samples (typically 1–2 kg) for lab or pilot testing. Each sample comes with a Certificate of Analysis (COA).',
     },
     {
-      question: 'What certifications do your products have?',
+      question: 'What certifications do your coconut shell activated carbon products have?',
       answer: 'Our coconut shell activated carbon is certified NSF/ANSI 61, ISO 9001, HALAL, and KOSHER. Every shipment includes a COA and MSDS.',
     },
     {
-      question: 'What packaging options are available?',
+      question: 'What packaging options are available for coconut shell activated carbon?',
       answer: '25 kg PP woven bags (palletized), 500 kg super sacks, and 1 MT jumbo bags. Custom packaging and private labeling are available on request.',
     },
   ],

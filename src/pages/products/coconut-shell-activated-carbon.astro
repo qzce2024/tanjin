@@ -1,0 +1,343 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { homeConfig } from '../../content/home/config';
+import { coconutShellData } from '../../content/products/coconut-shell';
+import Navigation from '../../components/Navigation.astro';
+import PageCTA from '../../components/PageCTA.astro';
+import Footer from '../../components/Footer.astro';
+import { Image } from 'astro:assets';
+import { Icon } from 'astro-icon/components';
+
+const d = coconutShellData;
+---
+<BaseLayout title={d.meta.title} description={d.meta.description}>
+  <Navigation config={homeConfig} />
+
+  <section class="relative overflow-hidden bg-[linear-gradient(135deg,#020202_0%,#0a0f14_34%,#111822_68%,#050607_100%)] px-4 sm:px-6 lg:px-8" style="padding-top: calc(5rem + 4rem); padding-bottom: 0;">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.10),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(71,85,105,0.24),transparent_34%),linear-gradient(180deg,rgba(148,163,184,0.05),transparent_24%)]"></div>
+    <div class="absolute inset-0 opacity-[0.08]" style="background-image: repeating-linear-gradient(135deg, rgba(226,232,240,0.22) 0, rgba(226,232,240,0.22) 1px, transparent 1px, transparent 14px);"></div>
+    <div class="absolute inset-x-0 top-0 h-px bg-white/10"></div>
+    <div class="mx-auto max-w-7xl pb-14 sm:pb-16 lg:pb-16 relative z-10">
+      <div class="grid grid-cols-1 items-center gap-10 lg:grid-cols-[3fr_2fr] lg:gap-14 xl:gap-16">
+        <div>
+          {d.hero.tag && (
+            <p class="scroll-fade-up mb-5 text-[11px] font-semibold tracking-[0.22em] text-white/70 uppercase">
+              {d.hero.tag}
+            </p>
+          )}
+          <h1 class="scroll-fade-up mb-5 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
+            Coconut Shell Activated Carbon Supplier & Manufacturer
+          </h1>
+          <p class="scroll-fade-up mb-7 text-[15px] leading-7 text-white/78 sm:text-base">
+            {d.hero.description}
+          </p>
+          <ul class="scroll-fade-up mb-8 space-y-2 text-[14px] leading-6 text-white/88 sm:text-[15px]">
+            {d.hero.highlights.map((item) => (
+              <li class="flex items-center gap-3 border-b border-white/15 pb-2.5">
+                <Icon name="heroicons:check" class="h-4 w-4 flex-shrink-0 text-white" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+          <div class="scroll-fade-up">
+            <button class="inquiry-trigger inline-flex items-center justify-center rounded-sm bg-mono-black px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-black/25 transition-all hover:bg-mono-darker sm:px-6 sm:text-[15px]">
+              {d.hero.buttonText}
+            </button>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center lg:justify-center">
+          <div class="aspect-[4/3] w-full overflow-hidden rounded-sm border border-white/10 bg-white/5 shadow-2xl shadow-black/30">
+            <Image src={d.hero.bgImage} alt="Coconut shell activated carbon" widths={[900, 1200, 1600]} sizes="(max-width: 1024px) 100vw, 40vw" class="h-full w-full object-cover object-center" loading="eager" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="bg-white px-4 py-14 sm:px-6 lg:px-8 lg:py-16">
+    <div class="mx-auto max-w-7xl">
+      <div class="space-y-8 lg:space-y-10">
+        <div class="grid gap-5 pb-7 lg:grid-cols-[1.25fr_0.75fr] lg:gap-7 lg:pb-8">
+          <div>
+            <h2 class="mb-5 text-2xl font-bold text-mono-heading sm:text-3xl">Coconut shell activated carbon supplier overview</h2>
+            <div class="space-y-5 text-[15px] leading-8 text-mono-dark sm:text-base">
+              <p>
+                Coconut shell activated carbon is a premium-grade adsorption material produced from selected coconut shell raw material. Its microporous structure, high hardness, and low ash content make it suitable for demanding purification systems where stable performance and longer service life are required.
+              </p>
+              <p>
+                As a supplier, we provide coconut shell activated carbon in multiple forms for water treatment, gold recovery, air purification, and food-grade applications. Supply can be arranged for standard grades as well as custom specifications based on target iodine value, mesh size, ash content, and packing requirements.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="rounded-sm border border-mono-lighter bg-mono-lighter/32 p-5 sm:p-6">
+              <p class="mb-3 text-[11px] font-semibold tracking-[0.2em] text-mono-gray uppercase">Page Contents</p>
+              <nav>
+                <ul class="divide-y divide-mono-lighter text-[14px] sm:text-[15px]">
+                  <li>
+                    <a href="#product-forms" class="flex items-center justify-between gap-4 py-2.5 text-mono-heading transition-colors hover:text-mono-black">
+                      <span class="text-mono-gray">01</span>
+                      <span class="flex-1">Product Forms</span>
+                      <Icon name="heroicons:arrow-right" class="h-4 w-4 flex-shrink-0" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#applications" class="flex items-center justify-between gap-4 py-2.5 text-mono-heading transition-colors hover:text-mono-black">
+                      <span class="text-mono-gray">02</span>
+                      <span class="flex-1">Applications</span>
+                      <Icon name="heroicons:arrow-right" class="h-4 w-4 flex-shrink-0" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#technical-parameters" class="flex items-center justify-between gap-4 py-2.5 text-mono-heading transition-colors hover:text-mono-black">
+                      <span class="text-mono-gray">03</span>
+                      <span class="flex-1">Specifications</span>
+                      <Icon name="heroicons:arrow-right" class="h-4 w-4 flex-shrink-0" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#packaging-supply" class="flex items-center justify-between gap-4 py-2.5 text-mono-heading transition-colors hover:text-mono-black">
+                      <span class="text-mono-gray">04</span>
+                      <span class="flex-1">Packaging & Shipping</span>
+                      <Icon name="heroicons:arrow-right" class="h-4 w-4 flex-shrink-0" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#product-advantages" class="flex items-center justify-between gap-4 py-2.5 text-mono-heading transition-colors hover:text-mono-black">
+                      <span class="text-mono-gray">05</span>
+                      <span class="flex-1">Product advantages</span>
+                      <Icon name="heroicons:arrow-right" class="h-4 w-4 flex-shrink-0" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#faq" class="flex items-center justify-between gap-4 py-2.5 text-mono-heading transition-colors hover:text-mono-black">
+                      <span class="text-mono-gray">06</span>
+                      <span class="flex-1">FAQ</span>
+                      <Icon name="heroicons:arrow-right" class="h-4 w-4 flex-shrink-0" />
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <div id="product-forms" class="pb-7 lg:pb-8">
+          <div class="mb-8 max-w-3xl">
+            <h2 class="mb-4 text-2xl font-bold text-mono-heading sm:text-3xl">Coconut Shell Activated Carbon Product Forms</h2>
+            <p class="text-[15px] leading-8 text-mono-dark sm:text-base">
+              Coconut shell activated carbon is available in several physical forms depending on operating conditions, contact time, pressure drop, and required adsorption performance.
+            </p>
+          </div>
+
+          <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+            {d.productTypes.items.map((item) => (
+              <article class="group overflow-hidden rounded-xl bg-mono-lighter/55 text-mono-heading transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+                <div class="overflow-hidden">
+                  <Image src={item.image} alt={item.title} widths={[400, 700]} sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 25vw" class="aspect-[16/9] h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                </div>
+                <div class="flex min-h-[56px] items-center justify-center px-4 py-2.5">
+                  <h3 class="text-center text-[13px] font-semibold leading-5 sm:text-[14px]">{item.title}</h3>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+
+        <div id="applications" class="pb-7 lg:pb-8">
+          <div class="mb-8 max-w-4xl">
+            <h2 class="mb-4 text-2xl font-bold text-mono-heading sm:text-3xl">Typical Applications</h2>
+            <p class="text-[15px] leading-8 text-mono-dark sm:text-base">
+              Typical applications include water treatment, gold recovery, air purification, food-grade processing, and other liquid-phase or gas-phase adsorption systems.
+            </p>
+          </div>
+
+          <div class="space-y-1 text-[14px] leading-6 text-mono-dark sm:text-[15px]">
+            <div class="flex items-start gap-3"><Icon name="heroicons:check" class="mt-1 h-4 w-4 flex-shrink-0 text-mono-black" /><span>Drinking water treatment</span></div>
+            <div class="flex items-start gap-3"><Icon name="heroicons:check" class="mt-1 h-4 w-4 flex-shrink-0 text-mono-black" /><span>Industrial water treatment</span></div>
+            <div class="flex items-start gap-3"><Icon name="heroicons:check" class="mt-1 h-4 w-4 flex-shrink-0 text-mono-black" /><span>Gold recovery (CIP/CIL)</span></div>
+            <div class="flex items-start gap-3"><Icon name="heroicons:check" class="mt-1 h-4 w-4 flex-shrink-0 text-mono-black" /><span>Air purification</span></div>
+            <div class="flex items-start gap-3"><Icon name="heroicons:check" class="mt-1 h-4 w-4 flex-shrink-0 text-mono-black" /><span>VOC removal</span></div>
+            <div class="flex items-start gap-3"><Icon name="heroicons:check" class="mt-1 h-4 w-4 flex-shrink-0 text-mono-black" /><span>Odor control</span></div>
+            <div class="flex items-start gap-3"><Icon name="heroicons:check" class="mt-1 h-4 w-4 flex-shrink-0 text-mono-black" /><span>Food and beverage purification</span></div>
+            <div class="flex items-start gap-3"><Icon name="heroicons:check" class="mt-1 h-4 w-4 flex-shrink-0 text-mono-black" /><span>Pharmaceutical purification</span></div>
+          </div>
+
+          <div class="mt-4">
+            <p class="mb-4 text-[15px] leading-8 text-mono-dark sm:text-base">
+              The above are only some typical applications. For more applications or other requirements, please contact our expert team.
+            </p>
+            <button class="inquiry-trigger inline-flex items-center justify-center rounded-sm bg-mono-black px-5 py-3 text-sm font-semibold text-white transition-all hover:bg-mono-darker sm:px-6 sm:text-[15px]">
+              Request a Quote
+            </button>
+          </div>
+        </div>
+
+        <div id="technical-parameters" class="pb-7 lg:pb-8">
+          <div class="mb-8 max-w-4xl">
+            <h2 class="mb-4 text-2xl font-bold text-mono-heading sm:text-3xl">Technical Parameters</h2>
+            <p class="text-[15px] leading-8 text-mono-dark sm:text-base">
+              The table below shows common particle sizes and key technical parameters for coconut activated carbon supply, including mesh range, iodine value, hardness, and core product characteristics.
+            </p>
+          </div>
+
+          <div id="specifications" class="overflow-x-auto border-t border-mono-lighter">
+            <table class="min-w-full text-left text-[14px] sm:text-[15px]">
+              <thead>
+                <tr class="border-b border-mono-lighter text-mono-gray">
+                  <th class="w-[22%] py-3 pr-4 font-semibold">Parameter</th>
+                  <th class="w-[56%] py-3 pr-4 font-semibold">Parameter</th>
+                  <th class="w-[22%] py-3 pr-4 font-semibold">ASTM Standard</th>
+                </tr>
+              </thead>
+              <tbody class="text-mono-dark">
+                <tr class="border-b border-mono-lighter/70 align-top">
+                  <td class="py-4 pr-4 font-semibold text-mono-heading">Particle Size</td>
+                  <td class="py-4 pr-4">
+                    <div class="grid gap-x-8 gap-y-2 sm:grid-cols-3">
+                      <div class="space-y-2">
+                        <div>4×6</div>
+                        <div>4×8</div>
+                        <div>4×10</div>
+                        <div>6×12</div>
+                        <div>6×16</div>
+                        <div>8×16</div>
+                      </div>
+                      <div class="space-y-2">
+                        <div>8×30</div>
+                        <div>12×20</div>
+                        <div>12×30</div>
+                        <div>12×40</div>
+                        <div>14×45</div>
+                        <div>20×50</div>
+                      </div>
+                      <div class="space-y-2">
+                        <div>30×60</div>
+                        <div>40×80</div>
+                        <div>50×200</div>
+                        <div>80×325</div>
+                        <div>-326</div>
+                        <div>Custom sizes available</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="py-4 pr-4">ASTM D2862</td>
+                </tr>
+                <tr class="border-b border-mono-lighter/70 align-top">
+                  <td class="py-4 pr-4 font-semibold text-mono-heading">Iodine Value</td>
+                  <td class="py-4 pr-4">950–1250</td>
+                  <td class="py-4 pr-4">ASTM D4607</td>
+                </tr>
+                <tr class="border-b border-mono-lighter/70 align-top">
+                  <td class="py-4 pr-4 font-semibold text-mono-heading">Hardness</td>
+                  <td class="py-4 pr-4">≥98%</td>
+                  <td class="py-4 pr-4">ASTM D3802</td>
+                </tr>
+                <tr class="border-b border-mono-lighter/70 align-top">
+                  <td class="py-4 pr-4 font-semibold text-mono-heading">Characteristics</td>
+                  <td class="py-4 pr-4">Low ash, microporous structure, stable adsorption performance</td>
+                  <td class="py-4 pr-4">—</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div id="packaging-supply" class="grid gap-7 pb-7 lg:grid-cols-[6fr_5fr] lg:items-start lg:pb-8">
+          <div>
+            <h2 class="mb-5 text-2xl font-bold text-mono-heading sm:text-3xl">Packaging and shipping</h2>
+            <div class="space-y-4 text-[15px] leading-8 text-mono-dark sm:text-base">
+              <p>
+                Export packing is arranged to suit order size, destination, and handling requirements.
+              </p>
+              <p>
+                Standard bagging, palletizing, and container loading can be matched to your project needs.
+              </p>
+            </div>
+            <div class="mt-4 space-y-3 text-[14px] leading-7 text-mono-dark sm:text-[15px]">
+              <div class="border-b border-mono-lighter pb-3"><strong class="text-mono-heading">Bag sizes:</strong> 25 kg, 500 kg, custom packaging</div>
+              <div class="border-b border-mono-lighter pb-3"><strong class="text-mono-heading">Documents:</strong> COA, MSDS, and shipment inspection support</div>
+              <div class="border-b border-mono-lighter pb-3"><strong class="text-mono-heading">Container load:</strong> 10–12 tons (20GP), 24–27 tons (40HQ)</div>
+            </div>
+          </div>
+
+          <div>
+            <div class="grid grid-cols-2 gap-[3px] overflow-hidden rounded-sm">
+              {d.factoryShowcase.images.slice(0, 4).map((img) => (
+                <div class="overflow-hidden bg-mono-lighter/15">
+                  <Image src={img.src} alt={img.alt} widths={[300, 500]} sizes="(max-width: 1024px) 50vw, 24vw" class="aspect-[4/3] w-full object-cover" />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div id="product-advantages" class="pb-7 lg:pb-8">
+          <div class="mb-8 max-w-4xl">
+            <div class="mb-3 inline-flex items-center gap-2 rounded-full bg-mono-black px-3 py-1 text-[11px] font-semibold tracking-[0.18em] text-white uppercase">
+              Key reasons
+            </div>
+            <h2 class="mb-4 text-2xl font-bold text-mono-heading sm:text-3xl">Product advantages</h2>
+            <p class="text-[15px] leading-8 text-mono-dark sm:text-base">
+              Key performance points buyers usually compare before placing an order.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {d.whyChooseUs.items.map((item, index) => (
+              <div class={`flex items-start gap-4 rounded-xl border border-mono-lighter p-5 stagger-${(index % 4) + 1}`}>
+                <Icon name={item.icon} class="mt-0.5 h-6 w-6 flex-shrink-0 text-mono-black" />
+                <div>
+                  <h3 class="mb-1 text-sm font-bold text-mono-heading">{item.title}</h3>
+                  <p class="text-sm leading-relaxed text-mono-gray">{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+
+
+        <div id="faq">
+          <h2 class="mb-5 text-2xl font-bold text-mono-heading sm:text-3xl">Frequently asked questions</h2>
+          <div class="divide-y divide-mono-lighter border-y border-mono-lighter">
+            {d.faq.map((item) => (
+              <div>
+                <button class="faq-button flex w-full items-center justify-between py-4 text-left" aria-expanded="false">
+                  <span class="pr-4 text-sm font-semibold text-mono-heading sm:text-base">{item.question}</span>
+                  <Icon name="heroicons:chevron-down" class="faq-icon h-5 w-5 flex-shrink-0 text-mono-gray transition-transform duration-200" />
+                </button>
+                <div class="faq-content">
+                  <p class="pb-4 text-[14px] leading-7 text-mono-dark sm:text-[15px]">{item.answer}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    document.querySelectorAll('.faq-button').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        const content = btn.nextElementSibling as HTMLElement;
+        content?.classList.toggle('active');
+        const icon = btn.querySelector('.faq-icon') as HTMLElement;
+        icon?.classList.toggle('rotate-180');
+      });
+    });
+  </script>
+
+  <PageCTA
+    title={d.cta.title}
+    description={d.cta.description}
+    buttonText={d.cta.buttonText}
+    buttonHref={d.cta.buttonHref}
+    bgImage={d.cta.bgImage}
+  />
+  <Footer config={homeConfig} />
+</BaseLayout>

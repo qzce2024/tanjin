@@ -1,0 +1,93 @@
+---
+import { Image } from 'astro:assets';
+import { Icon } from 'astro-icon/components';
+
+interface Subdivision {
+  title: string;
+  description: string;
+  image: ImageMetadata;
+}
+
+interface Props {
+  id: string;
+  title: string;
+  image: ImageMetadata;
+  description: string;
+  applications: readonly string[];
+  ctaText: string;
+  ctaProduct: string;
+  detailHref: string;
+  subdivisions: readonly Subdivision[];
+}
+
+const { id, title, image, description, applications, ctaText, ctaProduct, detailHref, subdivisions } = Astro.props;
+---
+
+<section id={id} class="section-lg px-4 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-7xl">
+    <div class="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,3fr)] lg:items-start lg:gap-12">
+      <div class="scroll-fade-up">
+        <div class="aspect-square overflow-hidden rounded-md bg-mono-lighter">
+          <Image
+            src={image}
+            alt={`${title} supplier and manufacturer`}
+            widths={[600, 900, 1200]}
+            sizes="(max-width: 1024px) 100vw, 25vw"
+            class="h-full w-full object-cover"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      <div>
+        <div class="scroll-fade-up">
+          <h2 class="text-mono-heading mb-4 text-2xl font-bold sm:text-3xl lg:text-4xl">{title}</h2>
+          <p class="text-mono-dark mb-6 max-w-3xl text-base leading-relaxed sm:text-lg">{description}</p>
+
+          <div class="mb-8">
+            <p class="text-mono-heading mb-3 text-sm font-normal">Typical Applications</p>
+            <ul class="space-y-2">
+              {applications.map((application) => (
+                <li class="flex items-start text-sm leading-snug text-mono-dark">
+                  <Icon name="heroicons:check-circle-solid" class="mt-0.5 mr-2.5 h-4 w-4 flex-shrink-0 text-mono-black" />
+                  <span>{application}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div class="mb-8 grid grid-cols-1 gap-4 sm:max-w-xl sm:grid-cols-2">
+            <button
+              class="inquiry-trigger min-w-0 whitespace-nowrap rounded-lg bg-mono-black px-8 py-3 text-center text-sm font-semibold text-white shadow-sm sm:text-base"
+              data-product={ctaProduct}
+            >
+              {ctaText}
+            </button>
+            <a href={detailHref} class="min-w-0 whitespace-nowrap rounded-lg border border-mono-lighter px-8 py-3 text-center text-sm font-semibold text-mono-heading transition-all hover:border-mono-black/20 hover:bg-mono-lighter/40 sm:text-base">
+              View Details
+            </a>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
+          {subdivisions.map((item, index) => (
+            <a href={detailHref} class={`group scroll-fade-up block stagger-${(index % 5) + 1}`}>
+              <div class="mb-4 overflow-hidden rounded-md bg-mono-lighter aspect-[16/9]">
+                <Image
+                  src={item.image}
+                  alt={`${item.title} supplier product image`}
+                  widths={[300, 500, 700]}
+                  sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 25vw"
+                  class="h-full w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="text-mono-heading mb-2 text-base font-bold transition-colors duration-200 group-hover:text-mono-black sm:text-lg">{item.title}</h3>
+              <p class="text-mono-dark text-sm leading-relaxed">{item.description}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
