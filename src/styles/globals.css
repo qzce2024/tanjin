@@ -20,6 +20,10 @@
 
   --font-sans: Geist, system-ui, -apple-system, sans-serif;
 
+  --spacing-16: clamp(2rem, 4vw, 4rem);
+  --spacing-20: clamp(2.5rem, 5vw, 5rem);
+  --spacing-24: clamp(3rem, 6vw, 6rem);
+  --spacing-32: clamp(4rem, 8vw, 8rem);
 }
 
 
