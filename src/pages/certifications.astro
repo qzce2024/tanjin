@@ -65,35 +65,18 @@ const d = certificationsData;
     </section>
   ))}
 
-  <!-- Factory & Equipment Gallery -->
-  <section class="bg-white section-lg px-4 sm:px-6 lg:px-8">
-    <div class="mx-auto max-w-7xl">
-      <div class="mb-10 text-center">
-        <h2 class="text-mono-heading mb-4 text-2xl font-medium sm:text-3xl">Our Factory & Equipment</h2>
-        <p class="text-mono-dark text-base sm:text-lg">A look inside our production facility in Longyan, Fujian, China</p>
-      </div>
-      <div class="grid grid-cols-2 gap-4 lg:grid-cols-4">
-        {d.gallery.map((item) => (
-          <div class="overflow-hidden rounded-xl">
-            <Image src={item.image} alt={item.alt} widths={[300, 500]} sizes="(max-width: 1024px) 50vw, 25vw" class="h-48 w-full object-cover transition-transform duration-300 hover:scale-105 sm:h-56" />
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-
   <!-- Certifications -->
-  <section class="bg-mono-lighter section-lg px-4 sm:px-6 lg:px-8">
+  <section class="bg-gradient-to-b from-white to-gray-50 section-lg px-4 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-7xl">
-      <div class="mb-10 text-center">
-        <h2 class="text-mono-heading mb-4 text-2xl font-medium sm:text-3xl">Our Certifications</h2>
-        <p class="text-mono-dark text-base sm:text-lg">Recognized by international standards organizations</p>
+      <div class="mb-12 text-center">
+        <h2 class="text-mono-heading mb-4 text-2xl font-medium sm:text-3xl lg:text-4xl">Our Certifications</h2>
+        <p class="text-mono-dark text-base sm:text-lg lg:text-xl">Recognized by international standards organizations</p>
       </div>
-      <div class="grid grid-cols-2 gap-6 sm:grid-cols-4">
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-8 lg:grid-cols-4">
         {d.certificates.map((cert) => (
-          <div class="rounded-xl bg-white px-6 py-8 text-center shadow-sm">
-            <div class="text-mono-heading text-xl font-medium">{cert.name}</div>
-            <div class="text-mono-gray mt-1 text-sm">{cert.scope}</div>
+          <div class="group rounded-2xl bg-gradient-to-br from-gray-900 to-gray-800 p-8 text-center shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <div class="mb-3 text-2xl font-bold text-white">{cert.name}</div>
+            <div class="text-sm font-medium leading-relaxed text-gray-300">{cert.scope}</div>
           </div>
         ))}
       </div>
