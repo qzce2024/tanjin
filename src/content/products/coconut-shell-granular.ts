@@ -5,18 +5,14 @@ export const coconutShellGranularData = {
     title: 'Coconut Shell Granular Activated Carbon - Tanjin Carbon',
     description: 'High-quality coconut shell granular activated carbon for water treatment, air purification, and industrial applications.',
   },
-  hero: {
-    title: 'Coconut Shell Granular Activated Carbon',
-    subtitle: 'High-performance microporous activated carbon with exceptional hardness and superior adsorption capacity. Ideal for drinking water treatment, industrial wastewater purification, air filtration, and gold recovery applications.',
-    advantages: [
-      'Global shipping with stable supply chain',
-      'Factory-direct competitive pricing',
-      'Custom specifications available',
-    ],
-    image: productImage,
-  },
-  content: `
-<h2>Product Overview</h2>
+  // 变量1: 标题
+  title: 'Coconut Shell Granular Activated Carbon',
+
+  // 变量2: 描述
+  description: 'High-performance microporous activated carbon with exceptional hardness and superior adsorption capacity. Ideal for drinking water treatment, industrial wastewater purification, air filtration, and gold recovery applications.',
+
+  // 变量3: 内容（HTML格式，直接编辑或通过WordPress获取）
+  content: `<h2>Product Overview</h2>
 <p>Coconut shell granular activated carbon is manufactured from high-quality coconut shells through carbonization and activation processes. It features a highly developed microporous structure, exceptional hardness, and superior adsorption performance.</p>
 
 <h2>Key Features</h2>
@@ -38,8 +34,16 @@ export const coconutShellGranularData = {
 </ul>
 
 <h2>Why Choose Our Product</h2>
-<p>We are a factory-direct manufacturer with 15+ years of experience. Every batch is tested and comes with a Certificate of Analysis (COA). We offer custom specifications, free samples, and global shipping.</p>
-  `,
+<p>We are a factory-direct manufacturer with 15+ years of experience. Every batch is tested and comes with a Certificate of Analysis (COA). We offer custom specifications, free samples, and global shipping.</p>`,
+
+  hero: {
+    advantages: [
+      'Global shipping with stable supply chain',
+      'Factory-direct competitive pricing',
+      'Custom specifications available',
+    ],
+    image: productImage,
+  },
   specifications: [
     { label: 'Iodine Number', value: '900-1100 mg/g' },
     { label: 'Particle Size', value: '4x8, 6x12, 8x16, 12x40 mesh' },
