@@ -15,13 +15,15 @@ export const coconutShellGranularData = {
   content: `<h2>Product Overview</h2>
 <p>Coconut shell granular activated carbon is manufactured from high-quality coconut shells through carbonization and activation processes. It features a highly developed microporous structure, exceptional hardness, and superior adsorption performance.</p>
 
-<h2>Key Features</h2>
-<ul>
-<li><strong>High Iodine Number</strong>: 900-1100 mg/g for excellent adsorption capacity</li>
-<li><strong>Superior Hardness</strong>: ≥95% ensures durability and long service life</li>
-<li><strong>Low Ash Content</strong>: ≤8% for high purity applications</li>
-<li><strong>Renewable Source</strong>: Made from sustainable coconut shells</li>
-</ul>
+<h2>Specifications</h2>
+<table class="specs-table">
+<tr><td>Iodine Number</td><td>900-1100 mg/g</td></tr>
+<tr><td>Particle Size</td><td>4x8, 6x12, 8x16, 12x40 mesh</td></tr>
+<tr><td>Moisture</td><td>≤5%</td></tr>
+<tr><td>Ash Content</td><td>≤8%</td></tr>
+<tr><td>Hardness</td><td>≥95%</td></tr>
+<tr><td>Bulk Density</td><td>0.45-0.55 g/cm³</td></tr>
+</table>
 
 <h2>Applications</h2>
 <ul>
@@ -33,8 +35,10 @@ export const coconutShellGranularData = {
 <li>Pharmaceutical purification</li>
 </ul>
 
-<h2>Why Choose Our Product</h2>
-<p>We are a factory-direct manufacturer with 15+ years of experience. Every batch is tested and comes with a Certificate of Analysis (COA). We offer custom specifications, free samples, and global shipping.</p>`,
+<h2>Packaging</h2>
+<p>Standard packaging: 25kg/bag, 500kg/ton bag</p>
+<p>Custom packaging available upon request</p>
+<p>Storage: Keep in dry place, avoid moisture and direct sunlight</p>`,
 
   hero: {
     advantages: [
