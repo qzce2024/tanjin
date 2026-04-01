@@ -4,7 +4,8 @@ import { homeConfig } from '../../content/home/config';
 import Navigation from '../../components/Navigation.astro';
 import Footer from '../../components/Footer.astro';
 import { Icon } from 'astro-icon/components';
-import { getProducts, getProductBySlug } from '../../lib/wordpress';
+import { Image } from 'astro:assets';
+import { getProducts } from '../../lib/wordpress';
 
 export async function getStaticPaths() {
   const products = await getProducts();
@@ -18,8 +19,18 @@ const { product } = Astro.props;
 const title = product.title.rendered;
 const description = product.acf?.introduction || product.excerpt.rendered.replace(/<[^>]*>/g, '').substring(0, 160);
 const content = product.content.rendered;
-const featuredImage = product._embedded?.['wp:featuredmedia']?.[0]?.source_url;
-const imageAlt = product._embedded?.['wp:featuredmedia']?.[0]?.alt_text || title;
+
+// 使用本地图片，根据slug匹配
+let productImage;
+try {
+  productImage = await import(`../../assets/images/products/${product.slug}.png`);
+} catch {
+  try {
+    productImage = await import(`../../assets/images/products/${product.slug}.jpg`);
+  } catch {
+    productImage = null;
+  }
+}
 
 const advantages = [
   'Global shipping with stable supply chain',
@@ -55,13 +66,13 @@ const advantages = [
             <Icon name="heroicons:arrow-right" class="h-5 w-5 transition-transform group-hover:translate-x-1" />
           </button>
         </div>
-        {featuredImage && (
+        {productImage && (
           <div class="fade-up" style="animation-delay: 250ms">
             <div class="w-full overflow-hidden rounded-lg shadow-xl lg:hidden" style="aspect-ratio: 16/9;">
-              <img src={featuredImage} alt={imageAlt} class="h-full w-full object-cover" />
+              <Image src={productImage.default} alt={title} widths={[500, 800]} sizes="100vw" class="h-full w-full object-cover" />
             </div>
             <div class="hidden w-full overflow-hidden rounded-lg shadow-xl lg:block" style="aspect-ratio: 4/3;">
-              <img src={featuredImage} alt={imageAlt} class="h-full w-full object-cover" />
+              <Image src={productImage.default} alt={title} widths={[500, 800]} sizes="40vw" class="h-full w-full object-cover" />
             </div>
           </div>
         )}
