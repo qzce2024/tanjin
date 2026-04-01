@@ -38,12 +38,42 @@ async function syncProducts() {
       imports.push(`import ${varName} from '../assets/images/products/wordpress/${product.slug}${ext}';`);
       mappings.push(`  '${product.slug}': ${varName},`);
     }
+
+    // 下载内容中的图片并替换所有WordPress链接
+    if (product.content?.rendered) {
+      let updatedContent = product.content.rendered;
+      const imgRegex = /<img[^>]+src="([^"]+)"/g;
+      let match;
+
+      while ((match = imgRegex.exec(product.content.rendered)) !== null) {
+        const contentImgUrl = match[1];
+        if (contentImgUrl.includes('file.goldcarbon.net')) {
+          const ext = path.extname(new URL(contentImgUrl).pathname);
+          const filename = `${product.slug}-content-${Date.now()}${ext}`;
+          const contentImgPath = path.join(__dirname, '../public/images/products', filename);
+
+          console.log(`    📷 ${filename}`);
+          await downloadImage(contentImgUrl, contentImgPath);
+
+          updatedContent = updatedContent.replace(contentImgUrl, `/images/products/${filename}`);
+        }
+      }
+
+      // 移除所有srcset属性（包含WordPress链接）
+      updatedContent = updatedContent.replace(/\s+srcset="[^"]*"/g, '');
+
+      product.content.rendered = updatedContent;
+    }
   }
 
   // 生成product-images.ts
   const content = `${imports.join('\n')}\n\nexport const productImages: Record<string, any> = {\n${mappings.join('\n')}\n};\n`;
   const outputPath = path.join(__dirname, '../src/lib/product-images.ts');
   fs.writeFileSync(outputPath, content);
+
+  // 保存产品数据（包含更新后的内容）
+  const productsDataPath = path.join(__dirname, '../src/lib/products-data.json');
+  fs.writeFileSync(productsDataPath, JSON.stringify(products, null, 2));
 
   console.log('✅ Sync complete!');
 }
