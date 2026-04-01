@@ -1,16 +1,34 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { homeConfig } from '../../content/home/config';
-import { coconutShellGranularData } from '../../content/products/coconut-shell-granular';
 import Navigation from '../../components/Navigation.astro';
 import Footer from '../../components/Footer.astro';
-import { Image } from 'astro:assets';
 import { Icon } from 'astro-icon/components';
+import { getProducts, getProductBySlug } from '../../lib/wordpress';
 
-const d = coconutShellGranularData;
+export async function getStaticPaths() {
+  const products = await getProducts();
+  return products.map((product) => ({
+    params: { slug: product.slug },
+    props: { product },
+  }));
+}
+
+const { product } = Astro.props;
+const title = product.title.rendered;
+const description = product.acf?.introduction || product.excerpt.rendered.replace(/<[^>]*>/g, '').substring(0, 160);
+const content = product.content.rendered;
+const featuredImage = product._embedded?.['wp:featuredmedia']?.[0]?.source_url;
+const imageAlt = product._embedded?.['wp:featuredmedia']?.[0]?.alt_text || title;
+
+const advantages = [
+  'Global shipping with stable supply chain',
+  'Factory-direct competitive pricing',
+  'Custom specifications available',
+];
 ---
 
-<BaseLayout title={d.meta.title} description={d.meta.description}>
+<BaseLayout title={`${title} - Tanjin Carbon`} description={description}>
   <Navigation config={homeConfig} />
 
   <!-- Hero -->
@@ -19,13 +37,13 @@ const d = coconutShellGranularData;
       <div class="grid grid-cols-1 items-center gap-10 lg:grid-cols-[3fr_2fr]">
         <div>
           <h1 class="fade-up mb-4 text-3xl font-semibold leading-tight text-mono-heading sm:text-4xl sm:leading-tight lg:text-5xl lg:leading-tight">
-            {d.title}
+            {title}
           </h1>
           <p class="fade-up mb-6 text-base leading-relaxed text-gray-700 sm:text-lg" style="animation-delay: 100ms">
-            {d.description}
+            {description}
           </p>
           <div class="fade-up mb-7 space-y-2.5" style="animation-delay: 150ms">
-            {d.hero.advantages.map((adv) => (
+            {advantages.map((adv) => (
               <div class="flex items-center gap-3">
                 <Icon name="heroicons:check" class="h-5 w-5 flex-shrink-0 text-mono-black font-bold" />
                 <span class="text-gray-800 text-base font-medium">{adv}</span>
@@ -37,14 +55,16 @@ const d = coconutShellGranularData;
             <Icon name="heroicons:arrow-right" class="h-5 w-5 transition-transform group-hover:translate-x-1" />
           </button>
         </div>
-        <div class="fade-up" style="animation-delay: 250ms">
-          <div class="w-full overflow-hidden rounded-lg shadow-xl lg:hidden" style="aspect-ratio: 16/9;">
-            <Image src={d.hero.image} alt={d.title} widths={[500, 800]} sizes="100vw" class="h-full w-full object-cover" style="display: block;" />
+        {featuredImage && (
+          <div class="fade-up" style="animation-delay: 250ms">
+            <div class="w-full overflow-hidden rounded-lg shadow-xl lg:hidden" style="aspect-ratio: 16/9;">
+              <img src={featuredImage} alt={imageAlt} class="h-full w-full object-cover" />
+            </div>
+            <div class="hidden w-full overflow-hidden rounded-lg shadow-xl lg:block" style="aspect-ratio: 4/3;">
+              <img src={featuredImage} alt={imageAlt} class="h-full w-full object-cover" />
+            </div>
           </div>
-          <div class="hidden w-full overflow-hidden rounded-lg shadow-xl lg:block" style="aspect-ratio: 4/3;">
-            <Image src={d.hero.image} alt={d.title} widths={[500, 800]} sizes="40vw" class="h-full w-full object-cover" style="display: block;" />
-          </div>
-        </div>
+        )}
       </div>
     </div>
   </section>
@@ -55,12 +75,11 @@ const d = coconutShellGranularData;
       <div class="grid grid-cols-1 gap-12 lg:grid-cols-[2fr_1fr]">
         <!-- Left: Content -->
         <div class="prose-content">
-          <div set:html={d.content} />
+          <div set:html={content} />
         </div>
 
         <!-- Right: Inquiry Form -->
         <div class="lg:sticky lg:top-24 lg:self-start">
-          <!-- Inquiry Form -->
           <div class="rounded-lg border border-gray-200 bg-gray-50 p-6">
             <h3 class="mb-4 text-lg font-semibold text-mono-heading">Request a Quote</h3>
             <form class="space-y-4">
@@ -106,16 +125,28 @@ const d = coconutShellGranularData;
   .prose-content h2:first-child {
     margin-top: 0;
   }
+  .prose-content h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1F2937;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
   .prose-content p {
     margin-bottom: 1rem;
     line-height: 1.7;
     color: #4B5563;
     font-size: 0.95rem;
   }
-  .prose-content ul {
+  .prose-content ul, .prose-content ol {
     margin-bottom: 1.25rem;
     padding-left: 1.5rem;
+  }
+  .prose-content ul {
     list-style-type: disc;
+  }
+  .prose-content ol {
+    list-style-type: decimal;
   }
   .prose-content li {
     margin-bottom: 0.5rem;
@@ -123,7 +154,11 @@ const d = coconutShellGranularData;
     font-size: 0.95rem;
     line-height: 1.7;
   }
-  .prose-content .specs-table {
+  .prose-content strong {
+    font-weight: 600;
+    color: #1F2937;
+  }
+  .prose-content table {
     width: 100%;
     margin: 1.5rem 0;
     border-collapse: collapse;
@@ -132,23 +167,32 @@ const d = coconutShellGranularData;
     overflow: hidden;
     border: 1px solid #E5E7EB;
   }
-  .prose-content .specs-table tr {
+  .prose-content table tr {
     border-bottom: 1px solid #E5E7EB;
   }
-  .prose-content .specs-table tr:last-child {
+  .prose-content table tr:last-child {
     border-bottom: none;
   }
-  .prose-content .specs-table td {
+  .prose-content table td, .prose-content table th {
     padding: 0.875rem 1rem;
     font-size: 0.9rem;
+    text-align: left;
   }
-  .prose-content .specs-table td:first-child {
-    font-weight: 500;
-    color: #374151;
-    width: 40%;
-  }
-  .prose-content .specs-table td:last-child {
+  .prose-content table th {
+    font-weight: 600;
     color: #1F2937;
-    font-weight: 500;
+    background: #F3F4F6;
+  }
+  .prose-content table td {
+    color: #4B5563;
+  }
+  .prose-content figure {
+    margin: 1.5rem 0;
+  }
+  .prose-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.375rem;
   }
 </style>
+

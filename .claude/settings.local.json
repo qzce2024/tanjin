@@ -26,7 +26,12 @@
       "Bash(git commit:*)",
       "Bash(git push:*)",
       "Bash(find src:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "WebFetch(domain:file.goldcarbon.net)",
+      "Bash(node:*)",
+      "Bash(rm:*)",
+      "Bash(NODE_TLS_REJECT_UNAUTHORIZED=0 node:*)",
+      "Bash(zip:*)"
     ]
   }
 }
