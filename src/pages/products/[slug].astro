@@ -20,16 +20,19 @@ const title = product.title.rendered;
 const description = product.acf?.introduction || product.excerpt.rendered.replace(/<[^>]*>/g, '').substring(0, 160);
 const content = product.content.rendered;
 
-// 使用本地图片，根据slug匹配
+// 使用本地图片
 let productImage;
-try {
-  productImage = await import(`../../assets/images/products/${product.slug}.png`);
-} catch {
+const imagePaths = [
+  `../../assets/images/products/wordpress/${product.slug}.webp`,
+  `../../assets/images/products/wordpress/${product.slug}.png`,
+  `../../assets/images/products/wordpress/${product.slug}.jpg`,
+];
+
+for (const path of imagePaths) {
   try {
-    productImage = await import(`../../assets/images/products/${product.slug}.jpg`);
-  } catch {
-    productImage = null;
-  }
+    productImage = await import(/* @vite-ignore */ path);
+    break;
+  } catch {}
 }
 
 const advantages = [

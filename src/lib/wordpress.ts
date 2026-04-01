@@ -1,5 +1,7 @@
 const WP_API = 'https://file.goldcarbon.net/wp-json/wp/v2';
 
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+
 export interface WPProduct {
   id: number;
   slug: string;

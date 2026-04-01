@@ -31,7 +31,8 @@
       "Bash(node:*)",
       "Bash(rm:*)",
       "Bash(NODE_TLS_REJECT_UNAUTHORIZED=0 node:*)",
-      "Bash(zip:*)"
+      "Bash(zip:*)",
+      "WebFetch(domain:tanjin.pages.dev)"
     ]
   }
 }
