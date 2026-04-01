@@ -6,6 +6,7 @@ import Footer from '../../components/Footer.astro';
 import { Icon } from 'astro-icon/components';
 import { Image } from 'astro:assets';
 import { getProducts } from '../../lib/wordpress';
+import { productImages } from '../../lib/product-images';
 
 export async function getStaticPaths() {
   const products = await getProducts();
@@ -20,20 +21,8 @@ const title = product.title.rendered;
 const description = product.acf?.introduction || product.excerpt.rendered.replace(/<[^>]*>/g, '').substring(0, 160);
 const content = product.content.rendered;
 
-// 使用本地图片
-let productImage;
-const imagePaths = [
-  `../../assets/images/products/wordpress/${product.slug}.webp`,
-  `../../assets/images/products/wordpress/${product.slug}.png`,
-  `../../assets/images/products/wordpress/${product.slug}.jpg`,
-];
-
-for (const path of imagePaths) {
-  try {
-    productImage = await import(/* @vite-ignore */ path);
-    break;
-  } catch {}
-}
+// 使用映射的本地图片
+const productImage = productImages[product.slug];
 
 const advantages = [
   'Global shipping with stable supply chain',
@@ -72,10 +61,10 @@ const advantages = [
         {productImage && (
           <div class="fade-up" style="animation-delay: 250ms">
             <div class="w-full overflow-hidden rounded-lg shadow-xl lg:hidden" style="aspect-ratio: 16/9;">
-              <Image src={productImage.default} alt={title} widths={[500, 800]} sizes="100vw" class="h-full w-full object-cover" />
+              <Image src={productImage} alt={title} widths={[500, 800]} sizes="100vw" class="h-full w-full object-cover" />
             </div>
             <div class="hidden w-full overflow-hidden rounded-lg shadow-xl lg:block" style="aspect-ratio: 4/3;">
-              <Image src={productImage.default} alt={title} widths={[500, 800]} sizes="40vw" class="h-full w-full object-cover" />
+              <Image src={productImage} alt={title} widths={[500, 800]} sizes="40vw" class="h-full w-full object-cover" />
             </div>
           </div>
         )}
