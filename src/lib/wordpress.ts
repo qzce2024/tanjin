@@ -42,3 +42,28 @@ export async function getProductBySlug(slug: string): Promise<WPProduct | null> 
   const posts = await fetchWP(`${WP_API}/product?slug=${slug}&_embed`);
   return posts[0] || null;
 }
+
+export interface WPPost {
+  id: number;
+  slug: string;
+  title: { rendered: string };
+  content: { rendered: string };
+  excerpt: { rendered: string };
+  date: string;
+  featured_media: number;
+  _embedded?: {
+    'wp:featuredmedia'?: Array<{
+      source_url: string;
+      alt_text: string;
+    }>;
+  };
+}
+
+export async function getPosts(): Promise<WPPost[]> {
+  return fetchWP(`${WP_API}/posts?per_page=100&_embed`);
+}
+
+export async function getPostBySlug(slug: string): Promise<WPPost | null> {
+  const posts = await fetchWP(`${WP_API}/posts?slug=${slug}&_embed`);
+  return posts[0] || null;
+}

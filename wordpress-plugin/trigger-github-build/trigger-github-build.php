@@ -44,7 +44,23 @@ function trigger_github_build($token) {
     $data = json_decode(wp_remote_retrieve_body($response), true);
     $latest_sha = $data['object']['sha'];
 
-    // 2. 创建空commit
+    // 2. 获取commit的tree SHA
+    $commit_info = wp_remote_get('https://api.github.com/repos/qzce2024/tanjin/git/commits/' . $latest_sha, [
+        'headers' => [
+            'Authorization' => 'Bearer ' . $token,
+            'Accept' => 'application/vnd.github+json',
+            'User-Agent' => 'WordPress'
+        ]
+    ]);
+
+    if (is_wp_error($commit_info)) {
+        return ['success' => false, 'message' => '获取commit信息失败: ' . $commit_info->get_error_message()];
+    }
+
+    $commit_data = json_decode(wp_remote_retrieve_body($commit_info), true);
+    $tree_sha = $commit_data['tree']['sha'];
+
+    // 3. 创建空commit
     $commit_response = wp_remote_post('https://api.github.com/repos/qzce2024/tanjin/git/commits', [
         'headers' => [
             'Authorization' => 'Bearer ' . $token,
@@ -52,8 +68,8 @@ function trigger_github_build($token) {
             'User-Agent' => 'WordPress'
         ],
         'body' => json_encode([
-            'message' => 'WordPress产品更新触发部署 [skip ci]',
-            'tree' => $data['object']['sha'],
+            'message' => 'WordPress产品更新触发部署',
+            'tree' => $tree_sha,
             'parents' => [$latest_sha]
         ])
     ]);

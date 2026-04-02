@@ -36,6 +36,7 @@ export const homeConfig = {
       { name: 'About', href: '/about' },
       { name: 'Certifications', href: '/certifications' },
       { name: 'FAQ', href: '/faq' },
+      { name: 'Blog', href: '/blog' },
       { name: 'Contact', href: '/contact' },
     ],
     cta: {

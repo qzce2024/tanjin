@@ -1,0 +1,2973 @@
+[
+  {
+    "id": 37,
+    "date": "2026-04-02T09:49:43",
+    "date_gmt": "2026-04-02T01:49:43",
+    "guid": {
+      "rendered": "https://file.goldcarbon.net/quality-standards-for-activated-carbon-what-to-look-for/"
+    },
+    "modified": "2026-04-02T09:52:26",
+    "modified_gmt": "2026-04-02T01:52:26",
+    "slug": "quality-standards-for-activated-carbon-what-to-look-for",
+    "status": "publish",
+    "type": "post",
+    "link": "https://file.goldcarbon.net/quality-standards-for-activated-carbon-what-to-look-for/",
+    "title": {
+      "rendered": "Quality Standards for Activated Carbon: What to Look For"
+    },
+    "content": {
+      "rendered": "<p>Not all activated carbon is created equal. Understanding quality standards ensures you get the performance you need.</p>\n<h2>Key Quality Indicators</h2>\n<ul>\n<li>Iodine number (surface area indicator)</li>\n<li>Methylene blue value (pore structure)</li>\n<li>Hardness number (mechanical strength)</li>\n<li>Ash content (purity level)</li>\n<li>Moisture content</li>\n</ul>\n<h2>Industry Certifications</h2>\n<p>Look for ISO 9001 certification, NSF/ANSI 61 for drinking water applications, and ASTM compliance for specific uses.</p>\n<h2>Testing and Documentation</h2>\n<p>Reputable suppliers provide Certificate of Analysis (COA) with each shipment, documenting all critical parameters and ensuring batch consistency.</p>\n<h2>Application-Specific Requirements</h2>\n<p>Different applications require different specifications. Water treatment demands high iodine numbers, while gold recovery prioritizes hardness and particle size.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Not all activated carbon is created equal. Understandin [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 50,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": {
+      "_acf_changed": false,
+      "footnotes": ""
+    },
+    "categories": [
+      1
+    ],
+    "tags": [],
+    "class_list": [
+      "post-37",
+      "post",
+      "type-post",
+      "status-publish",
+      "format-standard",
+      "has-post-thumbnail",
+      "hentry",
+      "category-uncategorized"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/37",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/comments?post=37"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/37/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 38,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/37/revisions/38"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/media/50"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/media?parent=37"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/categories?post=37"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/tags?post=37"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "id": 1,
+          "name": "admin",
+          "url": "https://file.goldcarbon.net",
+          "description": "",
+          "link": "https://file.goldcarbon.net/author/admin/",
+          "slug": "admin",
+          "avatar_urls": {
+            "24": "https://secure.gravatar.com/avatar/c91f2d0e7d3ee783810e81d0ffe6c5ab240825849ddb96614c948811e019924c?s=24&d=mm&r=g",
+            "48": "https://secure.gravatar.com/avatar/c91f2d0e7d3ee783810e81d0ffe6c5ab240825849ddb96614c948811e019924c?s=48&d=mm&r=g",
+            "96": "https://secure.gravatar.com/avatar/c91f2d0e7d3ee783810e81d0ffe6c5ab240825849ddb96614c948811e019924c?s=96&d=mm&r=g"
+          },
+          "acf": [],
+          "_links": {
+            "self": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "id": 50,
+          "date": "2026-04-02T09:52:07",
+          "slug": "coconut-shell-activated-carbon-manufacturing-process-showing-carbonization-and-activation",
+          "type": "attachment",
+          "link": "https://file.goldcarbon.net/powdered-vs-granular-activated-carbon-application-guide/coconut-shell-activated-carbon-manufacturing-process-showing-carbonization-and-activation/",
+          "title": {
+            "rendered": "Coconut shell activated carbon manufacturing process showing carbonization and activation"
+          },
+          "author": 1,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/png",
+          "media_details": {
+            "width": 1376,
+            "height": 768,
+            "file": "2026/04/Coconut-shell-activated-carbon-manufacturing-process-showing-carbonization-and-activation.png",
+            "filesize": 555354,
+            "sizes": {
+              "medium": {
+                "file": "Coconut-shell-activated-carbon-manufacturing-process-showing-carbonization-and-activation-300x167.png",
+                "width": 300,
+                "height": 167,
+                "filesize": 43955,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/Coconut-shell-activated-carbon-manufacturing-process-showing-carbonization-and-activation-300x167.png"
+              },
+              "large": {
+                "file": "Coconut-shell-activated-carbon-manufacturing-process-showing-carbonization-and-activation-1024x572.png",
+                "width": 1024,
+                "height": 572,
+                "filesize": 315204,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/Coconut-shell-activated-carbon-manufacturing-process-showing-carbonization-and-activation-1024x572.png"
+              },
+              "thumbnail": {
+                "file": "Coconut-shell-activated-carbon-manufacturing-process-showing-carbonization-and-activation-150x150.png",
+                "width": 150,
+                "height": 150,
+                "filesize": 21393,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/Coconut-shell-activated-carbon-manufacturing-process-showing-carbonization-and-activation-150x150.png"
+              },
+              "medium_large": {
+                "file": "Coconut-shell-activated-carbon-manufacturing-process-showing-carbonization-and-activation-768x429.png",
+                "width": 768,
+                "height": 429,
+                "filesize": 199689,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/Coconut-shell-activated-carbon-manufacturing-process-showing-carbonization-and-activation-768x429.png"
+              },
+              "full": {
+                "file": "Coconut-shell-activated-carbon-manufacturing-process-showing-carbonization-and-activation.png",
+                "width": 1376,
+                "height": 768,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/Coconut-shell-activated-carbon-manufacturing-process-showing-carbonization-and-activation.png"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/Coconut-shell-activated-carbon-manufacturing-process-showing-carbonization-and-activation.png",
+          "_links": {
+            "self": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/media/50",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/comments?post=50"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "post",
+                "id": 35,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/35"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 1,
+            "link": "https://file.goldcarbon.net/category/uncategorized/",
+            "name": "Uncategorized",
+            "slug": "uncategorized",
+            "taxonomy": "category",
+            "acf": [],
+            "_links": {
+              "self": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/categories/1",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts?categories=1"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        []
+      ]
+    }
+  },
+  {
+    "id": 36,
+    "date": "2026-04-02T09:49:42",
+    "date_gmt": "2026-04-02T01:49:42",
+    "guid": {
+      "rendered": "https://file.goldcarbon.net/activated-carbon-regeneration-extending-service-life/"
+    },
+    "modified": "2026-04-02T09:52:50",
+    "modified_gmt": "2026-04-02T01:52:50",
+    "slug": "activated-carbon-regeneration-extending-service-life",
+    "status": "publish",
+    "type": "post",
+    "link": "https://file.goldcarbon.net/activated-carbon-regeneration-extending-service-life/",
+    "title": {
+      "rendered": "Activated Carbon Regeneration: Extending Service Life"
+    },
+    "content": {
+      "rendered": "<p>Regenerating spent activated carbon reduces costs and environmental impact. Learn the methods and benefits of carbon reactivation.</p>\n<h2>Why Regenerate?</h2>\n<p>Once activated carbon becomes saturated, it can be regenerated to restore 85-95% of its original adsorption capacity, offering significant cost savings.</p>\n<h2>Regeneration Methods</h2>\n<h3>Thermal Reactivation</h3>\n<p>The most common method, using high temperatures (800-1000°C) to burn off adsorbed contaminants.</p>\n<h3>Chemical Regeneration</h3>\n<p>Uses solvents or acids to desorb contaminants, suitable for specific applications.</p>\n<h2>Economic Benefits</h2>\n<p>Regeneration costs 30-50% less than purchasing new carbon, making it economically attractive for large-scale operations.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Regenerating spent activated carbon reduces costs and e [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 48,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": {
+      "_acf_changed": false,
+      "footnotes": ""
+    },
+    "categories": [
+      1
+    ],
+    "tags": [],
+    "class_list": [
+      "post-36",
+      "post",
+      "type-post",
+      "status-publish",
+      "format-standard",
+      "has-post-thumbnail",
+      "hentry",
+      "category-uncategorized"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/36",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/comments?post=36"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/36/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 52,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/36/revisions/52"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/media/48"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/media?parent=36"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/categories?post=36"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/tags?post=36"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "id": 1,
+          "name": "admin",
+          "url": "https://file.goldcarbon.net",
+          "description": "",
+          "link": "https://file.goldcarbon.net/author/admin/",
+          "slug": "admin",
+          "avatar_urls": {
+            "24": "https://secure.gravatar.com/avatar/c91f2d0e7d3ee783810e81d0ffe6c5ab240825849ddb96614c948811e019924c?s=24&d=mm&r=g",
+            "48": "https://secure.gravatar.com/avatar/c91f2d0e7d3ee783810e81d0ffe6c5ab240825849ddb96614c948811e019924c?s=48&d=mm&r=g",
+            "96": "https://secure.gravatar.com/avatar/c91f2d0e7d3ee783810e81d0ffe6c5ab240825849ddb96614c948811e019924c?s=96&d=mm&r=g"
+          },
+          "acf": [],
+          "_links": {
+            "self": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "id": 48,
+          "date": "2026-04-02T09:52:00",
+          "slug": "banana_1768438557463",
+          "type": "attachment",
+          "link": "https://file.goldcarbon.net/powdered-vs-granular-activated-carbon-application-guide/banana_1768438557463/",
+          "title": {
+            "rendered": "banana_1768438557463"
+          },
+          "author": 1,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/png",
+          "media_details": {
+            "width": 1376,
+            "height": 768,
+            "file": "2026/04/banana_1768438557463.png",
+            "filesize": 1758021,
+            "sizes": {
+              "medium": {
+                "file": "banana_1768438557463-300x167.png",
+                "width": 300,
+                "height": 167,
+                "filesize": 91922,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/banana_1768438557463-300x167.png"
+              },
+              "large": {
+                "file": "banana_1768438557463-1024x572.png",
+                "width": 1024,
+                "height": 572,
+                "filesize": 844425,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/banana_1768438557463-1024x572.png"
+              },
+              "thumbnail": {
+                "file": "banana_1768438557463-150x150.png",
+                "width": 150,
+                "height": 150,
+                "filesize": 43273,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/banana_1768438557463-150x150.png"
+              },
+              "medium_large": {
+                "file": "banana_1768438557463-768x429.png",
+                "width": 768,
+                "height": 429,
+                "filesize": 506871,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/banana_1768438557463-768x429.png"
+              },
+              "full": {
+                "file": "banana_1768438557463.png",
+                "width": 1376,
+                "height": 768,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/banana_1768438557463.png"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/banana_1768438557463.png",
+          "_links": {
+            "self": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/media/48",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/comments?post=48"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "post",
+                "id": 35,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/35"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 1,
+            "link": "https://file.goldcarbon.net/category/uncategorized/",
+            "name": "Uncategorized",
+            "slug": "uncategorized",
+            "taxonomy": "category",
+            "acf": [],
+            "_links": {
+              "self": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/categories/1",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts?categories=1"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        []
+      ]
+    }
+  },
+  {
+    "id": 35,
+    "date": "2026-04-02T09:49:42",
+    "date_gmt": "2026-04-02T01:49:42",
+    "guid": {
+      "rendered": "https://file.goldcarbon.net/powdered-vs-granular-activated-carbon-application-guide/"
+    },
+    "modified": "2026-04-02T09:52:40",
+    "modified_gmt": "2026-04-02T01:52:40",
+    "slug": "powdered-vs-granular-activated-carbon-application-guide",
+    "status": "publish",
+    "type": "post",
+    "link": "https://file.goldcarbon.net/powdered-vs-granular-activated-carbon-application-guide/",
+    "title": {
+      "rendered": "Powdered vs Granular Activated Carbon: Application Guide"
+    },
+    "content": {
+      "rendered": "<p>Understanding the differences between powdered (PAC) and granular (GAC) activated carbon helps optimize your treatment process.</p>\n<h2>Powdered Activated Carbon (PAC)</h2>\n<p>Fine particles with diameters less than 0.18mm. Offers rapid adsorption kinetics and is ideal for batch processes.</p>\n<h3>Best Uses:</h3>\n<ul>\n<li>Emergency water treatment</li>\n<li>Seasonal taste/odor control</li>\n<li>Decolorization processes</li>\n</ul>\n<h2>Granular Activated Carbon (GAC)</h2>\n<p>Larger particles (0.5-4mm) designed for continuous flow systems. Provides longer contact time and easier handling.</p>\n<h3>Best Uses:</h3>\n<ul>\n<li>Water treatment plants</li>\n<li>Air filtration systems</li>\n<li>Gold recovery operations</li>\n</ul>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Understanding the differences between powdered (PAC) an [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 49,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": {
+      "_acf_changed": false,
+      "footnotes": ""
+    },
+    "categories": [
+      1
+    ],
+    "tags": [],
+    "class_list": [
+      "post-35",
+      "post",
+      "type-post",
+      "status-publish",
+      "format-standard",
+      "has-post-thumbnail",
+      "hentry",
+      "category-uncategorized"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/35",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/comments?post=35"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/35/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 51,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/35/revisions/51"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/media/49"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/media?parent=35"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/categories?post=35"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/tags?post=35"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "id": 1,
+          "name": "admin",
+          "url": "https://file.goldcarbon.net",
+          "description": "",
+          "link": "https://file.goldcarbon.net/author/admin/",
+          "slug": "admin",
+          "avatar_urls": {
+            "24": "https://secure.gravatar.com/avatar/c91f2d0e7d3ee783810e81d0ffe6c5ab240825849ddb96614c948811e019924c?s=24&d=mm&r=g",
+            "48": "https://secure.gravatar.com/avatar/c91f2d0e7d3ee783810e81d0ffe6c5ab240825849ddb96614c948811e019924c?s=48&d=mm&r=g",
+            "96": "https://secure.gravatar.com/avatar/c91f2d0e7d3ee783810e81d0ffe6c5ab240825849ddb96614c948811e019924c?s=96&d=mm&r=g"
+          },
+          "acf": [],
+          "_links": {
+            "self": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "id": 49,
+          "date": "2026-04-02T09:52:04",
+          "slug": "microscopic-structure-of-coconut-shell-activated-carbon-showing-pore-network",
+          "type": "attachment",
+          "link": "https://file.goldcarbon.net/powdered-vs-granular-activated-carbon-application-guide/microscopic-structure-of-coconut-shell-activated-carbon-showing-pore-network/",
+          "title": {
+            "rendered": "Microscopic structure of coconut shell activated carbon showing pore network"
+          },
+          "author": 1,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/png",
+          "media_details": {
+            "width": 1376,
+            "height": 768,
+            "file": "2026/04/Microscopic-structure-of-coconut-shell-activated-carbon-showing-pore-network.png",
+            "filesize": 2190397,
+            "sizes": {
+              "medium": {
+                "file": "Microscopic-structure-of-coconut-shell-activated-carbon-showing-pore-network-300x167.png",
+                "width": 300,
+                "height": 167,
+                "filesize": 116256,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/Microscopic-structure-of-coconut-shell-activated-carbon-showing-pore-network-300x167.png"
+              },
+              "large": {
+                "file": "Microscopic-structure-of-coconut-shell-activated-carbon-showing-pore-network-1024x572.png",
+                "width": 1024,
+                "height": 572,
+                "filesize": 1004402,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/Microscopic-structure-of-coconut-shell-activated-carbon-showing-pore-network-1024x572.png"
+              },
+              "thumbnail": {
+                "file": "Microscopic-structure-of-coconut-shell-activated-carbon-showing-pore-network-150x150.png",
+                "width": 150,
+                "height": 150,
+                "filesize": 58303,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/Microscopic-structure-of-coconut-shell-activated-carbon-showing-pore-network-150x150.png"
+              },
+              "medium_large": {
+                "file": "Microscopic-structure-of-coconut-shell-activated-carbon-showing-pore-network-768x429.png",
+                "width": 768,
+                "height": 429,
+                "filesize": 612174,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/Microscopic-structure-of-coconut-shell-activated-carbon-showing-pore-network-768x429.png"
+              },
+              "full": {
+                "file": "Microscopic-structure-of-coconut-shell-activated-carbon-showing-pore-network.png",
+                "width": 1376,
+                "height": 768,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/Microscopic-structure-of-coconut-shell-activated-carbon-showing-pore-network.png"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/Microscopic-structure-of-coconut-shell-activated-carbon-showing-pore-network.png",
+          "_links": {
+            "self": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/media/49",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/comments?post=49"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "post",
+                "id": 35,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/35"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 1,
+            "link": "https://file.goldcarbon.net/category/uncategorized/",
+            "name": "Uncategorized",
+            "slug": "uncategorized",
+            "taxonomy": "category",
+            "acf": [],
+            "_links": {
+              "self": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/categories/1",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts?categories=1"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        []
+      ]
+    }
+  },
+  {
+    "id": 34,
+    "date": "2026-04-02T09:49:40",
+    "date_gmt": "2026-04-02T01:49:40",
+    "guid": {
+      "rendered": "https://file.goldcarbon.net/air-purification-with-activated-carbon-industrial-applications/"
+    },
+    "modified": "2026-04-02T09:53:02",
+    "modified_gmt": "2026-04-02T01:53:02",
+    "slug": "air-purification-with-activated-carbon-industrial-applications",
+    "status": "publish",
+    "type": "post",
+    "link": "https://file.goldcarbon.net/air-purification-with-activated-carbon-industrial-applications/",
+    "title": {
+      "rendered": "Air Purification with Activated Carbon: Industrial Applications"
+    },
+    "content": {
+      "rendered": "<p>Industrial air purification requires robust solutions. Activated carbon filters provide effective removal of harmful gases and odors in manufacturing facilities.</p>\n<h2>How It Works</h2>\n<p>Activated carbon traps airborne contaminants through adsorption. The porous structure captures volatile organic compounds, chemical vapors, and odorous molecules.</p>\n<h2>Industrial Applications</h2>\n<ul>\n<li>Chemical manufacturing plants</li>\n<li>Pharmaceutical facilities</li>\n<li>Food processing units</li>\n<li>Paint and coating operations</li>\n</ul>\n<h2>Benefits</h2>\n<p>Improved air quality, regulatory compliance, worker safety, and odor control make activated carbon an essential component of industrial ventilation systems.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Industrial air purification requires robust solutions.  [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 45,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": {
+      "_acf_changed": false,
+      "footnotes": ""
+    },
+    "categories": [
+      1
+    ],
+    "tags": [],
+    "class_list": [
+      "post-34",
+      "post",
+      "type-post",
+      "status-publish",
+      "format-standard",
+      "has-post-thumbnail",
+      "hentry",
+      "category-uncategorized"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/34",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/comments?post=34"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/34/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 53,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/34/revisions/53"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/media/45"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/media?parent=34"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/categories?post=34"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/tags?post=34"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "id": 1,
+          "name": "admin",
+          "url": "https://file.goldcarbon.net",
+          "description": "",
+          "link": "https://file.goldcarbon.net/author/admin/",
+          "slug": "admin",
+          "avatar_urls": {
+            "24": "https://secure.gravatar.com/avatar/c91f2d0e7d3ee783810e81d0ffe6c5ab240825849ddb96614c948811e019924c?s=24&d=mm&r=g",
+            "48": "https://secure.gravatar.com/avatar/c91f2d0e7d3ee783810e81d0ffe6c5ab240825849ddb96614c948811e019924c?s=48&d=mm&r=g",
+            "96": "https://secure.gravatar.com/avatar/c91f2d0e7d3ee783810e81d0ffe6c5ab240825849ddb96614c948811e019924c?s=96&d=mm&r=g"
+          },
+          "acf": [],
+          "_links": {
+            "self": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "id": 45,
+          "date": "2026-04-02T09:51:46",
+          "slug": "water-treatment-facility-using-coconut-shell-activated-carbon-filters",
+          "type": "attachment",
+          "link": "https://file.goldcarbon.net/powdered-vs-granular-activated-carbon-application-guide/water-treatment-facility-using-coconut-shell-activated-carbon-filters/",
+          "title": {
+            "rendered": "Water treatment facility using coconut shell activated carbon filters"
+          },
+          "author": 1,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/png",
+          "media_details": {
+            "width": 1376,
+            "height": 768,
+            "file": "2026/04/Water-treatment-facility-using-coconut-shell-activated-carbon-filters.png",
+            "filesize": 1509828,
+            "sizes": {
+              "medium": {
+                "file": "Water-treatment-facility-using-coconut-shell-activated-carbon-filters-300x167.png",
+                "width": 300,
+                "height": 167,
+                "filesize": 88817,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/Water-treatment-facility-using-coconut-shell-activated-carbon-filters-300x167.png"
+              },
+              "large": {
+                "file": "Water-treatment-facility-using-coconut-shell-activated-carbon-filters-1024x572.png",
+                "width": 1024,
+                "height": 572,
+                "filesize": 762196,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/Water-treatment-facility-using-coconut-shell-activated-carbon-filters-1024x572.png"
+              },
+              "thumbnail": {
+                "file": "Water-treatment-facility-using-coconut-shell-activated-carbon-filters-150x150.png",
+                "width": 150,
+                "height": 150,
+                "filesize": 41267,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/Water-treatment-facility-using-coconut-shell-activated-carbon-filters-150x150.png"
+              },
+              "medium_large": {
+                "file": "Water-treatment-facility-using-coconut-shell-activated-carbon-filters-768x429.png",
+                "width": 768,
+                "height": 429,
+                "filesize": 467398,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/Water-treatment-facility-using-coconut-shell-activated-carbon-filters-768x429.png"
+              },
+              "full": {
+                "file": "Water-treatment-facility-using-coconut-shell-activated-carbon-filters.png",
+                "width": 1376,
+                "height": 768,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/Water-treatment-facility-using-coconut-shell-activated-carbon-filters.png"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/Water-treatment-facility-using-coconut-shell-activated-carbon-filters.png",
+          "_links": {
+            "self": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/media/45",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/comments?post=45"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "post",
+                "id": 35,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/35"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 1,
+            "link": "https://file.goldcarbon.net/category/uncategorized/",
+            "name": "Uncategorized",
+            "slug": "uncategorized",
+            "taxonomy": "category",
+            "acf": [],
+            "_links": {
+              "self": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/categories/1",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts?categories=1"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        []
+      ]
+    }
+  },
+  {
+    "id": 33,
+    "date": "2026-04-02T09:49:33",
+    "date_gmt": "2026-04-02T01:49:33",
+    "guid": {
+      "rendered": "https://file.goldcarbon.net/activated-carbon-in-gold-recovery-maximizing-efficiency/"
+    },
+    "modified": "2026-04-02T09:53:26",
+    "modified_gmt": "2026-04-02T01:53:26",
+    "slug": "activated-carbon-in-gold-recovery-maximizing-efficiency",
+    "status": "publish",
+    "type": "post",
+    "link": "https://file.goldcarbon.net/activated-carbon-in-gold-recovery-maximizing-efficiency/",
+    "title": {
+      "rendered": "Activated Carbon in Gold Recovery: Maximizing Efficiency"
+    },
+    "content": {
+      "rendered": "<p>The mining industry relies heavily on activated carbon for gold recovery. Understanding the process can significantly improve extraction efficiency and profitability.</p>\n<h2>The CIP/CIL Process</h2>\n<p>Carbon-in-Pulp (CIP) and Carbon-in-Leach (CIL) are the two primary methods using activated carbon to extract gold from ore. Both processes leverage carbon&#8217;s ability to adsorb gold from cyanide solutions.</p>\n<h2>Why Activated Carbon Works</h2>\n<p>Activated carbon has a strong affinity for gold-cyanide complexes. Its high surface area and optimal pore structure make it ideal for capturing gold particles efficiently.</p>\n<h2>Selecting the Right Carbon</h2>\n<ul>\n<li>High hardness to withstand abrasion</li>\n<li>Appropriate particle size (6&#215;12 or 6&#215;16 mesh)</li>\n<li>Low ash content for easier elution</li>\n<li>High activity for maximum gold loading</li>\n</ul>\n<h2>Optimizing Recovery Rates</h2>\n<p>Proper carbon management, including regular screening, acid washing, and reactivation, ensures consistent gold recovery rates above 95%.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>The mining industry relies heavily on activated carbon  [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 41,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": {
+      "_acf_changed": false,
+      "footnotes": ""
+    },
+    "categories": [
+      1
+    ],
+    "tags": [],
+    "class_list": [
+      "post-33",
+      "post",
+      "type-post",
+      "status-publish",
+      "format-standard",
+      "has-post-thumbnail",
+      "hentry",
+      "category-uncategorized"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/33",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/comments?post=33"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/33/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 55,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/33/revisions/55"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/media/41"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/media?parent=33"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/categories?post=33"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/tags?post=33"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "id": 1,
+          "name": "admin",
+          "url": "https://file.goldcarbon.net",
+          "description": "",
+          "link": "https://file.goldcarbon.net/author/admin/",
+          "slug": "admin",
+          "avatar_urls": {
+            "24": "https://secure.gravatar.com/avatar/c91f2d0e7d3ee783810e81d0ffe6c5ab240825849ddb96614c948811e019924c?s=24&d=mm&r=g",
+            "48": "https://secure.gravatar.com/avatar/c91f2d0e7d3ee783810e81d0ffe6c5ab240825849ddb96614c948811e019924c?s=48&d=mm&r=g",
+            "96": "https://secure.gravatar.com/avatar/c91f2d0e7d3ee783810e81d0ffe6c5ab240825849ddb96614c948811e019924c?s=96&d=mm&r=g"
+          },
+          "acf": [],
+          "_links": {
+            "self": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "id": 41,
+          "date": "2026-04-02T09:51:26",
+          "slug": "blog-image-suggestion-1768802438949-0",
+          "type": "attachment",
+          "link": "https://file.goldcarbon.net/powdered-vs-granular-activated-carbon-application-guide/blog-image-suggestion-1768802438949-0/",
+          "title": {
+            "rendered": "blog-image-suggestion-1768802438949-0"
+          },
+          "author": 1,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 1376,
+            "height": 768,
+            "file": "2026/04/blog-image-suggestion-1768802438949-0.jpg",
+            "filesize": 507314,
+            "sizes": {
+              "medium": {
+                "file": "blog-image-suggestion-1768802438949-0-300x167.jpg",
+                "width": 300,
+                "height": 167,
+                "filesize": 4975,
+                "mime_type": "image/jpeg",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/blog-image-suggestion-1768802438949-0-300x167.jpg"
+              },
+              "large": {
+                "file": "blog-image-suggestion-1768802438949-0-1024x572.jpg",
+                "width": 1024,
+                "height": 572,
+                "filesize": 32486,
+                "mime_type": "image/jpeg",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/blog-image-suggestion-1768802438949-0-1024x572.jpg"
+              },
+              "thumbnail": {
+                "file": "blog-image-suggestion-1768802438949-0-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "filesize": 2695,
+                "mime_type": "image/jpeg",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/blog-image-suggestion-1768802438949-0-150x150.jpg"
+              },
+              "medium_large": {
+                "file": "blog-image-suggestion-1768802438949-0-768x429.jpg",
+                "width": 768,
+                "height": 429,
+                "filesize": 20340,
+                "mime_type": "image/jpeg",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/blog-image-suggestion-1768802438949-0-768x429.jpg"
+              },
+              "full": {
+                "file": "blog-image-suggestion-1768802438949-0.jpg",
+                "width": 1376,
+                "height": 768,
+                "mime_type": "image/jpeg",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/blog-image-suggestion-1768802438949-0.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/blog-image-suggestion-1768802438949-0.jpg",
+          "_links": {
+            "self": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/media/41",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/comments?post=41"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "post",
+                "id": 35,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/35"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 1,
+            "link": "https://file.goldcarbon.net/category/uncategorized/",
+            "name": "Uncategorized",
+            "slug": "uncategorized",
+            "taxonomy": "category",
+            "acf": [],
+            "_links": {
+              "self": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/categories/1",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts?categories=1"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        []
+      ]
+    }
+  },
+  {
+    "id": 32,
+    "date": "2026-04-02T09:49:33",
+    "date_gmt": "2026-04-02T01:49:33",
+    "guid": {
+      "rendered": "https://file.goldcarbon.net/how-activated-carbon-purifies-drinking-water/"
+    },
+    "modified": "2026-04-02T09:53:14",
+    "modified_gmt": "2026-04-02T01:53:14",
+    "slug": "how-activated-carbon-purifies-drinking-water",
+    "status": "publish",
+    "type": "post",
+    "link": "https://file.goldcarbon.net/how-activated-carbon-purifies-drinking-water/",
+    "title": {
+      "rendered": "How Activated Carbon Purifies Drinking Water"
+    },
+    "content": {
+      "rendered": "<p>Activated carbon is the gold standard for water purification, removing contaminants that affect taste, odor, and safety. Here&#8217;s how it works.</p>\n<h2>The Adsorption Process</h2>\n<p>When water passes through activated carbon, contaminants are trapped in the porous structure through a process called adsorption. The massive surface area ensures maximum contact with impurities.</p>\n<h2>What Does It Remove?</h2>\n<ul>\n<li>Chlorine and chloramines</li>\n<li>Volatile organic compounds (VOCs)</li>\n<li>Pesticides and herbicides</li>\n<li>Industrial solvents</li>\n<li>Bad taste and odor</li>\n</ul>\n<h2>Types for Water Treatment</h2>\n<p>Granular activated carbon (GAC) is commonly used in large-scale water treatment plants, while powdered activated carbon (PAC) is ideal for emergency treatment and seasonal taste/odor control.</p>\n<h2>Maintenance and Replacement</h2>\n<p>Regular monitoring and timely replacement ensure optimal performance. The lifespan depends on water quality and flow rate, typically ranging from 6 to 12 months for residential systems.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Activated carbon is the gold standard for water purific [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 43,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": {
+      "_acf_changed": false,
+      "footnotes": ""
+    },
+    "categories": [
+      1
+    ],
+    "tags": [],
+    "class_list": [
+      "post-32",
+      "post",
+      "type-post",
+      "status-publish",
+      "format-standard",
+      "has-post-thumbnail",
+      "hentry",
+      "category-uncategorized"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/32",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/comments?post=32"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/32/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 54,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/32/revisions/54"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/media/43"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/media?parent=32"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/categories?post=32"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/tags?post=32"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "id": 1,
+          "name": "admin",
+          "url": "https://file.goldcarbon.net",
+          "description": "",
+          "link": "https://file.goldcarbon.net/author/admin/",
+          "slug": "admin",
+          "avatar_urls": {
+            "24": "https://secure.gravatar.com/avatar/c91f2d0e7d3ee783810e81d0ffe6c5ab240825849ddb96614c948811e019924c?s=24&d=mm&r=g",
+            "48": "https://secure.gravatar.com/avatar/c91f2d0e7d3ee783810e81d0ffe6c5ab240825849ddb96614c948811e019924c?s=48&d=mm&r=g",
+            "96": "https://secure.gravatar.com/avatar/c91f2d0e7d3ee783810e81d0ffe6c5ab240825849ddb96614c948811e019924c?s=96&d=mm&r=g"
+          },
+          "acf": [],
+          "_links": {
+            "self": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "id": 43,
+          "date": "2026-04-02T09:51:35",
+          "slug": "banana_1768439378969",
+          "type": "attachment",
+          "link": "https://file.goldcarbon.net/powdered-vs-granular-activated-carbon-application-guide/banana_1768439378969/",
+          "title": {
+            "rendered": "banana_1768439378969"
+          },
+          "author": 1,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/png",
+          "media_details": {
+            "width": 1376,
+            "height": 768,
+            "file": "2026/04/banana_1768439378969.png",
+            "filesize": 1005841,
+            "sizes": {
+              "medium": {
+                "file": "banana_1768439378969-300x167.png",
+                "width": 300,
+                "height": 167,
+                "filesize": 53093,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/banana_1768439378969-300x167.png"
+              },
+              "large": {
+                "file": "banana_1768439378969-1024x572.png",
+                "width": 1024,
+                "height": 572,
+                "filesize": 486497,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/banana_1768439378969-1024x572.png"
+              },
+              "thumbnail": {
+                "file": "banana_1768439378969-150x150.png",
+                "width": 150,
+                "height": 150,
+                "filesize": 26037,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/banana_1768439378969-150x150.png"
+              },
+              "medium_large": {
+                "file": "banana_1768439378969-768x429.png",
+                "width": 768,
+                "height": 429,
+                "filesize": 297792,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/banana_1768439378969-768x429.png"
+              },
+              "full": {
+                "file": "banana_1768439378969.png",
+                "width": 1376,
+                "height": 768,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/banana_1768439378969.png"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/banana_1768439378969.png",
+          "_links": {
+            "self": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/media/43",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/comments?post=43"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "post",
+                "id": 35,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/35"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 1,
+            "link": "https://file.goldcarbon.net/category/uncategorized/",
+            "name": "Uncategorized",
+            "slug": "uncategorized",
+            "taxonomy": "category",
+            "acf": [],
+            "_links": {
+              "self": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/categories/1",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts?categories=1"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        []
+      ]
+    }
+  },
+  {
+    "id": 31,
+    "date": "2026-04-02T09:49:32",
+    "date_gmt": "2026-04-02T01:49:32",
+    "guid": {
+      "rendered": "https://file.goldcarbon.net/coconut-shell-vs-coal-based-activated-carbon-which-is-better/"
+    },
+    "modified": "2026-04-02T09:53:39",
+    "modified_gmt": "2026-04-02T01:53:39",
+    "slug": "coconut-shell-vs-coal-based-activated-carbon-which-is-better",
+    "status": "publish",
+    "type": "post",
+    "link": "https://file.goldcarbon.net/coconut-shell-vs-coal-based-activated-carbon-which-is-better/",
+    "title": {
+      "rendered": "Coconut Shell vs Coal-Based Activated Carbon: Which is Better?"
+    },
+    "content": {
+      "rendered": "<p>Choosing between coconut shell and coal-based activated carbon depends on your specific application. This comparison helps you make an informed decision.</p>\n<h2>Coconut Shell Activated Carbon</h2>\n<p>Made from coconut shells, this type offers exceptional hardness and density. It&#8217;s renewable, eco-friendly, and ideal for applications requiring high purity.</p>\n<h3>Advantages:</h3>\n<ul>\n<li>Higher micropore volume</li>\n<li>Better for liquid phase applications</li>\n<li>Lower ash content</li>\n<li>Renewable resource</li>\n</ul>\n<h2>Coal-Based Activated Carbon</h2>\n<p>Produced from coal, this variant provides excellent performance in gas phase applications and is generally more cost-effective for large-scale operations.</p>\n<h3>Advantages:</h3>\n<ul>\n<li>More economical</li>\n<li>Better for gas phase adsorption</li>\n<li>Larger particle sizes available</li>\n<li>High mechanical strength</li>\n</ul>\n<h2>Making the Right Choice</h2>\n<p>Consider your application requirements, budget, and environmental priorities when selecting between these two popular types of activated carbon.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Choosing between coconut shell and coal-based activated [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 40,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": {
+      "_acf_changed": false,
+      "footnotes": ""
+    },
+    "categories": [
+      1
+    ],
+    "tags": [],
+    "class_list": [
+      "post-31",
+      "post",
+      "type-post",
+      "status-publish",
+      "format-standard",
+      "has-post-thumbnail",
+      "hentry",
+      "category-uncategorized"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/31",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/comments?post=31"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/31/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 56,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/31/revisions/56"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/media/40"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/media?parent=31"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/categories?post=31"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/tags?post=31"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "id": 1,
+          "name": "admin",
+          "url": "https://file.goldcarbon.net",
+          "description": "",
+          "link": "https://file.goldcarbon.net/author/admin/",
+          "slug": "admin",
+          "avatar_urls": {
+            "24": "https://secure.gravatar.com/avatar/c91f2d0e7d3ee783810e81d0ffe6c5ab240825849ddb96614c948811e019924c?s=24&d=mm&r=g",
+            "48": "https://secure.gravatar.com/avatar/c91f2d0e7d3ee783810e81d0ffe6c5ab240825849ddb96614c948811e019924c?s=48&d=mm&r=g",
+            "96": "https://secure.gravatar.com/avatar/c91f2d0e7d3ee783810e81d0ffe6c5ab240825849ddb96614c948811e019924c?s=96&d=mm&r=g"
+          },
+          "acf": [],
+          "_links": {
+            "self": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "id": 40,
+          "date": "2026-04-02T09:51:25",
+          "slug": "blog-image-suggestion-1768802438949-1",
+          "type": "attachment",
+          "link": "https://file.goldcarbon.net/powdered-vs-granular-activated-carbon-application-guide/blog-image-suggestion-1768802438949-1/",
+          "title": {
+            "rendered": "blog-image-suggestion-1768802438949-1"
+          },
+          "author": 1,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 1376,
+            "height": 768,
+            "file": "2026/04/blog-image-suggestion-1768802438949-1.jpg",
+            "filesize": 602081,
+            "sizes": {
+              "medium": {
+                "file": "blog-image-suggestion-1768802438949-1-300x167.jpg",
+                "width": 300,
+                "height": 167,
+                "filesize": 9182,
+                "mime_type": "image/jpeg",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/blog-image-suggestion-1768802438949-1-300x167.jpg"
+              },
+              "large": {
+                "file": "blog-image-suggestion-1768802438949-1-1024x572.jpg",
+                "width": 1024,
+                "height": 572,
+                "filesize": 70780,
+                "mime_type": "image/jpeg",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/blog-image-suggestion-1768802438949-1-1024x572.jpg"
+              },
+              "thumbnail": {
+                "file": "blog-image-suggestion-1768802438949-1-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "filesize": 6062,
+                "mime_type": "image/jpeg",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/blog-image-suggestion-1768802438949-1-150x150.jpg"
+              },
+              "medium_large": {
+                "file": "blog-image-suggestion-1768802438949-1-768x429.jpg",
+                "width": 768,
+                "height": 429,
+                "filesize": 43867,
+                "mime_type": "image/jpeg",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/blog-image-suggestion-1768802438949-1-768x429.jpg"
+              },
+              "full": {
+                "file": "blog-image-suggestion-1768802438949-1.jpg",
+                "width": 1376,
+                "height": 768,
+                "mime_type": "image/jpeg",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/blog-image-suggestion-1768802438949-1.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/blog-image-suggestion-1768802438949-1.jpg",
+          "_links": {
+            "self": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/media/40",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/comments?post=40"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "post",
+                "id": 35,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/35"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 1,
+            "link": "https://file.goldcarbon.net/category/uncategorized/",
+            "name": "Uncategorized",
+            "slug": "uncategorized",
+            "taxonomy": "category",
+            "acf": [],
+            "_links": {
+              "self": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/categories/1",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts?categories=1"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        []
+      ]
+    }
+  },
+  {
+    "id": 30,
+    "date": "2026-04-02T09:49:31",
+    "date_gmt": "2026-04-02T01:49:31",
+    "guid": {
+      "rendered": "https://file.goldcarbon.net/understanding-activated-carbon-a-complete-guide/"
+    },
+    "modified": "2026-04-02T09:54:05",
+    "modified_gmt": "2026-04-02T01:54:05",
+    "slug": "understanding-activated-carbon-a-complete-guide",
+    "status": "publish",
+    "type": "post",
+    "link": "https://file.goldcarbon.net/understanding-activated-carbon-a-complete-guide/",
+    "title": {
+      "rendered": "Understanding Activated Carbon: A Complete Guide"
+    },
+    "content": {
+      "rendered": "\n<p>Activated carbon is a highly porous material with an extensive surface area, making it one of the most effective adsorbents available. This guide explores the fundamentals of activated carbon and its widespread applications.</p>\n\n\n\n<h2 class=\"wp-block-heading\">What is Activated Carbon?</h2>\n\n\n\n<p>Activated carbon is a form of carbon processed to have small, low-volume pores that increase the surface area available for adsorption. This unique structure allows it to trap impurities and contaminants effectively.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Manufacturing Process</h2>\n\n\n\n<p>The production involves two main steps: carbonization and activation. Raw materials like coconut shells, coal, or wood are first carbonized at high temperatures, then activated using steam or chemicals to create the porous structure.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Key Properties</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>High surface area (500-3000 m²/g)</li>\n\n\n\n<li>Excellent adsorption capacity</li>\n\n\n\n<li>Chemical stability</li>\n\n\n\n<li>Customizable pore sizes</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Common Applications</h2>\n\n\n\n<p>From water purification to air filtration, activated carbon plays a crucial role in numerous industries including pharmaceutical, food processing, and environmental protection.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"572\" src=\"/images/blog/understanding-activated-carbon-a-complete-guide-content-1775095518267.png\" alt=\"\" class=\"wp-image-46\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Activated carbon is a highly porous material with an ex [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 39,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": {
+      "_acf_changed": false,
+      "footnotes": ""
+    },
+    "categories": [
+      1
+    ],
+    "tags": [],
+    "class_list": [
+      "post-30",
+      "post",
+      "type-post",
+      "status-publish",
+      "format-standard",
+      "has-post-thumbnail",
+      "hentry",
+      "category-uncategorized"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/30",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/comments?post=30"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/30/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 57,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/30/revisions/57"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/media/39"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/media?parent=30"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/categories?post=30"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/tags?post=30"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "id": 1,
+          "name": "admin",
+          "url": "https://file.goldcarbon.net",
+          "description": "",
+          "link": "https://file.goldcarbon.net/author/admin/",
+          "slug": "admin",
+          "avatar_urls": {
+            "24": "https://secure.gravatar.com/avatar/c91f2d0e7d3ee783810e81d0ffe6c5ab240825849ddb96614c948811e019924c?s=24&d=mm&r=g",
+            "48": "https://secure.gravatar.com/avatar/c91f2d0e7d3ee783810e81d0ffe6c5ab240825849ddb96614c948811e019924c?s=48&d=mm&r=g",
+            "96": "https://secure.gravatar.com/avatar/c91f2d0e7d3ee783810e81d0ffe6c5ab240825849ddb96614c948811e019924c?s=96&d=mm&r=g"
+          },
+          "acf": [],
+          "_links": {
+            "self": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "id": 39,
+          "date": "2026-04-02T09:51:23",
+          "slug": "blog-image-suggestion-1768803870383-1",
+          "type": "attachment",
+          "link": "https://file.goldcarbon.net/powdered-vs-granular-activated-carbon-application-guide/blog-image-suggestion-1768803870383-1/",
+          "title": {
+            "rendered": "blog-image-suggestion-1768803870383-1"
+          },
+          "author": 1,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 1376,
+            "height": 768,
+            "file": "2026/04/blog-image-suggestion-1768803870383-1.jpg",
+            "filesize": 689338,
+            "sizes": {
+              "medium": {
+                "file": "blog-image-suggestion-1768803870383-1-300x167.jpg",
+                "width": 300,
+                "height": 167,
+                "filesize": 10634,
+                "mime_type": "image/jpeg",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/blog-image-suggestion-1768803870383-1-300x167.jpg"
+              },
+              "large": {
+                "file": "blog-image-suggestion-1768803870383-1-1024x572.jpg",
+                "width": 1024,
+                "height": 572,
+                "filesize": 83096,
+                "mime_type": "image/jpeg",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/blog-image-suggestion-1768803870383-1-1024x572.jpg"
+              },
+              "thumbnail": {
+                "file": "blog-image-suggestion-1768803870383-1-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "filesize": 5779,
+                "mime_type": "image/jpeg",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/blog-image-suggestion-1768803870383-1-150x150.jpg"
+              },
+              "medium_large": {
+                "file": "blog-image-suggestion-1768803870383-1-768x429.jpg",
+                "width": 768,
+                "height": 429,
+                "filesize": 51769,
+                "mime_type": "image/jpeg",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/blog-image-suggestion-1768803870383-1-768x429.jpg"
+              },
+              "full": {
+                "file": "blog-image-suggestion-1768803870383-1.jpg",
+                "width": 1376,
+                "height": 768,
+                "mime_type": "image/jpeg",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/blog-image-suggestion-1768803870383-1.jpg"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/blog-image-suggestion-1768803870383-1.jpg",
+          "_links": {
+            "self": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/media/39",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/comments?post=39"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "post",
+                "id": 35,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/35"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 1,
+            "link": "https://file.goldcarbon.net/category/uncategorized/",
+            "name": "Uncategorized",
+            "slug": "uncategorized",
+            "taxonomy": "category",
+            "acf": [],
+            "_links": {
+              "self": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/categories/1",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts?categories=1"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        []
+      ]
+    }
+  },
+  {
+    "id": 1,
+    "date": "2026-04-01T00:58:06",
+    "date_gmt": "2026-04-01T00:58:06",
+    "guid": {
+      "rendered": "https://file.goldcarbon.net/?p=1"
+    },
+    "modified": "2026-04-01T00:58:06",
+    "modified_gmt": "2026-04-01T00:58:06",
+    "slug": "hello-world",
+    "status": "publish",
+    "type": "post",
+    "link": "https://file.goldcarbon.net/hello-world/",
+    "title": {
+      "rendered": "Hello world!"
+    },
+    "content": {
+      "rendered": "\n<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Welcome to WordPress. This is your first post. Edit or  [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": {
+      "_acf_changed": false,
+      "footnotes": ""
+    },
+    "categories": [
+      1
+    ],
+    "tags": [],
+    "class_list": [
+      "post-1",
+      "post",
+      "type-post",
+      "status-publish",
+      "format-standard",
+      "hentry",
+      "category-uncategorized"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/1",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/comments?post=1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/1/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/media?parent=1"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/categories?post=1"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/tags?post=1"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "id": 1,
+          "name": "admin",
+          "url": "https://file.goldcarbon.net",
+          "description": "",
+          "link": "https://file.goldcarbon.net/author/admin/",
+          "slug": "admin",
+          "avatar_urls": {
+            "24": "https://secure.gravatar.com/avatar/c91f2d0e7d3ee783810e81d0ffe6c5ab240825849ddb96614c948811e019924c?s=24&d=mm&r=g",
+            "48": "https://secure.gravatar.com/avatar/c91f2d0e7d3ee783810e81d0ffe6c5ab240825849ddb96614c948811e019924c?s=48&d=mm&r=g",
+            "96": "https://secure.gravatar.com/avatar/c91f2d0e7d3ee783810e81d0ffe6c5ab240825849ddb96614c948811e019924c?s=96&d=mm&r=g"
+          },
+          "acf": [],
+          "_links": {
+            "self": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users"
+              }
+            ]
+          }
+        }
+      ],
+      "replies": [
+        [
+          {
+            "id": 1,
+            "parent": 0,
+            "author": 0,
+            "author_name": "A WordPress Commenter",
+            "author_url": "https://wordpress.org/",
+            "date": "2026-04-01T00:58:06",
+            "content": {
+              "rendered": "<p>Hi, this is a comment.<br />\nTo get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.<br />\nCommenter avatars come from <a href=\"https://gravatar.com/\">Gravatar</a>.</p>\n"
+            },
+            "link": "https://file.goldcarbon.net/hello-world/#comment-1",
+            "type": "comment",
+            "author_avatar_urls": {
+              "24": "https://secure.gravatar.com/avatar/8e1606e6fba450a9362af43874c1b2dfad34c782e33d0a51e1b46c18a2a567dd?s=24&d=mm&r=g",
+              "48": "https://secure.gravatar.com/avatar/8e1606e6fba450a9362af43874c1b2dfad34c782e33d0a51e1b46c18a2a567dd?s=48&d=mm&r=g",
+              "96": "https://secure.gravatar.com/avatar/8e1606e6fba450a9362af43874c1b2dfad34c782e33d0a51e1b46c18a2a567dd?s=96&d=mm&r=g"
+            },
+            "acf": [],
+            "_links": {
+              "self": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/comments/1",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/comments"
+                }
+              ],
+              "up": [
+                {
+                  "embeddable": true,
+                  "post_type": "post",
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts/1"
+                }
+              ]
+            }
+          }
+        ]
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 1,
+            "link": "https://file.goldcarbon.net/category/uncategorized/",
+            "name": "Uncategorized",
+            "slug": "uncategorized",
+            "taxonomy": "category",
+            "acf": [],
+            "_links": {
+              "self": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/categories/1",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/posts?categories=1"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        []
+      ]
+    }
+  }
+]
