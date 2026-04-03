@@ -136,7 +136,20 @@ async function syncPosts() {
   console.log('✅ Posts sync complete!');
 }
 
+async function syncCatalogs() {
+  console.log('📥 Syncing product catalogs from WordPress...');
+
+  const response = await fetch(`${WP_API}/product-catalogs?per_page=100`);
+  const catalogs = await response.json();
+
+  const catalogsDataPath = path.join(__dirname, '../src/lib/product-catalogs-data.json');
+  fs.writeFileSync(catalogsDataPath, JSON.stringify(catalogs, null, 2));
+
+  console.log(`✅ Catalogs sync complete! (${catalogs.length} catalogs)`);
+}
+
 async function sync() {
+  await syncCatalogs();
   await syncProducts();
   await syncPosts();
 }

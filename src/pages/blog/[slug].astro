@@ -25,10 +25,6 @@ const date = new Date(post.date).toLocaleDateString('en-US', {
   day: 'numeric'
 });
 
-// 计算阅读时间
-const wordCount = content.replace(/<[^>]*>/g, '').split(/\s+/).length;
-const readingTime = Math.ceil(wordCount / 200);
-
 // 提取目录（TOC）
 const headings = [];
 const headingRegex = /<h2[^>]*>(.*?)<\/h2>/g;
@@ -84,12 +80,12 @@ const relatedPosts = postsData.filter(p => p.slug !== post.slug).slice(0, 3);
   <section class="relative py-12 px-4 sm:px-6 lg:px-8" style="background-color: #F5F5F5;">
     <div class="mx-auto max-w-7xl">
       <!-- Breadcrumb -->
-      <nav class="mb-6 flex items-center gap-2 text-sm text-gray-600">
-        <a href="/" class="hover:text-mono-black">Home</a>
-        <span>/</span>
-        <a href="/blog" class="hover:text-mono-black">Blog</a>
-        <span>/</span>
-        <span class="text-gray-400">{title}</span>
+      <nav class="mb-6 flex items-center gap-2 text-sm text-gray-600 max-w-full overflow-hidden whitespace-nowrap">
+        <a href="/" class="hover:text-mono-black shrink-0">Home</a>
+        <span class="shrink-0">/</span>
+        <a href="/blog" class="hover:text-mono-black shrink-0">Blog</a>
+        <span class="shrink-0">/</span>
+        <span class="text-gray-400 truncate">{title}</span>
       </nav>
 
       <div class="max-w-3xl">
@@ -108,8 +104,6 @@ const relatedPosts = postsData.filter(p => p.slug !== post.slug).slice(0, 3);
           </div>
           <span class="text-gray-400">•</span>
           <time>{date}</time>
-          <span class="text-gray-400">•</span>
-          <span>{readingTime} min read</span>
         </div>
       </div>
     </div>
@@ -133,26 +127,18 @@ const relatedPosts = postsData.filter(p => p.slug !== post.slug).slice(0, 3);
                 <p class="text-sm font-medium text-gray-700 mb-2">Share this article</p>
                 <div class="flex gap-3">
                   <a href={`https://twitter.com/intent/tweet?url=${encodeURIComponent('https://tanjincarbon.com/blog/' + post.slug)}&text=${encodeURIComponent(title)}`} target="_blank" class="flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-mono-black hover:text-white transition-colors">
-                    <Icon name="heroicons:share" class="h-5 w-5" />
+                    <Icon name="simple-icons:x" class="h-5 w-5" />
                   </a>
                   <a href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent('https://tanjincarbon.com/blog/' + post.slug)}`} target="_blank" class="flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-mono-black hover:text-white transition-colors">
-                    <Icon name="heroicons:share" class="h-5 w-5" />
+                    <Icon name="simple-icons:linkedin" class="h-5 w-5" />
                   </a>
                   <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://tanjincarbon.com/blog/' + post.slug)}`} target="_blank" class="flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-mono-black hover:text-white transition-colors">
-                    <Icon name="heroicons:share" class="h-5 w-5" />
+                    <Icon name="simple-icons:facebook" class="h-5 w-5" />
                   </a>
                 </div>
               </div>
             </div>
 
-            <div class="mt-8 rounded-lg bg-gray-50 p-6 text-center">
-              <h3 class="text-xl font-semibold text-mono-heading mb-2">Need Activated Carbon?</h3>
-              <p class="text-gray-600 mb-4">Get free samples and custom quotes within 24 hours</p>
-              <button class="inquiry-trigger inline-flex items-center gap-2 rounded-lg bg-mono-black px-6 py-3 font-semibold text-white hover:bg-gray-800 transition-colors">
-                Get Free Samples
-                <Icon name="heroicons:arrow-right" class="h-5 w-5" />
-              </button>
-            </div>
           </div>
         </article>
 
@@ -241,36 +227,114 @@ const relatedPosts = postsData.filter(p => p.slug !== post.slug).slice(0, 3);
 <style is:global>
   .prose-content h2 {
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 700;
     color: #0F172A;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #E8F0FE;
   }
   .prose-content h3 {
     font-size: 1.25rem;
     font-weight: 600;
     color: #1F2937;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     margin-bottom: 0.75rem;
   }
   .prose-content p {
-    margin-bottom: 1rem;
-    line-height: 1.7;
+    margin-bottom: 1.25rem;
+    line-height: 1.8;
     color: #4B5563;
+    font-size: 1.0625rem;
   }
-  .prose-content ul, .prose-content ol {
+  .prose-content ul {
+    list-style: none;
+    margin-bottom: 1.25rem;
+    padding-left: 0;
+  }
+  .prose-content ol {
     margin-bottom: 1.25rem;
     padding-left: 1.5rem;
   }
-  .prose-content li {
-    margin-bottom: 0.5rem;
+  .prose-content ol li::marker {
+    color: #0072EE;
+    font-weight: 600;
+  }
+  .prose-content ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0;
     color: #4B5563;
-    line-height: 1.7;
+    line-height: 1.8;
+    font-size: 1.0625rem;
+  }
+  .prose-content ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.65em;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #0072EE;
+  }
+  .prose-content ol li {
+    margin-bottom: 0;
+    color: #4B5563;
+    line-height: 1.8;
+    font-size: 1.0625rem;
+  }
+  .prose-content strong {
+    color: #0F172A;
+    font-weight: 600;
+  }
+  .prose-content a {
+    color: #0072EE;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 200ms ease;
+  }
+  .prose-content a:hover {
+    color: #0059BB;
+  }
+  .prose-content blockquote {
+    border-left: 4px solid #0072EE;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    background-color: #F8FAFC;
+    border-radius: 0 0.5rem 0.5rem 0;
+    color: #334155;
+    font-style: italic;
+  }
+  .prose-content blockquote p {
+    margin-bottom: 0;
   }
   .prose-content img {
     max-width: 100%;
     height: auto;
     border-radius: 0.5rem;
     margin: 1.5rem 0;
+  }
+  .prose-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.9375rem;
+  }
+  .prose-content th {
+    background-color: #F0F6FF;
+    color: #0F172A;
+    font-weight: 600;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border-bottom: 2px solid #0072EE;
+  }
+  .prose-content td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #E5E7EB;
+    color: #4B5563;
+  }
+  .prose-content tr:hover td {
+    background-color: #F8FAFC;
   }
 </style>

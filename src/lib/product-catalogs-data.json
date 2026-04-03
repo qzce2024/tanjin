@@ -1,0 +1,137 @@
+[
+  {
+    "id": 4,
+    "count": 0,
+    "description": "",
+    "link": "https://file.goldcarbon.net/product-catalogs/coal/",
+    "name": "coal",
+    "slug": "coal",
+    "taxonomy": "product-catalogs",
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/product-catalogs/4",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/product-catalogs"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/taxonomies/product-catalogs"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/product?product-catalogs=4"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "count": 4,
+    "description": "",
+    "link": "https://file.goldcarbon.net/product-catalogs/coconut/",
+    "name": "coconut",
+    "slug": "coconut",
+    "taxonomy": "product-catalogs",
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/product-catalogs/3",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/product-catalogs"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/taxonomies/product-catalogs"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/product?product-catalogs=3"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "count": 0,
+    "description": "",
+    "link": "https://file.goldcarbon.net/product-catalogs/wood/",
+    "name": "wood",
+    "slug": "wood",
+    "taxonomy": "product-catalogs",
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/product-catalogs/5",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/product-catalogs"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/taxonomies/product-catalogs"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/product?product-catalogs=5"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]

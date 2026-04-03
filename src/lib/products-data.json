@@ -1,5 +1,1037 @@
 [
   {
+    "id": 68,
+    "date": "2026-04-03T14:36:31",
+    "date_gmt": "2026-04-03T06:36:31",
+    "guid": {
+      "rendered": "https://file.goldcarbon.net/product/silver-impregnated-activated-carbon/"
+    },
+    "modified": "2026-04-03T14:36:31",
+    "modified_gmt": "2026-04-03T06:36:31",
+    "slug": "silver-impregnated-activated-carbon",
+    "status": "publish",
+    "type": "product",
+    "link": "https://file.goldcarbon.net/product/silver-impregnated-activated-carbon/",
+    "title": {
+      "rendered": "Silver Impregnated Activated Carbon"
+    },
+    "content": {
+      "rendered": "<h2>Product Overview</h2>\n<p>Silver impregnated activated carbon combines the superior adsorption performance of coconut shell activated carbon with the bacteriostatic properties of silver. Through a controlled impregnation process, silver ions are uniformly deposited onto the carbon surface, preventing bacterial colonization and biofilm formation within the filter media — a critical requirement for point-of-use drinking water systems and healthcare applications.</p>\n<h2>Technical Specifications</h2>\n<figure class=\"wp-block-table\">\n<table class=\"has-fixed-layout\">\n<tbody>\n<tr>\n<td><strong>Parameter</strong></td>\n<td><strong>Value</strong></td>\n</tr>\n<tr>\n<td>Iodine Number</td>\n<td>900–1050 mg/g</td>\n</tr>\n<tr>\n<td>Particle Size</td>\n<td>8×30, 12×40, 20×50 mesh</td>\n</tr>\n<tr>\n<td>Silver Content</td>\n<td>0.03%–0.10% (customizable)</td>\n</tr>\n<tr>\n<td>Moisture</td>\n<td>≤5%</td>\n</tr>\n<tr>\n<td>Ash Content</td>\n<td>≤5%</td>\n</tr>\n<tr>\n<td>Hardness</td>\n<td>≥95%</td>\n</tr>\n<tr>\n<td>pH</td>\n<td>6–8</td>\n</tr>\n<tr>\n<td>Silver Leaching</td>\n<td>≤50 μg/L (meets WHO standard)</td>\n</tr>\n</tbody>\n</table>\n</figure>\n<h2>Key Advantages</h2>\n<ul>\n<li><strong>Bacteriostatic performance</strong> — Silver ions inhibit bacterial growth, preventing biofilm formation within the carbon bed</li>\n<li><strong>Safe silver levels</strong> — Silver leaching well below WHO drinking water guidelines (100 μg/L), ensuring safe treated water</li>\n<li><strong>Dual-function media</strong> — Simultaneously removes chlorine, organics, taste, and odor while preventing microbial contamination</li>\n<li><strong>Extended service life</strong> — Anti-bacterial properties maintain filter hygiene, extending replacement intervals</li>\n<li><strong>Customizable silver content</strong> — Silver loading can be adjusted based on application requirements and regulatory standards</li>\n</ul>\n<h2>Applications</h2>\n<ul>\n<li>Point-of-use (POU) and point-of-entry (POE) drinking water filters</li>\n<li>Water coolers, dispensers, and refrigerator filters</li>\n<li>Medical and healthcare water purification systems</li>\n<li>Swimming pool and spa water treatment</li>\n<li>Emergency and portable water purification units</li>\n<li>Food and beverage processing water</li>\n</ul>\n<h2>Certifications &#038; Standards</h2>\n<p>Available with NSF/ANSI 42 and 61 compliance testing. Silver content and leaching levels comply with WHO, EPA, and EU drinking water standards. COA and MSDS provided with every shipment.</p>\n<h2>Packaging &#038; Storage</h2>\n<p>Standard packaging: 25 kg fiber drums or PP bags with inner PE liner, 500 kg bulk bags.<br />\nStorage: Store in a cool, dry, dark place. Avoid contact with strong reducing agents.<br />\nShelf life: 2 years in sealed original packaging.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Product Overview Silver impregnated activated carbon co [&hellip;]</p>\n",
+      "protected": false
+    },
+    "featured_media": 67,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+      "_acf_changed": false
+    },
+    "product-catalogs": [
+      3
+    ],
+    "class_list": [
+      "post-68",
+      "product",
+      "type-product",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry",
+      "product-catalogs-coconut"
+    ],
+    "acf": {
+      "introduction": "Coconut shell activated carbon impregnated with silver ions for enhanced bacteriostatic properties. Prevents bacterial growth within the carbon bed while maintaining excellent adsorption performance, ideal for point-of-use drinking water systems and medical-grade water purification."
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/product/68",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/product"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/types/product"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/media/67"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/media?parent=68"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "product-catalogs",
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/product-catalogs?post=68"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "wp:featuredmedia": [
+        {
+          "id": 67,
+          "date": "2026-04-03T14:36:27",
+          "slug": "silver-impregnated-activated-carbon-supplier",
+          "type": "attachment",
+          "link": "https://file.goldcarbon.net/silver-impregnated-activated-carbon-supplier/",
+          "title": {
+            "rendered": "silver-impregnated-activated-carbon-supplier"
+          },
+          "author": 1,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/png",
+          "media_details": {
+            "width": 1365,
+            "height": 768,
+            "file": "2026/04/silver-impregnated-activated-carbon-supplier.png",
+            "filesize": 630939,
+            "sizes": {
+              "medium": {
+                "file": "silver-impregnated-activated-carbon-supplier-300x169.png",
+                "width": 300,
+                "height": 169,
+                "filesize": 61937,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/silver-impregnated-activated-carbon-supplier-300x169.png"
+              },
+              "large": {
+                "file": "silver-impregnated-activated-carbon-supplier-1024x576.png",
+                "width": 1024,
+                "height": 576,
+                "filesize": 414463,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/silver-impregnated-activated-carbon-supplier-1024x576.png"
+              },
+              "thumbnail": {
+                "file": "silver-impregnated-activated-carbon-supplier-150x150.png",
+                "width": 150,
+                "height": 150,
+                "filesize": 30418,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/silver-impregnated-activated-carbon-supplier-150x150.png"
+              },
+              "medium_large": {
+                "file": "silver-impregnated-activated-carbon-supplier-768x432.png",
+                "width": 768,
+                "height": 432,
+                "filesize": 267517,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/silver-impregnated-activated-carbon-supplier-768x432.png"
+              },
+              "full": {
+                "file": "silver-impregnated-activated-carbon-supplier.png",
+                "width": 1365,
+                "height": 768,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/silver-impregnated-activated-carbon-supplier.png"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/silver-impregnated-activated-carbon-supplier.png",
+          "_links": {
+            "self": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/media/67",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/comments?post=67"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 3,
+            "link": "https://file.goldcarbon.net/product-catalogs/coconut/",
+            "name": "coconut",
+            "slug": "coconut",
+            "taxonomy": "product-catalogs",
+            "acf": [],
+            "_links": {
+              "self": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/product-catalogs/3",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/product-catalogs"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/taxonomies/product-catalogs"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/product?product-catalogs=3"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "id": 66,
+    "date": "2026-04-03T14:36:22",
+    "date_gmt": "2026-04-03T06:36:22",
+    "guid": {
+      "rendered": "https://file.goldcarbon.net/product/coconut-shell-activated-carbon-for-gold-recovery/"
+    },
+    "modified": "2026-04-03T14:36:22",
+    "modified_gmt": "2026-04-03T06:36:22",
+    "slug": "coconut-shell-activated-carbon-for-gold-recovery",
+    "status": "publish",
+    "type": "product",
+    "link": "https://file.goldcarbon.net/product/coconut-shell-activated-carbon-for-gold-recovery/",
+    "title": {
+      "rendered": "Gold Recovery Activated Carbon"
+    },
+    "content": {
+      "rendered": "<h2>Product Overview</h2>\n<p>Our gold recovery activated carbon is specifically engineered from carefully selected coconut shells for use in Carbon-in-Pulp (CIP), Carbon-in-Leach (CIL), and Carbon-in-Column (CIC) gold extraction processes. Through controlled activation, it achieves optimal pore size distribution for maximum gold-cyanide complex adsorption while maintaining the exceptional mechanical hardness required to withstand aggressive mining environments.</p>\n<h2>Technical Specifications</h2>\n<figure class=\"wp-block-table\">\n<table class=\"has-fixed-layout\">\n<tbody>\n<tr>\n<td><strong>Parameter</strong></td>\n<td><strong>Value</strong></td>\n</tr>\n<tr>\n<td>Iodine Number</td>\n<td>1000–1200 mg/g</td>\n</tr>\n<tr>\n<td>Particle Size</td>\n<td>6×12, 6×16 mesh (standard)</td>\n</tr>\n<tr>\n<td>Gold Adsorption Rate (K value)</td>\n<td>≥70 mg Au/g carbon/hr</td>\n</tr>\n<tr>\n<td>Gold Loading Capacity (R value)</td>\n<td>≥25 mg Au/g carbon</td>\n</tr>\n<tr>\n<td>Hardness</td>\n<td>≥97%</td>\n</tr>\n<tr>\n<td>Ash Content</td>\n<td>≤3%</td>\n</tr>\n<tr>\n<td>Moisture</td>\n<td>≤5%</td>\n</tr>\n<tr>\n<td>Ball-Pan Hardness</td>\n<td>≥98%</td>\n</tr>\n<tr>\n<td>Apparent Density</td>\n<td>0.48–0.54 g/cm³</td>\n</tr>\n</tbody>\n</table>\n</figure>\n<h2>Key Advantages</h2>\n<ul>\n<li><strong>High K value</strong> — Fast gold adsorption kinetics reduce required contact time and circuit inventory</li>\n<li><strong>Superior R value</strong> — High gold loading capacity maximizes recovery per cycle and reduces carbon consumption</li>\n<li><strong>Ultra-high hardness</strong> — >97% hardness minimizes carbon loss from attrition in agitated tanks and pumping systems</li>\n<li><strong>Low ash content</strong> — <3% ash reduces interference with gold elution and ensures cleaner final product</li>\n<li><strong>Excellent elution performance</strong> — Consistent gold stripping efficiency across multiple reactivation cycles</li>\n</ul>\n<h2>Applications</h2>\n<ul>\n<li>Carbon-in-Pulp (CIP) gold recovery circuits</li>\n<li>Carbon-in-Leach (CIL) gold extraction</li>\n<li>Carbon-in-Column (CIC) heap leach recovery</li>\n<li>Silver recovery from cyanide solutions</li>\n<li>Precious metal refining and hydrometallurgical processes</li>\n</ul>\n<h2>Packaging &#038; Storage</h2>\n<p>Standard packaging: 25 kg PP woven bags (inner PE liner), 1000 kg bulk bags.<br />\nStorage: Store dry, away from moisture and contaminants. Pre-wet before use per standard mining practice.<br />\nShelf life: 3 years in sealed original packaging.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Product Overview Our gold recovery activated carbon is  [&hellip;]</p>\n",
+      "protected": false
+    },
+    "featured_media": 65,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+      "_acf_changed": false
+    },
+    "product-catalogs": [
+      3
+    ],
+    "class_list": [
+      "post-66",
+      "product",
+      "type-product",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry",
+      "product-catalogs-coconut"
+    ],
+    "acf": {
+      "introduction": "Specialized coconut shell activated carbon engineered for gold adsorption in CIP, CIL, and CIC processes. Features high gold loading capacity, fast adsorption kinetics, superior hardness, and excellent elution performance for maximum gold recovery efficiency."
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/product/66",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/product"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/types/product"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/media/65"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/media?parent=66"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "product-catalogs",
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/product-catalogs?post=66"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "wp:featuredmedia": [
+        {
+          "id": 65,
+          "date": "2026-04-03T14:36:18",
+          "slug": "coconut-shell-gold-recovery-activated-carbon-supplier",
+          "type": "attachment",
+          "link": "https://file.goldcarbon.net/coconut-shell-gold-recovery-activated-carbon-supplier/",
+          "title": {
+            "rendered": "coconut-shell-gold-recovery-activated-carbon-supplier"
+          },
+          "author": 1,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/png",
+          "media_details": {
+            "width": 1365,
+            "height": 768,
+            "file": "2026/04/coconut-shell-gold-recovery-activated-carbon-supplier.png",
+            "filesize": 630939,
+            "sizes": {
+              "medium": {
+                "file": "coconut-shell-gold-recovery-activated-carbon-supplier-300x169.png",
+                "width": 300,
+                "height": 169,
+                "filesize": 61937,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/coconut-shell-gold-recovery-activated-carbon-supplier-300x169.png"
+              },
+              "large": {
+                "file": "coconut-shell-gold-recovery-activated-carbon-supplier-1024x576.png",
+                "width": 1024,
+                "height": 576,
+                "filesize": 414463,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/coconut-shell-gold-recovery-activated-carbon-supplier-1024x576.png"
+              },
+              "thumbnail": {
+                "file": "coconut-shell-gold-recovery-activated-carbon-supplier-150x150.png",
+                "width": 150,
+                "height": 150,
+                "filesize": 30418,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/coconut-shell-gold-recovery-activated-carbon-supplier-150x150.png"
+              },
+              "medium_large": {
+                "file": "coconut-shell-gold-recovery-activated-carbon-supplier-768x432.png",
+                "width": 768,
+                "height": 432,
+                "filesize": 267517,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/coconut-shell-gold-recovery-activated-carbon-supplier-768x432.png"
+              },
+              "full": {
+                "file": "coconut-shell-gold-recovery-activated-carbon-supplier.png",
+                "width": 1365,
+                "height": 768,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/coconut-shell-gold-recovery-activated-carbon-supplier.png"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/coconut-shell-gold-recovery-activated-carbon-supplier.png",
+          "_links": {
+            "self": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/media/65",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/comments?post=65"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 3,
+            "link": "https://file.goldcarbon.net/product-catalogs/coconut/",
+            "name": "coconut",
+            "slug": "coconut",
+            "taxonomy": "product-catalogs",
+            "acf": [],
+            "_links": {
+              "self": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/product-catalogs/3",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/product-catalogs"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/taxonomies/product-catalogs"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/product?product-catalogs=3"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "id": 64,
+    "date": "2026-04-03T14:36:14",
+    "date_gmt": "2026-04-03T06:36:14",
+    "guid": {
+      "rendered": "https://file.goldcarbon.net/product/coconut-shell-pellet-activated-carbon/"
+    },
+    "modified": "2026-04-03T14:36:14",
+    "modified_gmt": "2026-04-03T06:36:14",
+    "slug": "coconut-shell-pellet-activated-carbon",
+    "status": "publish",
+    "type": "product",
+    "link": "https://file.goldcarbon.net/product/coconut-shell-pellet-activated-carbon/",
+    "title": {
+      "rendered": "Coconut Shell Pellet Activated Carbon"
+    },
+    "content": {
+      "rendered": "<h2>Product Overview</h2>\n<p>Coconut shell pellet activated carbon is produced by extruding fine coconut shell carbon powder with a food-grade binder into uniform cylindrical pellets, followed by high-temperature activation. The uniform shape provides consistent airflow distribution, low pressure drop, and minimal dust generation in fixed-bed gas-phase adsorption systems.</p>\n<h2>Technical Specifications</h2>\n<figure class=\"wp-block-table\">\n<table class=\"has-fixed-layout\">\n<tbody>\n<tr>\n<td><strong>Parameter</strong></td>\n<td><strong>Value</strong></td>\n</tr>\n<tr>\n<td>Iodine Number</td>\n<td>800–1000 mg/g</td>\n</tr>\n<tr>\n<td>Pellet Diameter</td>\n<td>1.5 mm, 2.0 mm, 3.0 mm, 4.0 mm</td>\n</tr>\n<tr>\n<td>CTC Activity</td>\n<td>≥60%</td>\n</tr>\n<tr>\n<td>Moisture</td>\n<td>≤5%</td>\n</tr>\n<tr>\n<td>Ash Content</td>\n<td>≤8%</td>\n</tr>\n<tr>\n<td>Hardness</td>\n<td>≥95%</td>\n</tr>\n<tr>\n<td>Bulk Density</td>\n<td>0.45–0.55 g/cm³</td>\n</tr>\n</tbody>\n</table>\n</figure>\n<h2>Key Advantages</h2>\n<ul>\n<li><strong>Uniform pellet shape</strong> — Consistent airflow and low pressure drop across fixed-bed adsorbers, improving system efficiency</li>\n<li><strong>Low dust generation</strong> — Minimal fines during handling and operation, reducing downstream filter maintenance</li>\n<li><strong>High CTC activity</strong> — Excellent performance for capturing volatile organic compounds (VOCs) and solvent vapors</li>\n<li><strong>Superior mechanical strength</strong> — Withstands vibration and mechanical stress in industrial installations</li>\n<li><strong>Multiple diameter options</strong> — Available in various pellet sizes to match specific equipment and airflow requirements</li>\n</ul>\n<h2>Applications</h2>\n<ul>\n<li>Indoor air purification and HVAC systems</li>\n<li>Industrial gas treatment and odor control</li>\n<li>Solvent recovery in printing and coating operations</li>\n<li>Catalytic support and catalyst carrier</li>\n<li>Respiratory protection filters and gas masks</li>\n<li>Biogas and natural gas purification (H₂S removal)</li>\n</ul>\n<h2>Packaging &#038; Storage</h2>\n<p>Standard packaging: 25 kg PP woven bags, 500 kg jumbo bags, or carton boxes for small orders.<br />\nStorage: Store in a dry, ventilated area away from sources of ignition and strong oxidizers.<br />\nShelf life: 3 years in sealed original packaging.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Product Overview Coconut shell pellet activated carbon  [&hellip;]</p>\n",
+      "protected": false
+    },
+    "featured_media": 63,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+      "_acf_changed": false
+    },
+    "product-catalogs": [
+      3
+    ],
+    "class_list": [
+      "post-64",
+      "product",
+      "type-product",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry",
+      "product-catalogs-coconut"
+    ],
+    "acf": {
+      "introduction": "Extruded pellet activated carbon from coconut shell material with uniform cylindrical shape, low dust generation, and excellent gas-phase adsorption performance. Designed for air purification, solvent recovery, and continuous-flow gas treatment systems."
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/product/64",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/product"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/types/product"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/media/63"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/media?parent=64"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "product-catalogs",
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/product-catalogs?post=64"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "wp:featuredmedia": [
+        {
+          "id": 63,
+          "date": "2026-04-03T14:36:10",
+          "slug": "coconut-shell-pellet-activated-carbon-supplier",
+          "type": "attachment",
+          "link": "https://file.goldcarbon.net/coconut-shell-pellet-activated-carbon-supplier/",
+          "title": {
+            "rendered": "coconut-shell-pellet-activated-carbon-supplier"
+          },
+          "author": 1,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/png",
+          "media_details": {
+            "width": 1365,
+            "height": 768,
+            "file": "2026/04/coconut-shell-pellet-activated-carbon-supplier.png",
+            "filesize": 630939,
+            "sizes": {
+              "medium": {
+                "file": "coconut-shell-pellet-activated-carbon-supplier-300x169.png",
+                "width": 300,
+                "height": 169,
+                "filesize": 61937,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/coconut-shell-pellet-activated-carbon-supplier-300x169.png"
+              },
+              "large": {
+                "file": "coconut-shell-pellet-activated-carbon-supplier-1024x576.png",
+                "width": 1024,
+                "height": 576,
+                "filesize": 414463,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/coconut-shell-pellet-activated-carbon-supplier-1024x576.png"
+              },
+              "thumbnail": {
+                "file": "coconut-shell-pellet-activated-carbon-supplier-150x150.png",
+                "width": 150,
+                "height": 150,
+                "filesize": 30418,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/coconut-shell-pellet-activated-carbon-supplier-150x150.png"
+              },
+              "medium_large": {
+                "file": "coconut-shell-pellet-activated-carbon-supplier-768x432.png",
+                "width": 768,
+                "height": 432,
+                "filesize": 267517,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/coconut-shell-pellet-activated-carbon-supplier-768x432.png"
+              },
+              "full": {
+                "file": "coconut-shell-pellet-activated-carbon-supplier.png",
+                "width": 1365,
+                "height": 768,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/coconut-shell-pellet-activated-carbon-supplier.png"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/coconut-shell-pellet-activated-carbon-supplier.png",
+          "_links": {
+            "self": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/media/63",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/comments?post=63"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 3,
+            "link": "https://file.goldcarbon.net/product-catalogs/coconut/",
+            "name": "coconut",
+            "slug": "coconut",
+            "taxonomy": "product-catalogs",
+            "acf": [],
+            "_links": {
+              "self": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/product-catalogs/3",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/product-catalogs"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/taxonomies/product-catalogs"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/product?product-catalogs=3"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "id": 62,
+    "date": "2026-04-03T14:36:03",
+    "date_gmt": "2026-04-03T06:36:03",
+    "guid": {
+      "rendered": "https://file.goldcarbon.net/product/coconut-shell-powdered-activated-carbon/"
+    },
+    "modified": "2026-04-03T14:36:03",
+    "modified_gmt": "2026-04-03T06:36:03",
+    "slug": "coconut-shell-powdered-activated-carbon",
+    "status": "publish",
+    "type": "product",
+    "link": "https://file.goldcarbon.net/product/coconut-shell-powdered-activated-carbon/",
+    "title": {
+      "rendered": "Coconut Shell Powdered Activated Carbon"
+    },
+    "content": {
+      "rendered": "<h2>Product Overview</h2>\n<p>Coconut shell powdered activated carbon (PAC) is produced by grinding high-quality coconut shell granular carbon into fine powder form. With particle sizes predominantly below 200 mesh (75 μm), it provides a significantly larger external surface area and faster adsorption kinetics compared to granular forms, making it highly effective for batch-dosing applications.</p>\n<h2>Technical Specifications</h2>\n<figure class=\"wp-block-table\">\n<table class=\"has-fixed-layout\">\n<tbody>\n<tr>\n<td><strong>Parameter</strong></td>\n<td><strong>Value</strong></td>\n</tr>\n<tr>\n<td>Iodine Number</td>\n<td>900–1100 mg/g</td>\n</tr>\n<tr>\n<td>Particle Size</td>\n<td>≥90% passing 200 mesh (75 μm)</td>\n</tr>\n<tr>\n<td>Moisture</td>\n<td>≤10%</td>\n</tr>\n<tr>\n<td>Ash Content</td>\n<td>≤5%</td>\n</tr>\n<tr>\n<td>Methylene Blue</td>\n<td>≥120 mg/g</td>\n</tr>\n<tr>\n<td>pH</td>\n<td>6–8</td>\n</tr>\n<tr>\n<td>Bulk Density</td>\n<td>0.35–0.45 g/cm³</td>\n</tr>\n</tbody>\n</table>\n</figure>\n<h2>Key Advantages</h2>\n<ul>\n<li><strong>Rapid adsorption</strong> — Fine particle size enables fast contact and adsorption within minutes for time-sensitive applications</li>\n<li><strong>High purity</strong> — Low ash and heavy metal content meet stringent food-grade and pharmaceutical-grade requirements</li>\n<li><strong>Versatile dosing</strong> — Can be slurry-dosed directly into process streams, tanks, or batch reactors</li>\n<li><strong>Cost-effective treatment</strong> — Single-use application eliminates regeneration costs for intermittent or seasonal treatment needs</li>\n</ul>\n<h2>Applications</h2>\n<ul>\n<li>Emergency water treatment and taste/odor control</li>\n<li>Industrial wastewater polishing and final effluent treatment</li>\n<li>Sugar syrup decolorization and food processing</li>\n<li>Pharmaceutical API purification and intermediate processing</li>\n<li>Wine, juice, and beverage clarification</li>\n<li>Chemical process decolorization</li>\n</ul>\n<h2>Packaging &#038; Storage</h2>\n<p>Standard packaging: 25 kg multi-layer paper bags with PE liner, 500 kg jumbo bags.<br />\nStorage: Store in a dry, cool, well-ventilated warehouse. Prevent moisture absorption to maintain adsorption performance.<br />\nShelf life: 2 years in sealed original packaging.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Product Overview Coconut shell powdered activated carbo [&hellip;]</p>\n",
+      "protected": false
+    },
+    "featured_media": 61,
+    "menu_order": 0,
+    "template": "",
+    "meta": {
+      "_acf_changed": false
+    },
+    "product-catalogs": [
+      3
+    ],
+    "class_list": [
+      "post-62",
+      "product",
+      "type-product",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry",
+      "product-catalogs-coconut"
+    ],
+    "acf": {
+      "introduction": "Ultra-fine powdered activated carbon derived from coconut shells with rapid adsorption kinetics. Ideal for batch dosing in water treatment, decolorization, and purification processes requiring fast contact time."
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/product/62",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/product"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/types/product"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/media/61"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/media?parent=62"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "product-catalogs",
+          "embeddable": true,
+          "href": "https://file.goldcarbon.net/wp-json/wp/v2/product-catalogs?post=62"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "wp:featuredmedia": [
+        {
+          "id": 61,
+          "date": "2026-04-03T14:35:59",
+          "slug": "coconut-shell-powdered-activated-carbon-supplier",
+          "type": "attachment",
+          "link": "https://file.goldcarbon.net/coconut-shell-powdered-activated-carbon-supplier/",
+          "title": {
+            "rendered": "coconut-shell-powdered-activated-carbon-supplier"
+          },
+          "author": 1,
+          "featured_media": 0,
+          "acf": [],
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "",
+          "media_type": "image",
+          "mime_type": "image/png",
+          "media_details": {
+            "width": 1365,
+            "height": 768,
+            "file": "2026/04/coconut-shell-powdered-activated-carbon-supplier.png",
+            "filesize": 630939,
+            "sizes": {
+              "medium": {
+                "file": "coconut-shell-powdered-activated-carbon-supplier-300x169.png",
+                "width": 300,
+                "height": 169,
+                "filesize": 61937,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/coconut-shell-powdered-activated-carbon-supplier-300x169.png"
+              },
+              "large": {
+                "file": "coconut-shell-powdered-activated-carbon-supplier-1024x576.png",
+                "width": 1024,
+                "height": 576,
+                "filesize": 414463,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/coconut-shell-powdered-activated-carbon-supplier-1024x576.png"
+              },
+              "thumbnail": {
+                "file": "coconut-shell-powdered-activated-carbon-supplier-150x150.png",
+                "width": 150,
+                "height": 150,
+                "filesize": 30418,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/coconut-shell-powdered-activated-carbon-supplier-150x150.png"
+              },
+              "medium_large": {
+                "file": "coconut-shell-powdered-activated-carbon-supplier-768x432.png",
+                "width": 768,
+                "height": 432,
+                "filesize": 267517,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/coconut-shell-powdered-activated-carbon-supplier-768x432.png"
+              },
+              "full": {
+                "file": "coconut-shell-powdered-activated-carbon-supplier.png",
+                "width": 1365,
+                "height": 768,
+                "mime_type": "image/png",
+                "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/coconut-shell-powdered-activated-carbon-supplier.png"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://file.goldcarbon.net/wp-content/uploads/2026/04/coconut-shell-powdered-activated-carbon-supplier.png",
+          "_links": {
+            "self": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/media/61",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/users/1"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://file.goldcarbon.net/wp-json/wp/v2/comments?post=61"
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 3,
+            "link": "https://file.goldcarbon.net/product-catalogs/coconut/",
+            "name": "coconut",
+            "slug": "coconut",
+            "taxonomy": "product-catalogs",
+            "acf": [],
+            "_links": {
+              "self": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/product-catalogs/3",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/product-catalogs"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/taxonomies/product-catalogs"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://file.goldcarbon.net/wp-json/wp/v2/product?product-catalogs=3"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ]
+      ]
+    }
+  },
+  {
     "id": 26,
     "date": "2026-04-01T16:41:15",
     "date_gmt": "2026-04-01T08:41:15",
@@ -248,7 +1280,7 @@
       "rendered": "Coconut Shell Granular Activated Carbon"
     },
     "content": {
-      "rendered": "\n<h2 class=\"wp-block-heading\">Product Overview</h2>\n\n\n\n<p class=\"is-style-default\">Coconut shell granular activated carbon is manufactured from high-quality coconut shells through carbonization and activation processes. It features a highly developed microporous structure, exceptional hardness, and superior adsorption performance.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Specifications</h2>\n\n\n\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Iodine Number</td><td>900-1100 mg/g</td></tr><tr><td>Particle Size</td><td>4&#215;8, 6&#215;12, 8&#215;16, 12&#215;40 mesh</td></tr><tr><td>Moisture</td><td>≤5%</td></tr><tr><td>Ash Content</td><td>≤8%</td></tr><tr><td>Hardness</td><td>≥95%</td></tr><tr><td>Bulk Density</td><td>0.45-0.55 g/cm³</td></tr></tbody></table></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Applications</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Drinking water treatment and purification</li>\n\n\n\n<li>Industrial wastewater treatment</li>\n\n\n\n<li>Air purification and odor removal</li>\n\n\n\n<li>Gold recovery in mining operations</li>\n\n\n\n<li>Food and beverage processing</li>\n\n\n\n<li>Pharmaceutical purification</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Packaging</h2>\n\n\n\n<p>Standard packaging: 25kg/bag, 500kg/ton bag<br>Custom packaging available upon request<br>Storage: Keep in dry place, avoid moisture and direct sunlight</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"572\" src=\"/images/products/coconut-shell-granular-activated-carbon-content-1775097108830.webp\" alt=\"\" class=\"wp-image-21\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n",
+      "rendered": "\n<h2 class=\"wp-block-heading\">Product Overview</h2>\n\n\n\n<p class=\"is-style-default\">Coconut shell granular activated carbon is manufactured from high-quality coconut shells through carbonization and activation processes. It features a highly developed microporous structure, exceptional hardness, and superior adsorption performance.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Specifications</h2>\n\n\n\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><tbody><tr><td>Iodine Number</td><td>900-1100 mg/g</td></tr><tr><td>Particle Size</td><td>4&#215;8, 6&#215;12, 8&#215;16, 12&#215;40 mesh</td></tr><tr><td>Moisture</td><td>≤5%</td></tr><tr><td>Ash Content</td><td>≤8%</td></tr><tr><td>Hardness</td><td>≥95%</td></tr><tr><td>Bulk Density</td><td>0.45-0.55 g/cm³</td></tr></tbody></table></figure>\n\n\n\n<h2 class=\"wp-block-heading\">Applications</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Drinking water treatment and purification</li>\n\n\n\n<li>Industrial wastewater treatment</li>\n\n\n\n<li>Air purification and odor removal</li>\n\n\n\n<li>Gold recovery in mining operations</li>\n\n\n\n<li>Food and beverage processing</li>\n\n\n\n<li>Pharmaceutical purification</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Packaging</h2>\n\n\n\n<p>Standard packaging: 25kg/bag, 500kg/ton bag<br>Custom packaging available upon request<br>Storage: Keep in dry place, avoid moisture and direct sunlight</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"572\" src=\"/images/products/coconut-shell-granular-activated-carbon-content-1775198354158.webp\" alt=\"\" class=\"wp-image-21\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n",
       "protected": false
     },
     "excerpt": {
